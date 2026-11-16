@@ -1,3 +1,8 @@
+# Preserve platform-specific copies for reference without syncing them.
+_local-variants/
+# Templates are retained as authoring material, not active skills.
+utils/template-skill
+
 mattpocock/_skills/skills/engineering/ask-matt
 mattpocock/_skills/skills/engineering/diagnosing-bugs
 mattpocock/_skills/skills/engineering/domain-modeling

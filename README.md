@@ -1,6 +1,29 @@
 # my-skills
 
-My personal AI agent skills — managed and synced with [**skillshare**](https://github.com/runkids/skillshare).
+Personal AI agent skills, based on [runkids/my-skills](https://github.com/runkids/my-skills), managed and synced with [**skillshare**](https://github.com/runkids/skillshare).
+
+## Local collection
+
+This checkout includes 79 imported skills from the existing `.agents` collection, CodeBuddy, and native Pi plugin packages. Existing upstream skills are preserved. Imports use category folders, matching this repository's organization:
+
+| Folder | Contents |
+| --- | --- |
+| `engineering/` | Development, architecture, debugging, Git, and Ponytail |
+| `frontend/` | Existing frontend collection plus local UI skills |
+| `design/` | Branding, design systems, slides, and generative art |
+| `embedded/dejaos/` | DejaOS app and device workflows |
+| `testing/` | Bruno, browser testing, and QA |
+| `documentation/` | Documentation, editing, and knowledge tools |
+| `productivity/` | Planning, handoff, and learning workflows |
+| `misc/` | Supporting development tools |
+| `in-progress/` | Existing local experimental skills |
+| `utils/` | Skill authoring and utility skills |
+
+When local installations differ, `.agents` takes precedence, followed by native Pi plugin skills, then CodeBuddy. All 28 other versions are retained under `_local-variants/` and excluded from sync through `.skillignore`. `utils/template-skill/` is also excluded because it is an authoring template. Both the upstream frontend prototype skill and the imported engineering prototype skill are retained in their respective categories.
+
+[local-import.json](local-import.json) records each imported location, available upstream attribution, and SHA-256 hashes. Original installed skills were not moved or changed. Existing `.metadata.json` remains upstream Skillshare metadata; imported local files are recorded separately rather than pretending they were installed from a verified remote commit.
+
+This collection is maintained in [Uwith/my-skills](https://github.com/Uwith/my-skills), with `runkids/my-skills` retained as the upstream repository. On this machine, Skillshare's global `sources.skills` points directly to this checkout. Use `skillshare sync` to distribute changes, `skillshare push -m "Update skills"` to commit and push, and `skillshare pull` to retrieve changes from the fork.
 
 ## Install
 
@@ -13,11 +36,11 @@ One source of truth. Sync everywhere with one command.
 curl -fsSL https://raw.githubusercontent.com/runkids/skillshare/main/install.sh | sh
 
 # Install all skills from this repo
-skillshare install runkids/my-skills
+skillshare install Uwith/my-skills
 skillshare sync
 
 # Or pick a specific skill
-skillshare install runkids/my-skills -s vue-best-practices
+skillshare install Uwith/my-skills -s frontend-design
 skillshare sync
 ```
 

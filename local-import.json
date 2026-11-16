@@ -1,0 +1,1994 @@
+{
+  "version": 1,
+  "policy": "Prefer .agents skills, then native Pi plugin skills, then CodeBuddy. Preserve different copies under _local-variants; skip byte-identical copies. Original installations are untouched.",
+  "records": [
+    {
+      "name": "algorithmic-art",
+      "source": "~/.agents/skills/algorithmic-art",
+      "destination": "design/algorithmic-art",
+      "status": "active",
+      "file_count": 4,
+      "file_hashes": {
+        "LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+        "SKILL.md": "3bc4092c09804853186524c826bc0621b940bb6122c05b84496dff95388e6eef",
+        "templates/generator_template.js": "9ee0f1da52ef8f7bbfde1917123654880890d43f2d388642d71eab6dd78f94c4",
+        "templates/viewer.html": "86c79d7ce97d2599ebe4bd9b97fdeb7295c9d3ed61ceeb513cbe1b2bb5d1ce29"
+      },
+      "upstream": {
+        "source": "anthropics/skills",
+        "sourceUrl": "https://github.com/anthropics/skills.git",
+        "skillPath": "skills/algorithmic-art/SKILL.md",
+        "skillFolderHash": "4aef6bcad51d058ec32b1acb9da436851863e56e"
+      }
+    },
+    {
+      "name": "ask-matt",
+      "source": "~/.agents/skills/ask-matt",
+      "destination": "engineering/ask-matt",
+      "status": "active",
+      "file_count": 3,
+      "file_hashes": {
+        "PHASE-BOUNDARIES.md": "a8aa20158609ef39e2b308b6ba0660c91066838d07a867202e63a7744a88a3ed",
+        "SKILL.md": "1371f5ce005de0992a44b137748bfb960a56948aa9871b405fe9d90b24332e3c",
+        "agents/openai.yaml": "bdffbc5a0a99ed1b6ef3253d251d755fd18162b9845972e380007f844b09b05c"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/engineering/ask-matt/SKILL.md",
+        "skillFolderHash": "d6a0d9bf3cdc78cbfcbd6466ac5fd3deffb52877"
+      }
+    },
+    {
+      "name": "banner-design",
+      "source": "~/.agents/skills/banner-design",
+      "destination": "design/banner-design",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "913d9c4b2a3b405d638d50131e0dd3fe2787c839423d79287b7858ac29255acc",
+        "references/banner-sizes-and-styles.md": "c8906fb1073a576ee8c680d9bc8586249cbc4ed36690da960d65a1c9c37143b7"
+      }
+    },
+    {
+      "name": "brand",
+      "source": "~/.agents/skills/brand",
+      "destination": "design/brand",
+      "status": "active",
+      "file_count": 18,
+      "file_hashes": {
+        "SKILL.md": "6a450ee1a83a403d47cec2ede9030feb60a67a81fc425d2406e975339313bd44",
+        "references/approval-checklist.md": "4bf8549687f53a7b9684005b4b87de93c26f018e00609b4c506a5812abd13d20",
+        "references/asset-organization.md": "de98123417e9c5a1cc71a78131bba979c4c8ed2e5289e6c7a7f166576e488101",
+        "references/brand-guideline-template.md": "392db8cf10fef492221c15a86e68590074bf5716de1f2982f41c01fbe30567cc",
+        "references/color-palette-management.md": "c429298ffe3955edb8b22c9f51426fef75e83d02848cd4300e89c0d3fc34b44a",
+        "references/consistency-checklist.md": "56d8b2d4852cda11e600adec4b9dd68fc89a1b8265382359953bec5c5e5e2c36",
+        "references/logo-usage-rules.md": "044c5ddf30cfe0eea047451cfce6ea654939198ffdd8968a19161c97066a5a26",
+        "references/messaging-framework.md": "24b2500a72867b55dd10f4bf359178b0eb347fddd852659ce47b69d9f597d4e6",
+        "references/typography-specifications.md": "921c3d9e6ddfde2677b9a3e32eee94c7922f54f22c1f380c5ed2eb25a7d5bfa9",
+        "references/update.md": "537cb55ebe260e1de127bd6288b19d8d7b15b6c893545442a58b739cbd342b37",
+        "references/visual-identity.md": "63f0cfc5d95403d8e12aca4d839cc28471515574d9a431334bfbb96c15407c31",
+        "references/voice-framework.md": "08c15ac79f81cd964c5efbe593131b61a093c7e1b060d5dd28b17f3cc5b331fb",
+        "scripts/extract-colors.cjs": "36d21f3905e5762cfc8054b3f3b7276f6bc656884fe57c6bfa539526044778ed",
+        "scripts/inject-brand-context.cjs": "5b98abdeb5c636f247102cd235f1d3421db7a4de53fd853360feaa0c471b5c96",
+        "scripts/sync-brand-to-tokens.cjs": "390a760570fdba6d6ecfdfd8907fc802b64659b6178f8920349b0c6a2c822106",
+        "scripts/validate-asset.cjs": "4546c9109fb0f4f767426508cb29e60d02b301f8897cf16d8e378b7ce9d997fc",
+        "scripts/tests/test_sync_brand_to_tokens.py": "0ace0cf7c6a8c12c0b9154f317e847b1084eb00b065b6f22431e37b7c7e948d6",
+        "templates/brand-guidelines-starter.md": "d157a57b15f0b458c79636d11de42f3c89f03d8c0bbea1bdd3cf1c3542b2140d"
+      }
+    },
+    {
+      "name": "bruno",
+      "source": "~/.agents/skills/bruno",
+      "destination": "testing/bruno",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "1455ba338e9d69a5a1a085c9bddf0f2365a7dbceb717683570f988304106ae94",
+        "_scores.json": "65e17adf9f469ffd311ce675a812556f3cb5dbc50948918a8598965381a24cb5"
+      },
+      "upstream": {
+        "source": "TerminalSkills/skills",
+        "sourceUrl": "https://github.com/TerminalSkills/skills.git",
+        "skillPath": "skills/bruno/SKILL.md",
+        "skillFolderHash": "d3b9a533f498a17f478b2464177b11b5cfb0b94d"
+      }
+    },
+    {
+      "name": "btw",
+      "source": "~/.pi/agent/npm/node_modules/pi-btw/skills/btw",
+      "destination": "utils/btw",
+      "status": "active",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "f29ad6707c1440d4f14f9087f444989cfaf82efe8803f232f0e51aac606bee45"
+      }
+    },
+    {
+      "name": "chief-of-staff",
+      "source": "~/.agents/skills/chief-of-staff",
+      "destination": "in-progress/chief-of-staff",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+        "agents/openai.yaml": "c0f68ed9da6977adc97a791be3bb0830d301b2d27f9c635d92d6f325bffefb83"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/in-progress/chief-of-staff/SKILL.md",
+        "skillFolderHash": "58e0a4122260ba45c150d8201dad2d6de4153d18"
+      }
+    },
+    {
+      "name": "claude-handoff",
+      "source": "~/.agents/skills/claude-handoff",
+      "destination": "in-progress/claude-handoff",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "79357a18425d66d4c24048bedf83dceb79d3bba356f38014950f764a7fab4026",
+        "agents/openai.yaml": "2308a672978864633286fb9f0792b08657e501426b3f7883fc418d5d2eac5eb0"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/in-progress/claude-handoff/SKILL.md",
+        "skillFolderHash": "57d198aca08eddccb113632d52c6c13f1f3066ac"
+      }
+    },
+    {
+      "name": "code-review",
+      "source": "~/.agents/skills/code-review",
+      "destination": "engineering/code-review",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "9c921a8d88138a41401d8897ca1bb852088ab1b7b605cdd04edc13e3e8aab6dd",
+        "agents/openai.yaml": "8229ca854e11dc8e6aef2131ee03f31fb1561cf905fab9ccc325180cf3331352"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/engineering/code-review/SKILL.md",
+        "skillFolderHash": "a8ef561571acbb611de8ff19ba6da75b197c63a8"
+      }
+    },
+    {
+      "name": "codebase-design",
+      "source": "~/.agents/skills/codebase-design",
+      "destination": "engineering/codebase-design",
+      "status": "active",
+      "file_count": 4,
+      "file_hashes": {
+        "DEEPENING.md": "f3dd099ce99289bd213914d8ee3e2429b78309c3957ca4583f7659551b1d53c1",
+        "DESIGN-IT-TWICE.md": "c222ab5a82e0405672eb9062d62496139a08828e45d07fc5f18e4952c10fac1a",
+        "SKILL.md": "2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2",
+        "agents/openai.yaml": "edebc9e4fcfe102114012575eaa9600b9b5fd08c311664f389c36e7bc717740f"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/engineering/codebase-design/SKILL.md",
+        "skillFolderHash": "4cbe1c131e1ea54109cb1e4e5f3c505810db6606"
+      }
+    },
+    {
+      "name": "dejaos-app-dev",
+      "source": "~/.agents/skills/dejaos-app-dev",
+      "destination": "embedded/dejaos/dejaos-app-dev",
+      "status": "active",
+      "file_count": 197,
+      "file_hashes": {
+        "SKILL.md": "b5862e5c4e8aaee672e257c05a72f1e58ac43dbfafdec77c37942a7432bc0f55",
+        "agents/openai.yaml": "fa6e97c5adf7915fca020052c8337b8548c2cf453f7991f36ef5e69723a821b4",
+        "assets/UIManager.js": "2293f08b8ec38f00e701d0fc4d9d45428434804501c67bb1de3641eb1b3e0025",
+        "assets/sdk2/DW200_V20-app.dxproj": "f18e6ec47b8e04a6240dfa78af78a05233a8c4b979cad45c133eb44b3d07a359",
+        "assets/sdk2/VF105_V12-app.dxproj": "ae7eeecbd335081b4ed3c5d16225e3cf7c8ea60f424490fe448e7f5d654665e9",
+        "references/dejaos-cli-workflow.md": "f89a6a279cdd2592233607641530782c506757aeee7b7077724baf6e570da1d0",
+        "references/device-models.md": "4671b3b3d7adbaf854a809778b877b157fa9ade4fe99243160cbcbb1f24cb730",
+        "references/device-sku-capabilities.md": "0695ba5c54b055b6e2be0e69a0755efe7e1559c05b1d0c718c85684fedcf3309",
+        "references/dxmodules-api-audit.md": "8c2d373c0b8953817aa9381bc232e07a7fa1097326c529984c155431a6cc1c51",
+        "references/face-app-rules.md": "5657259a4f845ff77df60057a7bac87c90c30ed2a648f40a7390353bc006211f",
+        "references/sdk2-components.md": "84bd1225d73593cef555b10a806c9b145fb246ee5081886242c410700cc1d291",
+        "references/sdk2-large-app-patterns.md": "e1d42c42e96759966df71c053d058189aced99787aa4641015aa26946752d623",
+        "references/sdk2-runtime.md": "ddbfc6363bfa986bd007f02169453e859929be2d34c22add78c7140d313696d5",
+        "references/sdk4-api-patterns.md": "b32708133e705abf0eab34e08d9185eaee84025e0c9523ff24148405770f0ccc",
+        "references/sdk4-reference-project.md": "1b70ed38ebb74339276ed71433a1e3a4a51a78d0a99746f184515e5a9884825c",
+        "references/sdk4-runtime.md": "89da66dfe13c63bc26cbd2a9bf4709607c7038608aecf838eb25846d7d73f5e0",
+        "references/tools-http-api.md": "dbaf951a2ef8be32dfda5710a84997e0b040f686530e817ae66b2bdc38b86a57",
+        "references/sdk4-reference-project/src/main.js": "4ba44d4b20fef14f7bd2a7bee20c6cf67ed83a72ca1cfa3b793dea822576e6bf",
+        "references/sdk4-reference-project/src/core/commands.js": "dee678b320bd11d3f15e8a39f7141782b5f9aa01bfc1a296ae16239564aeceaf",
+        "references/sdk4-reference-project/src/core/error.js": "4736c69749496bf69be2282c6c1a58522259ee8d759a5cf4e484496bf53a9876",
+        "references/sdk4-reference-project/src/core/event_bus.js": "0bdfdabdbd7132ae7fe566e5490ac1435474545e426afb2c4a601ac41b278301",
+        "references/sdk4-reference-project/src/core/events.js": "787d8be0b9c356f3190e3aad827987dc51d3997beff18689a663e8d107bde44f",
+        "references/sdk4-reference-project/src/core/lifecycle.js": "64fdcd9871e3568f3993cdb1b600d6b15297be8315070417049a043ebae1734f",
+        "references/sdk4-reference-project/src/core/store.js": "525b994fd2578888b60b3bdf122fceef243a82a21712749842edda97cd2a675b",
+        "references/sdk4-reference-project/src/domain/advert_domain.js": "87b2ffe05590644eb454beaa973011ca0cc7b1edcd68c81f7ec64d6de0b1f85d",
+        "references/sdk4-reference-project/src/domain/alarm_domain.js": "8f6572b986ca460f26d61c18131d039f1af260e3116ce1a5afe0a550250140aa",
+        "references/sdk4-reference-project/src/domain/audio_domain.js": "febbe7f529d4eb5a4e2de853b3e8c66b30cc2f3ef49c83ed464d30abd805ea37",
+        "references/sdk4-reference-project/src/domain/capcal_domain.js": "80aca70b20f0557e3d06f3e25a264b56f3e79cfd96567636438e01327fbacd63",
+        "references/sdk4-reference-project/src/domain/diag_domain.js": "9a9945bca7f91904a6ebcf7d12297269bcbc268926de844bb5b346fd0c01559a",
+        "references/sdk4-reference-project/src/domain/display_domain.js": "ccb2c4c6ef32859cdcec4a95dd9994da9fff916f8c92c44fc1bacffdee9ca41a",
+        "references/sdk4-reference-project/src/domain/door_domain.js": "80d93937bc1be8108b22da21906516060bd8297abae1f2592d04e3a125f30e62",
+        "references/sdk4-reference-project/src/domain/door_schedule_domain.js": "36e8117fdcb49a5b1564547af43693f20853af0196247ac263f29c33d6e151a7",
+        "references/sdk4-reference-project/src/domain/eid_domain.js": "f5a447adaa98e12efa6a4132725a99cda12472a48914c0f0e6f5849bc7845150",
+        "references/sdk4-reference-project/src/domain/face_domain.js": "9b94f5d0fdd9fa527e29c7c47a45182eff637c37f55b147d62ff81fc93cd176e",
+        "references/sdk4-reference-project/src/domain/face_view_domain.js": "749c3c07aeaa01d05b0ed9107d482074371ff3cd3fcdd1c5f05d8014a37cc633",
+        "references/sdk4-reference-project/src/domain/finger_domain.js": "400e3c4b6a841d818d742a8c201d1a2e63a3025400a52fff82e99ac23e73e4bc",
+        "references/sdk4-reference-project/src/domain/intercom_domain.js": "968e99a54a60f76ba9c659e8986edadba030ff40ad5e522f4bb8b80fc4cec2ac",
+        "references/sdk4-reference-project/src/domain/light_domain.js": "50dfcfcdfdaf6ec9703e166c1272963c3a51063119959135d6a08e5dbbaf50f0",
+        "references/sdk4-reference-project/src/domain/log_domain.js": "864b5424aafcb7e02ce16a3dd07ae6afd77788f69faf6ef4e64f114d7fb39c7f",
+        "references/sdk4-reference-project/src/domain/login_auth_domain.js": "dc13fddcfc84f4e9b2a75838ac49f91a519af1c62309bbf4ae23a748f0a96443",
+        "references/sdk4-reference-project/src/domain/mqtt_domain.js": "0299323f57fdc1b0c45915d89bd925e5323d340407ad49b0b500c2b52949cc0f",
+        "references/sdk4-reference-project/src/domain/network_domain.js": "741d6bcf07a5048ac292361b199a64ade568bb3d30032e6e2df8adba8c4911bd",
+        "references/sdk4-reference-project/src/domain/nfc_domain.js": "f1f6c46ba9313da58275ec495b12ff427946c19eaa3825d4abaaf13ba8008bad",
+        "references/sdk4-reference-project/src/domain/permission_domain.js": "668242f3d82487cf052a494663be7b60f98968c08f7dc5f7ff1c2bea5d3c55ac",
+        "references/sdk4-reference-project/src/domain/person_domain.js": "2e120be053e53e7c472f02b3e28272b1e360ea1236f4f0e3a77eed69a7da2dbd",
+        "references/sdk4-reference-project/src/domain/record_domain.js": "e799c9a58bd10e2dd970488c546e4f31af852083120f37588a04c206309e8d52",
+        "references/sdk4-reference-project/src/domain/security_domain.js": "1ec9a54f5869f2b88ba71d483d555975ab2546b7d7def85cf4644938b89e5a5c",
+        "references/sdk4-reference-project/src/domain/software_domain.js": "e5caf960ca40cdb3b7af6a1bbd01a1f92b1e3fbb3a8fdb6e414d66772b7569a2",
+        "references/sdk4-reference-project/src/domain/time_domain.js": "88e87cadf0d50a98140f93db6c4bb78b2a7e60108703c64300102edfa03c4557",
+        "references/sdk4-reference-project/src/domain/ui_domain.js": "df1d343d1039c6bd6d1c63d1838b12213a23363f5a05c5fc5ccd9ee4ce7d2c33",
+        "references/sdk4-reference-project/src/domain/verify_domain.js": "40655d212e22692f20abb38be4d4b15313026caf07c121c8bd3bd82ad3ca055d",
+        "references/sdk4-reference-project/src/domain/verify_flow_domain.js": "ca1a4976ec6ec77449f64be80005fce77492c2cea6b4d5f722b5a1b9aa94bc53",
+        "references/sdk4-reference-project/src/domain/voucher_domain.js": "8e8d82c20bbb6bec03aab8e12874806eaa01a1adcbb6f00da7a02fba33a94758",
+        "references/sdk4-reference-project/src/domain/wecom_domain.js": "c36d1dcd7b25dec09344496bc492123dc3d1fb624e2c258aba089df48da4d672",
+        "references/sdk4-reference-project/src/drivers/advert_driver.js": "c6cfbd8312c5dff0eba5b2b51eb0d3f62a07271409fdaeb70f782dc2ff23e1e9",
+        "references/sdk4-reference-project/src/drivers/audio_driver.js": "e65415aba2db7261ab102631f9dd7052818d0e8f718c08108777e136c1f2b665",
+        "references/sdk4-reference-project/src/drivers/capcal_driver.js": "c52d68f5fbdd4d3740bc6ec8f03979f8ce0ca6e2b1f0077b7857e1d28d21670d",
+        "references/sdk4-reference-project/src/drivers/capturer_driver.js": "25a4b5b6878fef61cb2b7c68b069ec4ad98741db54e4f65eabb59e7b21798072",
+        "references/sdk4-reference-project/src/drivers/card_driver.js": "0c267e905f081f22a6e7cec204e160a7dd26d5ecbad9da7c53801953eb5fb147",
+        "references/sdk4-reference-project/src/drivers/diag_driver.js": "158dab3675a9b295d28b4ded195687d7cb5d84a32393fc32333a1322d6095091",
+        "references/sdk4-reference-project/src/drivers/display_driver.js": "633af751362f18601531929337ad244b601e91544ab6a777179bf6c4b7bfb3e8",
+        "references/sdk4-reference-project/src/drivers/eid_driver.js": "db26cdefaf34c73eac947a5021262108935883a2aa539b18390e7365217854d9",
+        "references/sdk4-reference-project/src/drivers/face_driver.js": "ebbd8ff7e1b7301d746b9232cc6bef70060453ee54bcf870cb65ee8ac4a301be",
+        "references/sdk4-reference-project/src/drivers/finger_driver.js": "8d81f48715cf71bc8ab7010b71f2fd77fc6b5b25904f5f2e4291065912e06ebd",
+        "references/sdk4-reference-project/src/drivers/gpio_driver.js": "2bfd9023484b67e2333c7076aeeeb326e3b06347772c186cf81fe9228cac84c5",
+        "references/sdk4-reference-project/src/drivers/gpiokey_driver.js": "4ba772c742d82e96122feb71c58d6a91dd15eac3c39a46201fab9fb7bb1b4c58",
+        "references/sdk4-reference-project/src/drivers/intercom_driver.js": "f76b7ecae175a1f717e8d35a8fae6cb0e27504dbdb935697af5be672a2d17539",
+        "references/sdk4-reference-project/src/drivers/ivcore_driver.js": "bf52ff753aee4d46aec74a06b47abe9b0a2f7296d3b667163381031f20027180",
+        "references/sdk4-reference-project/src/drivers/log_driver.js": "b2842ee9cf4d110d8ce2c816c855874be3735068b6731ac221107f1ff7a938fb",
+        "references/sdk4-reference-project/src/drivers/network_driver.js": "4a62352483feb304808de69b65844c3a31a8c5a38c1d00ee676516d7c0b1909f",
+        "references/sdk4-reference-project/src/drivers/os_driver.js": "9398f10123e6dfbceb0c7146be7815b3a316d39ce0ca339aa9454350dd565097",
+        "references/sdk4-reference-project/src/drivers/ota_driver.js": "8454165f4e0674bd22b1e34b506e3b36d5a1a5373dc40d5d1badcf7c8f412696",
+        "references/sdk4-reference-project/src/drivers/pwm_driver.js": "6c51e42bb4c803625806317b8a2c0d6596f6b75a20c71526ffd0ee6de2bb507b",
+        "references/sdk4-reference-project/src/drivers/scanner_driver.js": "ff6421ff09215e36c6b6dbbc2b9389c9426dc56f5f79ee99669e5582f4ebd209",
+        "references/sdk4-reference-project/src/drivers/time_driver.js": "3d7259ddf7bc0fc63e8f7b1f5662aca09173b4240d3aa362d9a869d4c7d3d933",
+        "references/sdk4-reference-project/src/drivers/watchdog_driver.js": "c6306baf26eb883b3d839aeaeb55bffe4f447a36ec8b6313ac2e22052a47077e",
+        "references/sdk4-reference-project/src/protocols/http/http_protocol.js": "5f3d11cb56aec41ce4b2ef41b3f2e01cefdb8b34711946df8ff8a97a8f6dc5c0",
+        "references/sdk4-reference-project/src/protocols/mqtt/mqtt_client.js": "7c184a46677b1794283df8dadf4cff2194c3291d6a99d9a29cd06e0eed61773b",
+        "references/sdk4-reference-project/src/protocols/mqtt/mqtt_protocol.js": "5c4c431d4b05cee400b654fdbc73d455afe8789e4e7e173c21d7ddb478bbfe52",
+        "references/sdk4-reference-project/src/services/access_reporter.js": "3058f36cb211286b90617ece37b0b705aff42e7f8c1eddb1b4055f0b64766f17",
+        "references/sdk4-reference-project/src/services/access_service.js": "913568c71a4765957cb40c9048bd05f08f49a56c496c5f34ae620a1778c33a31",
+        "references/sdk4-reference-project/src/services/advert_service.js": "91fde7f390be7679f76f174ae1dad71a61fc7f3e87797b45803d92b64dd8d815",
+        "references/sdk4-reference-project/src/services/alarm_service.js": "fb95334d24a2d6a797c43aee14ba657823d60ce128a76d136d72253ef66c17ff",
+        "references/sdk4-reference-project/src/services/call_service.js": "588229276798d4dc7dc47058f292feaca5c6b865b999d948b18f8d8e16fb9682",
+        "references/sdk4-reference-project/src/services/capcal_service.js": "666c717e14393bfc4d13c3cdf53512ace81e1353fa19bc82d287b5a1ff1cd2ad",
+        "references/sdk4-reference-project/src/services/code_service.js": "d2ae3925443366470dba752a82141d9c3d8c6b7c9e5ef6a699136de50c337bb4",
+        "references/sdk4-reference-project/src/services/config_service.js": "2262596b2d3fe44b2ba48707d0de2c1045ebfad81b9f504bbc3255ca5feab35b",
+        "references/sdk4-reference-project/src/services/control_service.js": "28e0baedc3ea5fa8e930a717ba59453f790c160e588ee039b2d21a307c0a028a",
+        "references/sdk4-reference-project/src/services/diag_service.js": "9557aee63573de6746bb2ec029243cdf1b5fdefc1fa0af991c52a43a11a9fe1d",
+        "references/sdk4-reference-project/src/services/door_service.js": "2f4ffd131dbb6cd35fc6cc58f8ad3a38e5ac86f5f93b0e01c458bbf74f61f1d9",
+        "references/sdk4-reference-project/src/services/face_service.js": "36de30a7e93834d19c76d9af41f1616786f18d32bdf3284e144ce9bf3d3f2cf9",
+        "references/sdk4-reference-project/src/services/grant_service.js": "214a67971cf2d20ff6dadc7bf3322264ed137e8b9b62b4fa864f85f532a1ff91",
+        "references/sdk4-reference-project/src/services/login_auth_service.js": "3106ad1246310de3ee1404cc60f3ab0cf927be35d994b092228f83ad29fc57f3",
+        "references/sdk4-reference-project/src/services/state_service.js": "77556a689549d73b94d00a113ba94f7af05a2d88a9455e41ef2d5ba8a7146826",
+        "references/sdk4-reference-project/src/services/wecom_service.js": "7c92ee2a56a99fc57e49592a619bb2c049fcb7dd4a854760406441034761f927",
+        "references/sdk4-reference-project/src/storage/config/config.js": "edac39f54547b1253505fd27e39eeb2bb78ef1ffe939dbc0f6a2c52f349924f9",
+        "references/sdk4-reference-project/src/storage/config/rules.js": "bc157f422d7c361f54bac39611148977c75e9989bacbf130c2b1deb1002fd7fe",
+        "references/sdk4-reference-project/src/storage/data/data.js": "1a707d78192fa9433cef8ba0c1cf76302b95363f7be8ece802fdcc7094dcd952",
+        "references/sdk4-reference-project/src/storage/data/door_schedule.js": "905a66c0d4ce95c33c03c8c99fea14687fc64f112ee2ea2eaecad171126a5558",
+        "references/sdk4-reference-project/src/storage/data/permission.js": "e3cfa8a75584652bd1d0bae0c065cfe1f12fea7142d9d4f7962e446b8025dc75",
+        "references/sdk4-reference-project/src/storage/data/person.js": "b509508b579f75192270a7e4e28a1e8bea3c29b2ededda5d8022d5f755d58c14",
+        "references/sdk4-reference-project/src/storage/data/record.js": "61e970d2afab54750b35752caf7f69274e8ab44ef82c146277a09fa3d2f992ab",
+        "references/sdk4-reference-project/src/storage/data/security.js": "0f4530cec81ade986d0464fba1d8a91ab60b1b652c34676f069742d93ce0aa8b",
+        "references/sdk4-reference-project/src/storage/data/sql.js": "64a5a7323f575fc39687dfd21a660a53d6a75261af9933e083d911728dc2c1a7",
+        "references/sdk4-reference-project/src/storage/data/voucher.js": "0b1c9212d89b74338b8b75a25c5a93ce34767b17021757550fb34f3d9a4dfc83",
+        "references/sdk4-reference-project/src/storage/sqlite/sqlite.js": "a37d13c26f82f348ec4a1817d03c6e692297df21024fb0d46f8a65d821581984",
+        "references/sdk4-reference-project/src/utils/config_code_utils.js": "1ff5324e0463ed7f351d06e011c6a449cb9b50016627cc852e04adf3ee81e458",
+        "references/sdk4-reference-project/src/utils/data_utils.js": "a572aec816f5098f6ef3572043d09f72dc1cf0af2095d3c38999553db2c2a5f9",
+        "references/sdk4-reference-project/src/utils/diag_log.js": "48f0b42f1611750ac46ea8b33e48aa7b77afda21675ece07cb52319ee7cf12d3",
+        "references/sdk4-reference-project/src/utils/mqtt_endpoint.js": "2d8d4868809f9d5fe1a7512307b21c8c17dd05c0b83ad06b3cc07f27aca3adbb",
+        "references/sdk4-reference-project/src/view/index.js": "820565da0f16e412659d18ad46008611104685a180e30677d14094d5db1b637a",
+        "references/sdk4-reference-project/src/view/ui_driver.js": "9fceb24a37a279817ba5b5e0bedfd58c3485b4e616bcd991ede625094941b1e8",
+        "references/sdk4-reference-project/src/view/components/confirm.js": "6648afc42fcc5d4c9823ac9de3b23c5db2469b30466d73a8820749d736c1b85e",
+        "references/sdk4-reference-project/src/view/components/face_box.js": "1c9baf5de2f58ba2e599632bb2d5c00075a81b555574df8706406d28eef3c2d4",
+        "references/sdk4-reference-project/src/view/components/font.js": "24b7a6d2dab725e279990463388267da7a0c4d59d237f0ac2969e342366f4783",
+        "references/sdk4-reference-project/src/view/components/idle_home.js": "9b27650f784fd39a9748049b2b18b98e2dd8c6dea6e73c988a67fcb04f5ab49a",
+        "references/sdk4-reference-project/src/view/components/keyboard.js": "d0806898b7f4270c51d5bd79dbc047bf0704bd87e74ee283a4fb14371e89b3f7",
+        "references/sdk4-reference-project/src/view/components/layout.js": "0e17ba7afb0484dad221c4c07f411a5b65438604f0dc8516369f24be9eb33787",
+        "references/sdk4-reference-project/src/view/components/loading_spinner.js": "b7e1b11582a510f449f4a93a81df6efb29c9abb63afb22f5acf43a8cedfcf685",
+        "references/sdk4-reference-project/src/view/components/page_header.js": "3f220685293bc29df5f705f9361550b1350076f3c69bc89c7ae929942c0baf0f",
+        "references/sdk4-reference-project/src/view/components/popup.js": "10b2402fc2008b73bfcc154f6d73d51e0e815f8f005c6ca31dbbae9f7e7d00ab",
+        "references/sdk4-reference-project/src/view/components/result_popup.js": "de9fd6e2f1a868829a629cb20a039530d30b544e7bd95f5fb2a5b7101ec8bc45",
+        "references/sdk4-reference-project/src/view/components/screen_off.js": "c7acedb36f05dff3a170c23e16d1ced51aeb53e2a193f056997adf17f661c98b",
+        "references/sdk4-reference-project/src/view/components/screensaver.js": "01eae2e884cf6438781420f7429bc647562e0b44de670cbf8ba0b1675d62e96d",
+        "references/sdk4-reference-project/src/view/components/status_bar.js": "ef47768a3bd936b6227b3bf4a5a9fd4f695f110cf42223c321bb13d281a54ccb",
+        "references/sdk4-reference-project/src/view/components/theme.js": "34286db9adcf3471bd2ae3d8c068ed3cb85e4a95267914abb14a4b767907d793",
+        "references/sdk4-reference-project/src/view/components/pinyin/dict.js": "d5b01a2e52530d5d859a0d374b41da55e24aae7f2617b36d494f0862d6202f0c",
+        "references/sdk4-reference-project/src/view/components/pinyin/pinyin.js": "02e0bfafd1fd39a259b847e9d2dda136d4b93679d227ae6822cf32348827a39c",
+        "references/sdk4-reference-project/src/view/core/capability_store.js": "cb0a8a05455ed5b93c65a5e4d5c10e8847168138ceb6ca07d7a49ffb52fd661a",
+        "references/sdk4-reference-project/src/view/i18n/en.js": "7ca41b15c54241b880f9efed0ee96468febe5fddb293b138dcbe3f2443f45273",
+        "references/sdk4-reference-project/src/view/i18n/index.js": "0482f0c0ec8e88c31e9d6806dc3ad9a868410459146113194e83f9f8c454d9b1",
+        "references/sdk4-reference-project/src/view/i18n/zh.js": "66069591ad5f80da17018736c4c07954709b28e568f031ef4fadee7de2d84204",
+        "references/sdk4-reference-project/src/view/pages/base_view.js": "6d4f20d2270e37acadf24dc5f90b60155b9b51fd0d4686581c321e85973e8a82",
+        "references/sdk4-reference-project/src/view/pages/auth/auth_page.js": "ff6e228209e0092f317f005c03e88751cb3833db0e6c83e6d944450436ff1fc7",
+        "references/sdk4-reference-project/src/view/pages/auth/auth_store.js": "624d32f29b7b1fcbd37c3254a0edc0652aa1a71645058f817164b46ca5038c94",
+        "references/sdk4-reference-project/src/view/pages/auth/first_password_page.js": "5c118cf671e70e658d84874e7a6c82bc7cfb29a15234da3cb1fa1cca2b4acf0c",
+        "references/sdk4-reference-project/src/view/pages/call/call_list_page.js": "70e048975728b26ad77edef4e3bfa1666929c72587d350ece22a778b06a2a152",
+        "references/sdk4-reference-project/src/view/pages/call/call_page.js": "c92bc4b691de445162e70bb7e6c9dc95af354c9c89ca88150d19e371a619b0ce",
+        "references/sdk4-reference-project/src/view/pages/call/call_store.js": "a3a2bab14a9c274296dc9b7baedcc87b39e3d457098e39bccd48e0c2fecbda70",
+        "references/sdk4-reference-project/src/view/pages/cloud_cert/cloud_cert_page.js": "55dec44e0cc486c7cb1759064e6cfe95badc482a793b87dd2b86593b8fd5ba38",
+        "references/sdk4-reference-project/src/view/pages/cloud_cert/cloud_cert_store.js": "9f2da0db2853cbd0ebacf068f436c2db861d526c0ce07a07b9af6ff899eb5927",
+        "references/sdk4-reference-project/src/view/pages/device/device_menu.js": "fc541fa07f40bf0d26835d3c8a950eb1c6fb08ed397c0756aded3b74228db44e",
+        "references/sdk4-reference-project/src/view/pages/device/device_page.js": "a4c45d54af6dfe39db37e2eddacdedb7dde9dbeb68eddfbda55eaf6ef96bae59",
+        "references/sdk4-reference-project/src/view/pages/device/device_section_page.js": "0e2637b780c7bf88fca8ad6744ab9782d6de1b134bcbf40c14f5a3b0391ef682",
+        "references/sdk4-reference-project/src/view/pages/device/device_store.js": "a8815c04326a46b8a4e98325d59f5866fe045a4a1e9c9843325856370ccaafc5",
+        "references/sdk4-reference-project/src/view/pages/diagnostics/diagnostics_page.js": "0aba4da403ef1cd795cead268147a0cc3c999cdd1ad5b50ced3a09b998d02d63",
+        "references/sdk4-reference-project/src/view/pages/diagnostics/diagnostics_store.js": "19d95b3ae0899cd57c2099dcb135cfa306acc96a0956493893bf69f09a892864",
+        "references/sdk4-reference-project/src/view/pages/door/door_page.js": "c1b76fa82dec17cabb931b74cbbde334d3faf7237998d9af74eb599e6d743bf7",
+        "references/sdk4-reference-project/src/view/pages/door/door_schedule_page.js": "9280f4fa0f48cea6662d8f55b5d1e7680850c1bfdb478d73ed14befda2ec3169",
+        "references/sdk4-reference-project/src/view/pages/door/door_schedule_store.js": "c09226657b31ada17f5c0eb62d6ecd0264fccf6890d415736c372284ed20409c",
+        "references/sdk4-reference-project/src/view/pages/door/door_store.js": "e97221d0fcce273bf5cfe7bc8207e0b11ef5362a09081d387161d22accf5e68f",
+        "references/sdk4-reference-project/src/view/pages/factory/calibration_page.js": "1b882c8e03307ea434f741859a219d68f30108ddcf72a5d3d372652dc19bca0b",
+        "references/sdk4-reference-project/src/view/pages/factory/capcal_store.js": "5a6ef7fb0032f50d765203943342dd07852eefb880f0fd9ba637d4683495e430",
+        "references/sdk4-reference-project/src/view/pages/factory/factory_menu.js": "18eee997ab7d535988e7014ac90c026a13f3303095f45e166d8ea592fb247477",
+        "references/sdk4-reference-project/src/view/pages/factory/factory_page.js": "55f8164195b1caf714498fd6ee73b170f8bcde1af7aaa56bf51a94d277c1d789",
+        "references/sdk4-reference-project/src/view/pages/fingerprint/fingerprint_enroll_page.js": "4e9752a6b546db1020b2d88ded10433da2e571651b37a23ba4aadbede2a3c903",
+        "references/sdk4-reference-project/src/view/pages/fingerprint/fingerprint_remote_page.js": "cc56b0cf77db907b0b7e911b2c744aaf4c13617e2e3ed5aa948a2a6967799e22",
+        "references/sdk4-reference-project/src/view/pages/fingerprint/fingerprint_store.js": "b1419958a91a1664335383b50e38c613c483efdc90ee7e05ea34de8157d2c514",
+        "references/sdk4-reference-project/src/view/pages/help/help_page.js": "8a6ce5c855838adcacd5855ca4763d0cfa269e05dbcd2279efef7119e2ad6a95",
+        "references/sdk4-reference-project/src/view/pages/home/home_page.js": "d816c63283244ef8ccd54de0c0f7eacea6b57d09be4e39f573e88141d07057c2",
+        "references/sdk4-reference-project/src/view/pages/home/home_store.js": "b54fd4f5c74e2b81a8fb112915463d093f4605b696ed5fe01c21eb45d00cafde",
+        "references/sdk4-reference-project/src/view/pages/init/init_page.js": "fd7b0d551f454f46534777b3762d7dd202c66117d69d5e3d304b19796db40420",
+        "references/sdk4-reference-project/src/view/pages/local_user/local_user_add_page.js": "dc2954b4392532f1bca270de47910330c1ed0fde71029b6bb7afffc4076ab550",
+        "references/sdk4-reference-project/src/view/pages/local_user/local_user_face_page.js": "a171dbe9ef27ff9077b0b3c23415c10dd195e842ededd7ecc2ff248c07359448",
+        "references/sdk4-reference-project/src/view/pages/local_user/local_user_page.js": "81fda7151a75c2f7559a5aad21da3526b55dac37cfa0675e5838d0bc9771eedb",
+        "references/sdk4-reference-project/src/view/pages/local_user/local_user_store.js": "fa78ca7dff9d49eef7bc47fb7f565126f6d185d88227ff81ea01111ecdc90059",
+        "references/sdk4-reference-project/src/view/pages/local_user/local_user_verifier_page.js": "7eceb0cd5e7a11a1917945c444d6e05eff197aa78b9312291bb4bc6ccfca46c5",
+        "references/sdk4-reference-project/src/view/pages/network/network_page.js": "08c198ea7287f79a4d7add6ef2be296539cd32cd50c44a68f5f6821beccce26f",
+        "references/sdk4-reference-project/src/view/pages/network/network_store.js": "ab6755d129404c7ef5fdb71fbd3e3730b0943026ffd4ccfde205a95b2e919cb6",
+        "references/sdk4-reference-project/src/view/pages/password/password_page.js": "369cdacc511c70e29d611e7e9c02cef119efbb77951a6e8f66fefa01c5215da9",
+        "references/sdk4-reference-project/src/view/pages/password/password_store.js": "f1a1fd219bd18e5ff9be52152ac992f1f80c9df5f9769c26ddc6c717514913fd",
+        "references/sdk4-reference-project/src/view/pages/platform/platform_page.js": "2b66b8d1f7849dd92240a8a8eb86f9c452c592f84db7e073af415e04b6f2bddb",
+        "references/sdk4-reference-project/src/view/pages/platform/platform_store.js": "b4d6b37ade95c2b78a86ec251242a4f0e0a8b846d0294d60d44695dd01a9f411",
+        "references/sdk4-reference-project/src/view/pages/record/record_detail_page.js": "dd97d7c342ec9e5ed2a7bbce534b827edb1c1a5d72dcce1afc46fd62970bab41",
+        "references/sdk4-reference-project/src/view/pages/record/record_page.js": "dc1cd23699b30a5ae1e094af78b41224f8e9a5768aa1c633db21e466f9c41055",
+        "references/sdk4-reference-project/src/view/pages/record/record_store.js": "4fb888bccb881de92a972d01ad306553f777fae409483195ba838c729196894b",
+        "references/sdk4-reference-project/src/view/pages/settings/settings_blank_page.js": "420748f96612cd1af17f3eead8cba138f4b97784190198da6bc85a03970fcfec",
+        "references/sdk4-reference-project/src/view/pages/settings/settings_menu.js": "cbf8ec7edabf23ffdb526a5ed32443218f846b380b5895170722c9fbdfe4476b",
+        "references/sdk4-reference-project/src/view/pages/settings/settings_page.js": "40afd89e1129d038f2d2fc55bc446ff3ba4bebc12cd313d9bcb6ddfbfff72745",
+        "references/sdk4-reference-project/src/view/pages/system/system_menu.js": "3d63b5b56e6446a83343c40f6cc39336d4f4c800e51cc7b7265f01f2dde3eeb7",
+        "references/sdk4-reference-project/src/view/pages/system/system_page.js": "2335dd4043268a06c14d0419d0c5ddaf759988c0347cbef305a8819245571aad",
+        "references/sdk4-reference-project/src/view/pages/system/system_section_page.js": "feab93f19f5fe1a62517b4fefb316fcdf643f4142656818e6b696fa1527d3103",
+        "references/sdk4-reference-project/src/view/pages/system/system_store.js": "f8664adaf8b4cd418d3be1ddeebccf5f52b33a564fa174fddfe88d0bd1ce8801",
+        "references/sdk4-reference-project/src/view/pages/voice/voice_page.js": "770b3fd8877f01ed29ffa36a71662eb420e16348165c6ced4a1753a1aa130e38",
+        "references/sdk4-reference-project/src/view/pages/voice/voice_store.js": "dce8d71c79244f6c5aef48877776724076a8849d9ebd49e7321c4d54a0856e4b",
+        "references/sdk4-reference-project/src/view/pages/wecom/wecom_bind_page.js": "84c526c0769bb3cf074481f69bb4ba2b5cac9f9b2e3acc972df36043155d07a9",
+        "references/sdk4-reference-project/src/view/pages/wecom/wecom_capture_page.js": "2c0d4c32b1435038a23e5e7665ecc250a257fcf4e914180172d1a774d19e5d3a",
+        "references/sdk4-reference-project/src/view/pages/wecom/wecom_footer.js": "a0666fd000f0426542e1da7b330278305c42fa4e0452acd785f7283252fca39c",
+        "references/sdk4-reference-project/src/view/pages/wecom/wecom_network_page.js": "715ed43c43d27842ed99ad73d9d589c70b5499a9cc0ca46d1c974b012a634896",
+        "references/sdk4-reference-project/src/view/pages/wecom/wecom_store.js": "dfbc9ab62209c59f8c4125ce1d3c83d55a08628758d65986d4f32ecbdbf7d608",
+        "references/sdk4-reference-project/src/view/router/core.js": "6ebfe8ef76cff04f3c15f8abfe154727893b889fafcaaec6afbea58dd749158e",
+        "references/sdk4-reference-project/src/view/router/routes.js": "628fc75fb199c347f3bf5cabcb43fe0294eb88876cfb0b57b08fffd90d97beb7",
+        "references/sdk4-reference-project/src/view/utils/assets.js": "e25e79e129f5cfd7bc3144373cafeb175586ff64e84047b791916176144175e0",
+        "references/sdk4-reference-project/src/view/utils/datetime.js": "01428b8f0a9d0dbb7c207b4d22b519ca25fa015573830f518926b4476e5f8cb5",
+        "references/sdk4-reference-project/src/view/utils/text_metrics.js": "b0020c5330f68388c3cb147d95d837f9006c9edd18640a202b341d03d0fbd420",
+        "scripts/install-skill.bat": "60c57321239414bbae9a0d72bd348276a85d3300a91d225edcd090d278c4c773",
+        "scripts/resolve-device-sdk.mjs": "025e2740b18d8228eace77e00592da2e38ee0ab5ddd0bc8b034a8fbb37994cdf"
+      },
+      "upstream": {
+        "source": "DejaOS/DejaOS",
+        "sourceUrl": "https://github.com/DejaOS/DejaOS.git",
+        "skillPath": "skills/_temp/dejaos-app-dev-zh-review/SKILL.md",
+        "skillFolderHash": "07d643afddcf692b57e3e198687d11f3cba8afe9"
+      }
+    },
+    {
+      "name": "dejaos-app-dev-sdk2-0",
+      "source": "~/.agents/skills/dejaos-app-dev-sdk2-0",
+      "destination": "embedded/dejaos/dejaos-app-dev-sdk2-0",
+      "status": "active",
+      "file_count": 10,
+      "file_hashes": {
+        "SKILL.md": "9ce8e27695976409f10b3000c9779083ab9ac442cd6a3c30b6930f3c9f0411d9",
+        "agents/openai.yaml": "5af9c116f6d894226b62cb13dcc2ee0d229087f780bc00ce291bf5e63d7388c6",
+        "assets/DW200_V20-app.dxproj": "f18e6ec47b8e04a6240dfa78af78a05233a8c4b979cad45c133eb44b3d07a359",
+        "assets/UIManager.js": "b0ce270ffbca041016f90a7f9e94690f59c0d791c706c8b9e5572f13e4821824",
+        "assets/VF105_V12-app.dxproj": "ae7eeecbd335081b4ed3c5d16225e3cf7c8ea60f424490fe448e7f5d654665e9",
+        "references/dejaos-cli-workflow.md": "688ca7ed7989645096d20161f0ca49649fdaf782093d870d5ea1490d9653bb34",
+        "references/dejaos-guide.md": "d0125f45e38c1443861e85c82760abf7ee0b75f58e6da0c74fb32ff1ce94a97f",
+        "references/device-sku-capabilities.md": "3a2ea9f28760ee72ab8f2a50344bd526b8d97aa401a820f3a9420e0f319230fb",
+        "references/fitlock-patterns.md": "11752b636838b537605ee8d7b147c12f2afd1de0d07f242c98fd74f68512642c",
+        "references/tools-http-api.md": "210db04eff1d3656e1a5889f69386f7d1165f2ec9a1471c837e2a6a35d43c2e7"
+      },
+      "upstream": {
+        "source": "DejaOS/DejaOS",
+        "sourceUrl": "https://github.com/DejaOS/DejaOS.git",
+        "skillPath": "skills/dejaos-app-dev-sdk2-0/SKILL.md",
+        "skillFolderHash": "d9ff3b17ce657ebc9d542798171fa515d8f2e9e1"
+      }
+    },
+    {
+      "name": "dejaos-device-control",
+      "source": "~/.codebuddy/skills/dejaos-device-control",
+      "destination": "embedded/dejaos/dejaos-device-control",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "837ff3b3a83bd1b6e1977b78fd283ca51bc855c9d78f89cb026cdb25a79527bf",
+        "scripts/retry-dejaos.mjs": "1915bf1d5a15b8fc1fbe7d27862f10b84d8ecf2d94de946ec3a0f8e73002e7a2"
+      }
+    },
+    {
+      "name": "design",
+      "source": "~/.agents/skills/design",
+      "destination": "design/design",
+      "status": "active",
+      "file_count": 35,
+      "file_hashes": {
+        "SKILL.md": "413f4ab913d07f7fd92acbadc25d71aad63443be0c40d11234944aea688603b6",
+        "data/cip/deliverables.csv": "229912f35c2f5a790508ddd62270cc7a92a84694027025ea5a30f1fb5ba84b70",
+        "data/cip/industries.csv": "729b1dea6d6f39b0bc22a1e659584e7ca5cead75841146d599c9f8dc00d4da46",
+        "data/cip/mockup-contexts.csv": "15d61cef16e6746d5aa665976f4de8074fedb64bfc5c7313a40eec1112a1d499",
+        "data/cip/styles.csv": "4e7f9e209bc90b60df62fd9843a1a73b365e54161dbd820b82817a8e512af4c4",
+        "data/icon/styles.csv": "a4aa7d326ffe1e50961eb70e25a6351f45c0247cd245461fa1a27cdc72f903b4",
+        "data/logo/colors.csv": "d60218f0705bb0f0b892a10468a5c8d9a44eef3d0262ef8df8970ba3fbab567a",
+        "data/logo/industries.csv": "e58dda4b9d28851f70914f82c1d2a2cff626a991ca41076f64122f33cc8a6525",
+        "data/logo/styles.csv": "ea08bdfb7aa557f08d1b6299222423f948700f8e4029321acb58c8f83197bdf2",
+        "references/banner-sizes-and-styles.md": "c8906fb1073a576ee8c680d9bc8586249cbc4ed36690da960d65a1c9c37143b7",
+        "references/cip-deliverable-guide.md": "1424e120b967288e2334f24fcfa5cdc7f238420326a7444f4c5597efecfabc41",
+        "references/cip-design.md": "47a3b2e445bc07185edd0cd24ba8a417229baf86717dcdff7c4e403adbceb3f1",
+        "references/cip-prompt-engineering.md": "4bf3a0c858f38c230e43e872857b72d9eb692e066e8de5920da75aac733e753c",
+        "references/cip-style-guide.md": "f3e15408cd981e93804440c1159c12e02d001bc37a3945f455b3fc13729ed4e1",
+        "references/design-routing.md": "32914a913f4f20d4cb1e497e5a87cfc04b71af4e6d75db72ecf50e4f060201c8",
+        "references/icon-design.md": "39281931d070918b4e51ecd71054da99493cabe06a07dfa8f1f682e48637c83f",
+        "references/logo-color-psychology.md": "3fd0e93e24c3b2ea7f3be778e8f2d03b1c62c7c6eab3ade478c8fca332bff287",
+        "references/logo-design.md": "2e845fe165c845fd9582c1d74204fa31de607380982a6ea0b5f8db4e293afa3a",
+        "references/logo-prompt-engineering.md": "e50f55bf323263eb27b4cd4c5172383a787fb894581d5d2befb3f6e0180b253e",
+        "references/logo-style-guide.md": "611baa841eedab101f45c113c6bfbd4d7e16e859c9d6ebd2cf941827a6e8dd15",
+        "references/slides-copywriting-formulas.md": "03733d5916ab771834745550045b736deeb94a08226f2b200f7953009c35b219",
+        "references/slides-create.md": "792d647a5d4f87d765cf417f7ac54dd0b2fc4d229cc23ea9df56282d4c1ee086",
+        "references/slides-html-template.md": "fd5b051a37365fc6059c75bb388ec6f64daf1bd9ae938b287b6d762dc83c0c35",
+        "references/slides-layout-patterns.md": "0a967ca3bd829d3234e6f1802bade6c76447fabbaddbc8117c41adbae7dfb6df",
+        "references/slides-strategies.md": "27ee3e53ffa0ea679ec83ebeacb0bcfbce498df57277e99f574b9c139dc44286",
+        "references/slides.md": "5630d5daec947ff58ab1ac97c7a1ee77a21cf6f5dce5155535b65d291691979f",
+        "references/social-photos-design.md": "2544c143ff3a4471a775e2271797a3871480f94de91b267178da92e8952192a0",
+        "scripts/cip/core.py": "78a78a51f12d2382b2854414df395dc62b68532626ef724ddd5de713507911e4",
+        "scripts/cip/generate.py": "2745040c9b534cf4113d2f7f4d7a52bc96a9fbfa12204c4f8460be4e15449069",
+        "scripts/cip/render-html.py": "a49a89a017ea4a2c492438055f05dfba3dfb4f91563f5f913359939beeaeccab",
+        "scripts/cip/search.py": "6619fbbe71983003a858c5eb79bc59c607b342610a1178b6976c687c2932161b",
+        "scripts/icon/generate.py": "1a6be99dc233f6d9f8b558c26148203418be5b47c677cd83e48e41e78e38780c",
+        "scripts/logo/core.py": "4f8b36ffe538e5995d0e0b740053a0899a1adf445ffdf484bd47f94e71ade8d0",
+        "scripts/logo/generate.py": "6e4358f21cd85fec51c8d01b03e3696d6db180815309d7e10a19c623d4d4462c",
+        "scripts/logo/search.py": "693b3a1824831f120d4c60ed72477847604da1f6b654343381f8e9d3800a28f2"
+      }
+    },
+    {
+      "name": "design-an-interface",
+      "source": "~/.codebuddy/skills/design-an-interface",
+      "destination": "engineering/design-an-interface",
+      "status": "active",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "a2596e9fa2d50e23ba014f64a5b8f9df4eb56b846a52cad152899ef5eb97b085"
+      }
+    },
+    {
+      "name": "design-system",
+      "source": "~/.agents/skills/design-system",
+      "destination": "design/design-system",
+      "status": "active",
+      "file_count": 27,
+      "file_hashes": {
+        "SKILL.md": "655468bb723a6bc9d17fcb09a6a005e10e313d63b879f4d74fb2abdc3041ae3f",
+        "data/slide-backgrounds.csv": "d1bb701b87bef493d72974d6fac1087c8ba4e2df14185fe3e0c36a13fe35f3d1",
+        "data/slide-charts.csv": "12ef876cd76e67a6553444bfa2ebf1d5d4d6216289d34db052a6e87421135033",
+        "data/slide-color-logic.csv": "ea68c737075f1615b2a7e461e2878c06bfe8f803dcabfbcc2977ffe5f9ec9ded",
+        "data/slide-copy.csv": "43152937a0e598b3fbfdd418684311c105d44e3c5b333703ddb0b8cb28e40658",
+        "data/slide-layout-logic.csv": "26b5b75782d5aba89836c0479acd3111cc69b67853db9c2259b30ac1e966bc62",
+        "data/slide-layouts.csv": "95d558c1b7d2552d7a75402dc68facbd16125e574985851db5729d1145e14896",
+        "data/slide-strategies.csv": "f656be0ab0b3a85fa7fc74202e9701a7236220412d67d5f63eb6dbb100bb2639",
+        "data/slide-typography.csv": "b96cd11dd4ff1dea8a9454b0b9e898e7f82f9243182f8f237af1f2c9b8824ce5",
+        "references/component-specs.md": "b265d979a741dd748d4e595e6898ae430faeef4f6d13d7a634fa6241b91d2da4",
+        "references/component-tokens.md": "e27f8f5999badee425c98235eabbd2cb3ebe2a1a364766d5c7a6b3134ceaaec8",
+        "references/primitive-tokens.md": "91e6caa12646c08c8aadf8e09399aed65760a25c8d80595936d81a9131118fc3",
+        "references/semantic-tokens.md": "97e16d8061bbc22e82b51966a7015e3fc990932902e4647843506669a1cdebcc",
+        "references/states-and-variants.md": "8dacb95d57d4bb37d8a99cc55515ff26da272056f837d29abc74aedcaa3ba104",
+        "references/tailwind-integration.md": "6d01092db1479dbd2060567b4232bb2b4bc16e89730ab07e1f87a3e7f5c406b9",
+        "references/token-architecture.md": "925f4049c4c4313d9fd5df98cdfd52004112aca49fba1664ad85e76bc9dce4d3",
+        "scripts/embed-tokens.cjs": "23a9ce214e3c0d2fb4c5442b3bf1222c66721f7988a181ab29dcb549a5e5f511",
+        "scripts/fetch-background.py": "cecedad0a9054e6e65f31ab7ba7d07eb6af2179e237c5632bc962dad69fd6d66",
+        "scripts/generate-slide.py": "0463c98efea54870816925015fe5819e42a29aaba57408c2c38bacb33e2605b9",
+        "scripts/generate-tokens.cjs": "aac8a0f4ec4dccf0d371f9ee5a9111e44977bb0cad7e40a3754aba5571aa1231",
+        "scripts/html-token-validator.py": "9556a65e7aacda23388478294ee9a5cb84b315d964fbbf754aa0dcdbcfee58e6",
+        "scripts/search-slides.py": "fded9548bc1bbe1303da67fabe34006c6a7c57934c9d171ea3dc3eb5f6eee010",
+        "scripts/slide-token-validator.py": "66da5da5e8e659d405a89b342e13dd1e469e79726c46002d9d2368c3c7aaf945",
+        "scripts/slide_search_core.py": "2464050ae338eb50728086046b644845fa7ae943f32efead3908fdbe1473edbe",
+        "scripts/validate-tokens.cjs": "65f03a29290b9029d8cc27537701f226de7bcffc303b3bc361648fadfa09b77d",
+        "scripts/tests/test_validate_tokens.py": "a32f34a9e89542a341b6ff3ee4392494b48dea622b22b99652d3cf0c1a1ee966",
+        "templates/design-tokens-starter.json": "5444f477b06bab9c72e2cc289d4a9104efef653391c9639972bcb712d5f2d81e"
+      }
+    },
+    {
+      "name": "diagnose",
+      "source": "~/.codebuddy/skills/diagnose",
+      "destination": "engineering/diagnose",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "28886402bbfa0470248086eab9106a103b964b76ae9496e63ff0c8a6761b6d13",
+        "scripts/hitl-loop.template.sh": "b2932630950e5210075bcd6f850e5accf30c101c5367b29eac3a29b4dd8084c8"
+      }
+    },
+    {
+      "name": "diagnosing-bugs",
+      "source": "~/.agents/skills/diagnosing-bugs",
+      "destination": "engineering/diagnosing-bugs",
+      "status": "active",
+      "file_count": 3,
+      "file_hashes": {
+        "SKILL.md": "849198df88cdb65fd0d97236604c1fca7ff2f22d2f705f9724a800d0266b118d",
+        "agents/openai.yaml": "3e430dbe4334a87597488c060cb3dc3786bb00c9182877d6f5ec41f62490e90b",
+        "scripts/hitl-loop.template.sh": "35103539fc36873eea36074769ad454f9379d6fc8b2dc0e26ce987fd3bfe5503"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/engineering/diagnosing-bugs/SKILL.md",
+        "skillFolderHash": "5fdd6cc53385395441910b026c72d71768e993d4"
+      }
+    },
+    {
+      "name": "discernment-nudge",
+      "source": "~/.agents/skills/discernment-nudge",
+      "destination": "utils/discernment-nudge",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+        "SKILL.md": "9191177c4a8ef11a20dace786d708506b22d43e748c71287bb823de0dc812dad"
+      },
+      "upstream": {
+        "source": "anthropics/skills",
+        "sourceUrl": "https://github.com/anthropics/skills.git",
+        "skillPath": "skills/discernment-nudge/SKILL.md",
+        "skillFolderHash": "290670f304c67cf36725d7612583cf203f7a4e50"
+      }
+    },
+    {
+      "name": "doc-coauthoring",
+      "source": "~/.agents/skills/doc-coauthoring",
+      "destination": "documentation/doc-coauthoring",
+      "status": "active",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "2e47d78846faeea4a56e9809c52700087a15a2155a3f293a3efbaded81398ef4"
+      },
+      "upstream": {
+        "source": "anthropics/skills",
+        "sourceUrl": "https://github.com/anthropics/skills.git",
+        "skillPath": "skills/doc-coauthoring/SKILL.md",
+        "skillFolderHash": "d9df960e61fe2bafe9183e37de6f9f6b73b74087"
+      }
+    },
+    {
+      "name": "domain-modeling",
+      "source": "~/.agents/skills/domain-modeling",
+      "destination": "engineering/domain-modeling",
+      "status": "active",
+      "file_count": 4,
+      "file_hashes": {
+        "ADR-FORMAT.md": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0",
+        "GLOSSARY-FORMAT.md": "21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801",
+        "SKILL.md": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3",
+        "agents/openai.yaml": "f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/engineering/domain-modeling/SKILL.md",
+        "skillFolderHash": "ea30ee454ba264543dbe40737973b1a5afb9f0e6"
+      }
+    },
+    {
+      "name": "edit-article",
+      "source": "~/.codebuddy/skills/edit-article",
+      "destination": "documentation/edit-article",
+      "status": "active",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "cc372fb25b552017765aa0dac1b108f77eaee4555d607041efc1ad5d8c995b4a"
+      }
+    },
+    {
+      "name": "frontend-design",
+      "source": "~/.agents/skills/frontend-design",
+      "destination": "frontend/frontend-design",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "LICENSE.txt": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+        "SKILL.md": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3"
+      },
+      "upstream": {
+        "source": "anthropics/skills",
+        "sourceUrl": "https://github.com/anthropics/skills.git",
+        "skillPath": "skills/frontend-design/SKILL.md",
+        "skillFolderHash": "d79e2a5bb4df4a386c2adcdd9ab8709bba28c3f6"
+      }
+    },
+    {
+      "name": "git-guardrails-claude-code",
+      "source": "~/.agents/skills/git-guardrails-claude-code",
+      "destination": "misc/git-guardrails-claude-code",
+      "status": "active",
+      "file_count": 3,
+      "file_hashes": {
+        "SKILL.md": "69b291d655626a01602b998a1836fcb93c058ede68dfafddfd71e87f17074764",
+        "agents/openai.yaml": "d53cd783fc0ac208dec9a4c267989284384785aab6422dccdaed42f9e40243ec",
+        "scripts/block-dangerous-git.sh": "234922b83c0a1737ee7300806c21ac0f389b07aaeb65c2d71ccedafbc5e1ea4b"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/misc/git-guardrails-claude-code/SKILL.md",
+        "skillFolderHash": "ceed97af09633b300826d0ca0b1464c527ec9a35"
+      }
+    },
+    {
+      "name": "git-guardrails-claude-code",
+      "source": "~/.codebuddy/skills/git-guardrails-claude-code",
+      "destination": "_local-variants/codebuddy/git-guardrails-claude-code",
+      "status": "archived-variant",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "03c4de7613c712aea336d64c467ea3ed14be2cbd52345925fe949c75c01c29f7",
+        "scripts/block-dangerous-git.sh": "234922b83c0a1737ee7300806c21ac0f389b07aaeb65c2d71ccedafbc5e1ea4b"
+      }
+    },
+    {
+      "name": "git-manage",
+      "source": "~/.agents/skills/git-manage",
+      "destination": "engineering/git-manage",
+      "status": "active",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "1a483e89828ed09df4e7232778e26330743f91bd7724be45756f57a4b87a998b"
+      }
+    },
+    {
+      "name": "grill-me",
+      "source": "~/.agents/skills/grill-me",
+      "destination": "productivity/grill-me",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637",
+        "agents/openai.yaml": "c061e39c3e0f9d865fb1b97556d485704af2a8a58f4b8221a8917a5c2074a32b"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/productivity/grill-me/SKILL.md",
+        "skillFolderHash": "3df14e2d3a89459bf300614be9247e3ce74798f8"
+      }
+    },
+    {
+      "name": "grill-me",
+      "source": "~/.codebuddy/skills/grill-me",
+      "destination": "_local-variants/codebuddy/grill-me",
+      "status": "archived-variant",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "74147eb6010a65957efef2b9e0f0b3ff935c1def7fc117697151b1d0f3610556"
+      }
+    },
+    {
+      "name": "grill-with-docs",
+      "source": "~/.agents/skills/grill-with-docs",
+      "destination": "engineering/grill-with-docs",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "7de372c13488f1ee96cc11cd8907b56b6809cc93eef776eeddd37de6b6cbe3fe",
+        "agents/openai.yaml": "94cd0ab161fb468a836349f5ed482ba58ce8e709a05c57ce533d739dbd35cca9"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/engineering/grill-with-docs/SKILL.md",
+        "skillFolderHash": "eedaf2562c83155115e9c649fa3ecaac2e10e81d"
+      }
+    },
+    {
+      "name": "grill-with-docs",
+      "source": "~/.codebuddy/skills/grill-with-docs",
+      "destination": "_local-variants/codebuddy/grill-with-docs",
+      "status": "archived-variant",
+      "file_count": 3,
+      "file_hashes": {
+        "ADR-FORMAT.md": "f1f36cd3f8d3b6474ddd5855da4e233bfc4ae1a1c5024909ccf11871819a41b2",
+        "CONTEXT-FORMAT.md": "b8cc318f2a4285b530e908b6bc43901c3c5cd11100362636bbc4216639bef597",
+        "SKILL.md": "3e35025119ba03efe7983dfdec3c8b96918142e3978512f3c2bf66d428310c7e"
+      }
+    },
+    {
+      "name": "grilling",
+      "source": "~/.agents/skills/grilling",
+      "destination": "productivity/grilling",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "a146842ed93ca43d833550fa9adf02e58cb63c83fea9d4b4522995b82242d4e2",
+        "agents/openai.yaml": "1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/productivity/grilling/SKILL.md",
+        "skillFolderHash": "f551b6e0d219fdda0b6abf277f8f915b3127d1e9"
+      }
+    },
+    {
+      "name": "hallmark",
+      "source": "~/.codebuddy/skills/hallmark",
+      "destination": "utils/hallmark",
+      "status": "active",
+      "file_count": 107,
+      "file_hashes": {
+        "SKILL.md": "59469635bbbd21acddbc664d95e8d97147f454b2d8f4a0a89c7d2c5afbe67577",
+        "references/anti-patterns.md": "a36eb346ad59cafaa26119ed1e7c0bbb8aca6637209ee110eb630dd1a9307070",
+        "references/assets.md": "60929b3dc2258b69caf3012d99d174e1ad73da9645263db81a9b271cd6fd7d61",
+        "references/color.md": "31c470d16ceb17ccce290cbdd00b9e9a88f2094df8eaaefb67c86ec1e1cdb876",
+        "references/component-cookbook.md": "4d9ff4eeb675b9d668516ce5d098031d3552453b3671e50da30fb38cb9ab58bb",
+        "references/contract.md": "2923a056b95da63d04100ac56bc8cdff6bc0a717ac3e5da5cef69eb5feb4619c",
+        "references/copy.md": "703cdbf81fbef6f71d90596a32041d2a33a46fb71ba07ccf5ede6b4b1471d347",
+        "references/custom-craft.md": "417ff74cd83e1fea50c41948c53e18365269b880806ef4f31d9e0ebda0f99246",
+        "references/custom-theme.md": "da0fb051689bf9d100e50e67209566623c1fbe72e09b943248c458985c39e780",
+        "references/design-md.md": "a9368b64dd9b6e53e8c707830ce28fd8601d3195a81647ea46b6995aa3556b3c",
+        "references/export-formats.md": "de0a73d9bec7a31abbd0cbbf1ecd51c2e440f1f3fdc08f476a343959ca6c22f3",
+        "references/floating-nav.md": "c8c80f6560700bf6ee6baf28b81ec1539e9ff920d885624707de5fe8803c25d1",
+        "references/hero-enrichment.md": "63c14cc2c256dd78a69a1c36f4bcb764940aa7f1ba2e6dd40ca36013f8884a83",
+        "references/imagery-kit.md": "39d71df8dd6186b27f174fd8ab8ffd379553be3917cff50810c72365f6d6cb53",
+        "references/interaction-and-states.md": "e816eb2d067ba9f6f288a3831549da95624a05f432ed2a50f54136f27dd2d67f",
+        "references/layout-and-space.md": "987f3a45f5dbe81547117a77987bcedf5376608a6412067e04337047e0c7c839",
+        "references/macrostructures.md": "a6f19a17073aca18a6ff7a8fc8c3c5f711865e01c6d97de609771b47fe8394bc",
+        "references/microinteractions.md": "613ca56c2c16e40aeb594af21fabd651732d9de63c848aee51113602525f6e64",
+        "references/motion.md": "330d056810315f65819579f8207afe402703a9192bc76a2009558a59b7c84ccf",
+        "references/preview-examples.md": "df61c24c9a67457ef7369ec5f20575095326df72ffe6534c8fa9730581ebf7d9",
+        "references/responsive.md": "2bf18d72af704ca5dd3c220359a4c77c718efa19c40f62d9bff61ac4a90209b0",
+        "references/slop-test.md": "6eb49fc64ca54929d2c1600e2a6014268f1a7593787c0ed3f6ecb4ac8390ad86",
+        "references/structure.md": "ca5c0296ae428f8c4c5214407d431bbda5c453f98f2e7abdec03d644271af32b",
+        "references/study.md": "021fe4d001b38ee87414c1bb69321d2e44b67df8ede76ecec225c41a634aab20",
+        "references/typography.md": "94d7b2d2b138bd8687e09dc3dd618eaafff500b0497a6d69cb4c29b764e94b9c",
+        "references/components/c1-outlined-chip.md": "bfc3bcef6e23062710845dd8986dbf98574c6c46ffade1db255dbe13a3203262",
+        "references/components/c2-inline-form-as-cta.md": "1a6e3d564f49a1d3345117bf2f8af5aea46938c6974bf7eb86cf890e5068bc95",
+        "references/components/c3-typographic-link.md": "59362c6d9f683ec15c3e09862f2ea6cd8e2a84574738ece98e479c58607d0d69",
+        "references/components/c4-sticky-bottom-bar.md": "67234a8d8722bf0685d00a64ac737748c82af7e0c25271d0c50f418739bd03c6",
+        "references/components/f1-bento-grid.md": "d696a5ab7d6258cff0d2d9527fe07651bfbda6a725a4dfd8de00f678e1fb2bbc",
+        "references/components/f2-sticky-scroll-stack.md": "0079ce8c01e8d008882411ed807aa367276cc67af9b956c4f06da1714007ae83",
+        "references/components/f3-tabular-spec-sheet.md": "16331628cf441c7b570055c8edd60693d0aa793d1bc5eb2bfd145da700d9f072",
+        "references/components/f4-step-sequence.md": "d3ca2aa99f7e639b8ccda20f5e263f3a33b03830f8c93d666f469b8e629975e2",
+        "references/components/f5-annotated-screenshot.md": "58f9f4811ea60f923b2f44e0f3e9bac95c40929f8b1af4fdeedd1eae424051ec",
+        "references/components/f6-product-card-grid.md": "22ebc07b00d71c950be8d1a0fdad2cc0e7340cfbbf2cd62c43804bfcfaaf106a",
+        "references/components/ft1-mast-headed.md": "7f5671b583e9991f9a4671c223d6c15efdee5c1161dc616cbe2b398eb8d1b6db",
+        "references/components/ft2-inline-rule-single-line.md": "de13bf7d9bfaddb42a84fc8584646e914f2273abdb34aa98ea9bd2f5d7ff0493",
+        "references/components/ft3-index-style-category-list.md": "9f70608d62872be05af910a6168017c872ee1c17b2dbb8329128569231aa3cce",
+        "references/components/ft4-dense-typographic.md": "b8d087773614698036e63474a8546024d874bb6da2b575e64fcaacc2fba0ad60",
+        "references/components/ft5-statement.md": "71be63a51def6a3b59badcd481e49d4d5c5d9f3d63a3b4a5b9c05482110f4000",
+        "references/components/ft6-letter-close.md": "8119d22fbbfb3efa83d0bdc41acbfc5037f2c80cb7c39659623d5216eb16c03e",
+        "references/components/ft7-newsletter-first.md": "2cd766761a8e18bff7bc473b3303392b806a15e461187ac325138f77a308dd48",
+        "references/components/ft8-marquee-scroll.md": "32b8d38df984b0db385e9ce2251bbf6bb8df279e3933c441b97a0b703961e9f0",
+        "references/components/h1-marquee.md": "8258b25e27232994126701a4f72bf05267fc9c5dfdc14bcf186efaf96a7dbb10",
+        "references/components/h2-split-diptych.md": "f6077864f5c58414d7a10648aa8a3162767f2e356d0701d01953181a83cf3364",
+        "references/components/h3-quote-led.md": "4b1427750c5041ab9201cd18fcdd3dd7a93622644eff518d9ad300339f9a46b7",
+        "references/components/h4-stat-led.md": "9ada00461ea12be83dec2fba58e19fffd2c559925e68eb72ec18e0ec434f6cec",
+        "references/components/h5-letter-hero.md": "afcd7bb6b4c888d7e8460e7af5e86dc50149ca253419757bed2834bf66083321",
+        "references/components/h6-photographic-fold.md": "59e046afd5648bfe2737966f1203c0212e7311fbf0e1edee448e3f68f45aa0d0",
+        "references/components/h7-demo-video-clipped-by-viewport-edge.md": "12b6f32a47a0b2e73547a0ac8b641cc19b1caa05dda4ffde424defb53afaa0de",
+        "references/components/h8-mockup-split-browser-framed.md": "954b0a3aebfe6de8a3be70fedda669099125dd2ebc9c07948fbdb457fd8dc166",
+        "references/components/h9-custom-illustration-centerpiece.md": "1d3d32859e6e451a67bfc38a403bd80115a42b6898a4d8788e4cfadb8c83e8d6",
+        "references/components/n1-wordmark-2-links.md": "8504774127e33f24a09844eb4c678e91b09ed513690fce51f7863d7cf3fdeab1",
+        "references/components/n10-floating-on-scroll-morph.md": "056c2107492ab0eb9dafc7ab4c7ff5454222c1ee127fa45615ccc7b8955da36a",
+        "references/components/n11-mega-menu.md": "b715421012d0997d25d5739c209be6129132fc91add677d75a8ad82d8672e1d4",
+        "references/components/n12-banner-retract.md": "2d52ecb8725b1991d4f6b78301cd6f112464f7b17315bdf0febbff67bca50a56",
+        "references/components/n13-inline-cmdk-pill.md": "6375fa0a1bbc92cba9a435159aa46cb084fc030c63e1abf8f073688959d7be75",
+        "references/components/n1b-saas-three-section.md": "c2631c7807e33eea9b02faa9121a0f9e64861467b57b8635ee97f5fa52bb60ae",
+        "references/components/n2-floating-chip.md": "70ea848537c5fe29be30f5e4b7478ecc39f86d0089f207549dc98a873b6c8fc1",
+        "references/components/n3-side-rail.md": "20ed8a06a599d73190502a4801a3be2933b8e06874371167196b7d32dae66111",
+        "references/components/n4-hidden-behind-k.md": "bccddb3a25a6afd457163b71e09de07ac23bf5d922fdeb9561e25d825bb97dcf",
+        "references/components/n5-floating-pill.md": "6dc8ffb9628fd7ee3669208091e11497864cecea69becc6b513ebdc1f3a737a3",
+        "references/components/n6-newspaper-masthead.md": "243a28d1165328c3479a1b75a3ae05dbfe2a6b8c9f867df8e35873b391f8edd5",
+        "references/components/n7-brutal-slab.md": "6c58d29129f7fd89b9fc755143648397749cdd06043ae0c0b51e6f07e7e6dcb5",
+        "references/components/n8-terminal-command.md": "c88d787bd2e5cf8bf6fb2c4121602dc0289760b41235d437468322821ee4334b",
+        "references/components/n9-edge-aligned-minimal.md": "cc20c76a5abe7099ed2bde3480c81f75f02a760a4c0d2ac79de1503dca9f9ee3",
+        "references/components/s1-left-margin-numbered.md": "074ed68eafb03ca775b0593d0599fe20c7891356f473f04996f42425e6586585",
+        "references/components/s2-hanging.md": "7b6d04cb896051006fe41b041a67ed77d25010edb579c60b03d88f68ae471462",
+        "references/components/s3-sticky-pinned.md": "4101cd7a28fe21a9b8094848ac6cc13c89f9e6f9bf801f04ac69b986c76727b4",
+        "references/components/s4-inline-no-break.md": "4b6d36da05383df1b29afe17b96645b816de07373016deb667efca340bb61ac6",
+        "references/components/s5-bottom-anchored.md": "55c159e2d8299501f14ac97468404dc8cad35695c2b7eaad2e972d314620eca0",
+        "references/components/t1-pull-quote-with-marginalia.md": "c7139796972c5f47d723742cbff02916a1ee0f2496456b86ac05d8839542be38",
+        "references/components/t2-logo-wall-hairline.md": "942121342a61bb4650722f7ba1b605347c6178d69ebeb740139b0bfb5c810e7f",
+        "references/components/t3-single-huge-quote.md": "7bca56e2cd630da3669f7cf8befd1bd654a5b249cf38b6d9af5a7c62e33b9239",
+        "references/components/t4-numbered-stat-strip.md": "a5fb5615902f9c4026f4ae7b0c96b536bb3cbb2fb4259031342d1cd190dab729",
+        "references/genres/atmospheric.md": "58d36e9a59c7d9e0ca99edeaaadab885f2635386fa69d52ea9eda3c29977e190",
+        "references/genres/editorial.md": "1e88cd0c94435c6a9edd1c0b93b67db4321fb3481ff0d66ee24869e655847319",
+        "references/genres/modern-minimal.md": "6125db00e38f2baca9369ed4d4aa917d977b85dd5eac6f19dac89707c3c3534b",
+        "references/genres/playful.md": "e52c6ff3fe21b5024c83ac1f03285e1d627e3469ff140d6bea728642026c4f95",
+        "references/macrostructures/01-bento-grid.md": "aa268415862188414f8db94715e20ae7d29df3dc7c494083683378705f3f8493",
+        "references/macrostructures/02-long-document.md": "8ca81106396f2bd00eb9ef5d5d1f00c3aab0500394e706d6a2b3221a6c0d910f",
+        "references/macrostructures/03-marquee-hero.md": "2b7c35860086da6232cb3725c059bead9a31a91872d464266ce6e07a5a75f755",
+        "references/macrostructures/04-stat-led.md": "a6930b4ba6377c8ef5fcb7af6bf4393cd924292cf03871a37636dd4b77de22b7",
+        "references/macrostructures/05-workbench.md": "0cbe92772c7b2ffd9b24b9e446b1e1cd9ed22930b39030ef5a6e9cba5512d31f",
+        "references/macrostructures/06-conversational-faq.md": "373473bed23d055164edc04b16344fcd3861c1ab39ff73f3c75dc1719663d488",
+        "references/macrostructures/07-manifesto.md": "dc1327bad300179c1b233d02d20137776dc98c9affcfd3942b9f3f796ca67b93",
+        "references/macrostructures/08-photographic.md": "e5c77bb6ca6d82616c9c63bb6e68ee17c6af7bbca935f9ff29481294d7d1f74c",
+        "references/macrostructures/09-quote-led.md": "39069a564d9ebd76daf26f46ec7776828dc45fc6a72ae712b3bf7a4fd012f650",
+        "references/macrostructures/10-specimen.md": "7f23cead7f91c2ee2335eb2c87fb0aa1e7826f4573748d549756523085ed6ad4",
+        "references/macrostructures/11-catalogue.md": "99ff614600f18cfc80dfa3b9a2158dbea3b3674f76f40b70e721b9255796c265",
+        "references/macrostructures/12-letter.md": "6f3ad86e87223bd9b6b1267e27532811efbb60f50606e7f72c8525d2cc01d709",
+        "references/macrostructures/13-index-first.md": "25c832844a1b5e6ce17a335ac98e81d98d9e3372f514d83dc26ac299cc077865",
+        "references/macrostructures/14-narrative-workflow.md": "e604a1106131fe3a65721066a304922e757a78c997c197227840931079c780fd",
+        "references/macrostructures/15-split-studio.md": "400effa4de50d5f2fabd88be37447aa845deb3b67810ed4f2b995df458c852e4",
+        "references/macrostructures/16-feature-stack.md": "a389fae7fe39550352bdf1ce68cdaa3965a434fa1154f67d3c276e550d1d165a",
+        "references/macrostructures/17-type-specimen.md": "a1487fde891f73bf34a2ca38a631a2cb5c71d3a7b2ccd940114354e291ea8034",
+        "references/macrostructures/18-portfolio-grid.md": "af5d0f34a7ef7b81d6f4c8c845497ae553d44f418526d7e503346c9243b034e3",
+        "references/macrostructures/19-map-diagram.md": "5a576f25f4c8d58c14f574e3413560118343df9a9669db80c6c452daf509c3c3",
+        "references/macrostructures/20-ecosystem-index.md": "fe206580a39ffc4b3534f3a7414155aa626fe16b82b608a0b8b415c1510f17ad",
+        "references/macrostructures/21-component-playground.md": "ad3cbdbe9181e9472cb7b7fffbbe35021dc9b5b99ea86adc026f34d6b2c2f01f",
+        "references/themes/carnival.md": "119a9c803eac74958e5df6151da8a2575a1cc2d061a619bdb7f32cf972308ee2",
+        "references/themes/cobalt.md": "13be92af729e6b82d1b1e51aa078f7c007e2900c8f0798b2c0fd2c0eeac7019e",
+        "references/themes/grid.md": "e68e8b97f62d613dc94a03afd346b9e12de8ffcc65dc8633c4c223c92875c7da",
+        "references/themes/hum.md": "bbdd1e89a32d6b15e99493ba9497816a0915bd4e9bf150b95868db597c20e1d5",
+        "references/themes/lumen.md": "d5459478d3aa1ea6330c221dfe011b717a70dbb036f597403b3a6b3cf82dd53b",
+        "references/verbs/audit.md": "0a5b484453f1697a8675a7020df9159d0b4ce22f059b873501bfd82c26d6a31a",
+        "references/verbs/redesign.md": "c2830f3b7d68e9622f55d376048a5a454c5ef59d309a211e716d1142e86acbdf"
+      }
+    },
+    {
+      "name": "handoff",
+      "source": "~/.agents/skills/handoff",
+      "destination": "productivity/handoff",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "4cbb043950dad2ffd3662ff1a5a0b51ae676004b5cae10e3787e8ee7a4ee69d3",
+        "agents/openai.yaml": "5c479fd562c691851690e8b18c8501045bef0943c10743d636b2fae26add1d28"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/productivity/handoff/SKILL.md",
+        "skillFolderHash": "ce24892bd2d4b9e7fd5ac9b95c03175e18bef388"
+      }
+    },
+    {
+      "name": "handoff",
+      "source": "~/.codebuddy/skills/handoff",
+      "destination": "_local-variants/codebuddy/handoff",
+      "status": "archived-variant",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "d215dd8f2a19bf85fdaf67a3cdb5077641f6b4108f229ba79579414793d7b0a3"
+      }
+    },
+    {
+      "name": "implement",
+      "source": "~/.agents/skills/implement",
+      "destination": "engineering/implement",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "483bdc4ccf4ac31d86ac7beeaa0d0db80313e71e120bb8c59b3196ae5decd53d",
+        "agents/openai.yaml": "8970a8596ade0c28ab427f41a4ea242d6bdf6186c59ebf55e1238dbecaab79dc"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/engineering/implement/SKILL.md",
+        "skillFolderHash": "4804b466ab26c9b9d8d42917547db133d1f20a9f"
+      }
+    },
+    {
+      "name": "implement-spec",
+      "source": "~/.agents/skills/implement-spec",
+      "destination": "engineering/implement-spec",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "1993a473cec40ac85d081c112cdffdc63ec3267c2e412055ad09e013a2f623d1",
+        "agents/openai.yaml": "fd41efb42c60c96320d6531be7e4bf15cbf5518cd652d57dff27ccffa46988e9"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/engineering/implement-spec/SKILL.md",
+        "skillFolderHash": "407c196f5c88af53c71efc8f31ee37c02dbb12e7"
+      }
+    },
+    {
+      "name": "improve-codebase-architecture",
+      "source": "~/.agents/skills/improve-codebase-architecture",
+      "destination": "engineering/improve-codebase-architecture",
+      "status": "active",
+      "file_count": 3,
+      "file_hashes": {
+        "HTML-REPORT.md": "581e8bb5a521e46bbda8ca7e19b15948bed882187108092ebb90c62513b77528",
+        "SKILL.md": "35b03a3db61e0f5aa333ea59b54963e45a3d2ace6649b2ef4f9576603e2582a6",
+        "agents/openai.yaml": "c8cb20f68ebf0edb4e497bc11ae5fcaa196004e661cd189015b04f4109ced7f1"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/engineering/improve-codebase-architecture/SKILL.md",
+        "skillFolderHash": "587147dd230da299cc5e84971cb0a33f6676f8a6"
+      }
+    },
+    {
+      "name": "improve-codebase-architecture",
+      "source": "~/.codebuddy/skills/improve-codebase-architecture",
+      "destination": "_local-variants/codebuddy/improve-codebase-architecture",
+      "status": "archived-variant",
+      "file_count": 5,
+      "file_hashes": {
+        "DEEPENING.md": "9577485f4fc32c0267639a9151bb41c8af0f8f6086e4bf8b84d5b236e30604e9",
+        "HTML-REPORT.md": "8a8bcdbb578066271efe6ff675c831a6a4c4c7fd2081d6b5c9bc2e5fabc741d5",
+        "INTERFACE-DESIGN.md": "678c3e34f1339015053212b3316bf0b676c70aa251050a0613667d4e755fb35e",
+        "LANGUAGE.md": "6feca2140439c54a774749e8367f18350899ff69c777144ed2248cd4407949fa",
+        "SKILL.md": "f00de04c7bb83cfd0ed1f97f3401a83838212c30856912ee44ba406649e6c749"
+      }
+    },
+    {
+      "name": "loop-me",
+      "source": "~/.agents/skills/loop-me",
+      "destination": "in-progress/loop-me",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "e44d1cc3e760fb86ac42964c2a5f1fcac511715db50fb375f3f7be814de1eaa7",
+        "agents/openai.yaml": "b66fa10079957051be6a812f45e55b67ac394b71d5ba88349962b4c9205802c3"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/in-progress/loop-me/SKILL.md",
+        "skillFolderHash": "a0dfdc3562686d920900973b50289b36e2f7eafe"
+      }
+    },
+    {
+      "name": "mcp-builder",
+      "source": "~/.agents/skills/mcp-builder",
+      "destination": "engineering/mcp-builder",
+      "status": "active",
+      "file_count": 11,
+      "file_hashes": {
+        "LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+        "SKILL.md": "b483b56d6673134497e45489c317f26ae0f1429c194db0297e43073e17e6748c",
+        "reference/evaluation.md": "8c99479f8a2d22a636c38e274537aac3610879e26f34e0709825077c4576f427",
+        "reference/mcp_best_practices.md": "80fb4369a349447cf18ecdd7494fe7938b6065377e9f08c077cec411093a3007",
+        "reference/node_mcp_server.md": "ee3c95d812e450f6168b734390d0c9ef6f8ebeef041d73a122c972dfbd4d476a",
+        "reference/node_mcp_server_v2.md": "49b2fe48f33910b743ae3a56353fffa5d5f252f531053f24f2da4e5914c0d3aa",
+        "reference/python_mcp_server.md": "2da52f77e675191014ca2e146a4b95aa04d0ca7dd7e2b100322df15ade685e80",
+        "scripts/connections.py": "9403668a2041568772082a8b334122c1f88daf0541fb393af4522d0094a47a6e",
+        "scripts/evaluation.py": "49ed1d17cdce5da101b210197740713f49b935c29d4f339542a14b132658e6f7",
+        "scripts/example_evaluation.xml": "9272b348ddcc4b06ba562367ccd0770e018158c0068ac5116d5e34aaeff8777a",
+        "scripts/requirements.txt": "d5d7558b2368ecea9dfeed7d1fbc71ee9e0750bebd1282faa527d528a344c3c7"
+      },
+      "upstream": {
+        "source": "anthropics/skills",
+        "sourceUrl": "https://github.com/anthropics/skills.git",
+        "skillPath": "skills/mcp-builder/SKILL.md",
+        "skillFolderHash": "ea6e4d7bc108b44b3009129688049e23d801f0f3"
+      }
+    },
+    {
+      "name": "migrate-to-shoehorn",
+      "source": "~/.agents/skills/migrate-to-shoehorn",
+      "destination": "misc/migrate-to-shoehorn",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
+        "agents/openai.yaml": "395c2db852e66a199f1cd07f7ed92d66cb6f0787460c5475926f1a5e778b699d"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/misc/migrate-to-shoehorn/SKILL.md",
+        "skillFolderHash": "0aea91a3599a4bf7aeec17e3262d4cbcfcbeec23"
+      }
+    },
+    {
+      "name": "migrate-to-shoehorn",
+      "source": "~/.codebuddy/skills/migrate-to-shoehorn",
+      "destination": "_local-variants/codebuddy/migrate-to-shoehorn",
+      "status": "archived-variant",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72"
+      }
+    },
+    {
+      "name": "obsidian-vault",
+      "source": "~/.codebuddy/skills/obsidian-vault",
+      "destination": "documentation/obsidian-vault",
+      "status": "active",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "7bed1d552aa5e9345e493cd62cb13e65c5d829d153c349afdb2cb91c809fa6c4"
+      }
+    },
+    {
+      "name": "ponytail",
+      "source": "~/.pi/agent/git/github.com/DietrichGebert/ponytail/skills/ponytail",
+      "destination": "engineering/ponytail/ponytail",
+      "status": "active",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "9badd22a32e19cb884e46dfa8d3aae82bb81dfa5484105b8b4f0262df823a509"
+      }
+    },
+    {
+      "name": "ponytail",
+      "source": "~/.codebuddy/skills/ponytail",
+      "destination": "_local-variants/codebuddy/ponytail",
+      "status": "archived-variant",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "d11df477b1a4e807155a7e578b135a4d9c52beef06eb3a44322940c331a06942"
+      }
+    },
+    {
+      "name": "ponytail",
+      "source": "~/.pi/agent/git/github.com/DietrichGebert/ponytail/.openclaw/skills/ponytail",
+      "destination": "_local-variants/pi-openclaw/ponytail",
+      "status": "archived-variant",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "3868c7aa7cc721b7391a6a136ce609bc1e08a2b29d393fe2e637297d8d45f379"
+      }
+    },
+    {
+      "name": "ponytail-audit",
+      "source": "~/.pi/agent/git/github.com/DietrichGebert/ponytail/skills/ponytail-audit",
+      "destination": "engineering/ponytail/ponytail-audit",
+      "status": "active",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "2b3223a02c386d1263e1b08343cb8eb3a53e444cdafb1d79e26c8ec2a8fcad28"
+      }
+    },
+    {
+      "name": "ponytail-audit",
+      "source": "~/.codebuddy/skills/ponytail-audit",
+      "destination": "_local-variants/codebuddy/ponytail-audit",
+      "status": "archived-variant",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "5560b8e383dbe2ddfddc873a1e2bf2e586e23e0cd7d995537482b2315331f6d1"
+      }
+    },
+    {
+      "name": "ponytail-audit",
+      "source": "~/.pi/agent/git/github.com/DietrichGebert/ponytail/.openclaw/skills/ponytail-audit",
+      "destination": "_local-variants/pi-openclaw/ponytail-audit",
+      "status": "archived-variant",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "3dc1c18ec325632db297f2c34d03e6f4b3fe5f50a8eaee727f02d223b1ee3d4b"
+      }
+    },
+    {
+      "name": "ponytail-debt",
+      "source": "~/.pi/agent/git/github.com/DietrichGebert/ponytail/skills/ponytail-debt",
+      "destination": "engineering/ponytail/ponytail-debt",
+      "status": "active",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "b5ec2762f6ba8c4af9ea7173aa6c9f91b88655a25e43f9de0264f6ce8722b25f"
+      }
+    },
+    {
+      "name": "ponytail-debt",
+      "source": "~/.codebuddy/skills/ponytail-debt",
+      "destination": "_local-variants/codebuddy/ponytail-debt",
+      "status": "archived-variant",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "c84fba75f0ca12bfe83f9a78ea02fd125c5dd3f1fbb18124105a489937f284e6"
+      }
+    },
+    {
+      "name": "ponytail-debt",
+      "source": "~/.pi/agent/git/github.com/DietrichGebert/ponytail/.openclaw/skills/ponytail-debt",
+      "destination": "_local-variants/pi-openclaw/ponytail-debt",
+      "status": "archived-variant",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "d55354743bf344611907bbcda8da105abe4d3eec4696b80099eb9b6c02029c40"
+      }
+    },
+    {
+      "name": "ponytail-gain",
+      "source": "~/.pi/agent/git/github.com/DietrichGebert/ponytail/skills/ponytail-gain",
+      "destination": "engineering/ponytail/ponytail-gain",
+      "status": "active",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "231034a896d6762e4b5c8468287083422c56b499119976ec9f76821f7d083090"
+      }
+    },
+    {
+      "name": "ponytail-gain",
+      "source": "~/.codebuddy/skills/ponytail-gain",
+      "destination": "_local-variants/codebuddy/ponytail-gain",
+      "status": "archived-variant",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "24e01d1c9715cb136ba1c4f1e52a95940c0193558b876828e537736480d6408b"
+      }
+    },
+    {
+      "name": "ponytail-gain",
+      "source": "~/.pi/agent/git/github.com/DietrichGebert/ponytail/.openclaw/skills/ponytail-gain",
+      "destination": "_local-variants/pi-openclaw/ponytail-gain",
+      "status": "archived-variant",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "40efb084e29bfaaa85a0807ec3a88d5c85897a7bf751985496295e541dea937b"
+      }
+    },
+    {
+      "name": "ponytail-help",
+      "source": "~/.pi/agent/git/github.com/DietrichGebert/ponytail/skills/ponytail-help",
+      "destination": "engineering/ponytail/ponytail-help",
+      "status": "active",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "86ab0ce0af70cbeeeef499d5c884873b393f87f86401dcc45553662ce2c1eff9"
+      }
+    },
+    {
+      "name": "ponytail-help",
+      "source": "~/.codebuddy/skills/ponytail-help",
+      "destination": "_local-variants/codebuddy/ponytail-help",
+      "status": "archived-variant",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "23ee3856c727129f87ab850985f9e9ed6368f10449816aa7ff043bf2dd45ab4d"
+      }
+    },
+    {
+      "name": "ponytail-help",
+      "source": "~/.pi/agent/git/github.com/DietrichGebert/ponytail/.openclaw/skills/ponytail-help",
+      "destination": "_local-variants/pi-openclaw/ponytail-help",
+      "status": "archived-variant",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "3a267f1c71058854b608c4eebcf2291a90c1a25972cbdd52fef777d6a2c60945"
+      }
+    },
+    {
+      "name": "ponytail-review",
+      "source": "~/.pi/agent/git/github.com/DietrichGebert/ponytail/skills/ponytail-review",
+      "destination": "engineering/ponytail/ponytail-review",
+      "status": "active",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "33fe4ebe22a460924e5d4a261e223df22e409cc94ab76182bee9fb91a3ef022e"
+      }
+    },
+    {
+      "name": "ponytail-review",
+      "source": "~/.codebuddy/skills/ponytail-review",
+      "destination": "_local-variants/codebuddy/ponytail-review",
+      "status": "archived-variant",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "40df33b58fc6ef889b93585733feb9566b76e9586efa7f376785c1e995197ac0"
+      }
+    },
+    {
+      "name": "ponytail-review",
+      "source": "~/.pi/agent/git/github.com/DietrichGebert/ponytail/.openclaw/skills/ponytail-review",
+      "destination": "_local-variants/pi-openclaw/ponytail-review",
+      "status": "archived-variant",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "1f010d87a90d9e801f5634e3b863510b40121608f6e980f20bb3db8b2d165299"
+      }
+    },
+    {
+      "name": "pr",
+      "source": "~/.agents/skills/pr",
+      "destination": "engineering/pr",
+      "status": "active",
+      "file_count": 3,
+      "file_hashes": {
+        "CREDITS.md": "a7a087127665d7298a72280ef6e19c41ad8404523712a788c8dc3ab414bc2497",
+        "SKILL.md": "ab63f1cf78647389edcd386c9427c5dfca27ed2836930c24773ffee834c19bcd",
+        "agents/openai.yaml": "2295b586624db4ef546f3fd4695492f039d941a46d8a1593a702ce3ca511b8ad"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/engineering/pr/SKILL.md",
+        "skillFolderHash": "00b896d811adffad747c7ca30078d909d60c7f93"
+      }
+    },
+    {
+      "name": "prototype",
+      "source": "~/.agents/skills/prototype",
+      "destination": "engineering/prototype",
+      "status": "active",
+      "file_count": 4,
+      "file_hashes": {
+        "LOGIC.md": "f61c7d249e786a79ef289018901c348271e1798dd0b0bc5607b5c6f4d4a01ab9",
+        "SKILL.md": "714de632d116bb73f65cdb5a882db15b9369a6713b9a47c0fad827848f0bfbe3",
+        "UI.md": "723211e878acbc7b6ff09755263f3295cde724ba902ff0064da41eed51d45ad3",
+        "agents/openai.yaml": "5af65e43ab41a350436697b81e27b7f848d36782043b73c322bb2c9fa9cc55dc"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/engineering/prototype/SKILL.md",
+        "skillFolderHash": "e41d92e171f074a2b6887d8f6faca4a15c83d1ca"
+      }
+    },
+    {
+      "name": "prototype",
+      "source": "~/.codebuddy/skills/prototype",
+      "destination": "_local-variants/codebuddy/prototype",
+      "status": "archived-variant",
+      "file_count": 3,
+      "file_hashes": {
+        "LOGIC.md": "da91dc92195c00d5dc33863b8c1a030998025a0f8583ebf2babd770825b7f70c",
+        "SKILL.md": "a653deb65afa2ee8f45c68f6ef4f593147171b386e994c8cccf89292d9ea9d75",
+        "UI.md": "d76d565149ee50456c5ddc5e29c27fec8737637874fe5c37d970db085a200b27"
+      }
+    },
+    {
+      "name": "qa",
+      "source": "~/.codebuddy/skills/qa",
+      "destination": "testing/qa",
+      "status": "active",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "d9727aac6503981bf69bdd8b37e0d85b32b8fbd353a57528c252dac1337ab761"
+      }
+    },
+    {
+      "name": "request-refactor-plan",
+      "source": "~/.codebuddy/skills/request-refactor-plan",
+      "destination": "engineering/request-refactor-plan",
+      "status": "active",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "d59de4ba6cc1fe2dd267e8b9b5a1fd88e3e739e2130bc9dd78061d2a072830b8"
+      }
+    },
+    {
+      "name": "research",
+      "source": "~/.agents/skills/research",
+      "destination": "engineering/research",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "1f629e18ab899412683bc6a1c4efb4339999e27c2fdac328f26ee10a8c031d33",
+        "agents/openai.yaml": "9b4c470d63221c1f68f22df70b83e2f12401b317babe0d1b7b5f24a974474d0d"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/engineering/research/SKILL.md",
+        "skillFolderHash": "2f8f36af48796faed5c687c75bb650071631a984"
+      }
+    },
+    {
+      "name": "retro",
+      "source": "~/.agents/skills/retro",
+      "destination": "engineering/retro",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+        "agents/openai.yaml": "cb6fb9d7e6b4be5975f41f6def1dd00a1255bad5d9b02696b124c924a8b8745c"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/engineering/retro/SKILL.md",
+        "skillFolderHash": "335c1862a43da9d629abafdb79ca0c0de118be08"
+      }
+    },
+    {
+      "name": "review",
+      "source": "~/.codebuddy/skills/review",
+      "destination": "engineering/review",
+      "status": "active",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "5700f30d3f06706ee56c099adceec222fef26dbcf82817ff604962634e246b2e"
+      }
+    },
+    {
+      "name": "scaffold-exercises",
+      "source": "~/.agents/skills/scaffold-exercises",
+      "destination": "misc/scaffold-exercises",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "75f5c9d771606fb9762f16522efc954df11c324f87148d8ff069bce166257de9",
+        "agents/openai.yaml": "525b33913340bea7947ad2de17f2a7c5fb94be543345fe80ae753b9a44ba601d"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/misc/scaffold-exercises/SKILL.md",
+        "skillFolderHash": "44a0ee332b9d67ebbd59389c7eb4e5aff1ce845c"
+      }
+    },
+    {
+      "name": "scaffold-exercises",
+      "source": "~/.codebuddy/skills/scaffold-exercises",
+      "destination": "_local-variants/codebuddy/scaffold-exercises",
+      "status": "archived-variant",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "75f5c9d771606fb9762f16522efc954df11c324f87148d8ff069bce166257de9"
+      }
+    },
+    {
+      "name": "setup-matt-pocock-skills",
+      "source": "~/.agents/skills/setup-matt-pocock-skills",
+      "destination": "engineering/setup-matt-pocock-skills",
+      "status": "active",
+      "file_count": 7,
+      "file_hashes": {
+        "SKILL.md": "b01e05bfe8c323171275c6ceec78b12f1bd4c62dfd26c2cfe8be806d3883f1ed",
+        "domain.md": "593a7042218689f1d24df89df14eaf0a20e19e0d0a7d479a01947ac78f0784b9",
+        "issue-tracker-github.md": "6fdb3e9b00b7b0b115ecac3b1c00e3790f637f190abf598815368722c0a94692",
+        "issue-tracker-gitlab.md": "947602d33a80f98f939fb990995b8f95a3459b114b919c4221d08bd75d7cffe0",
+        "issue-tracker-local.md": "7dcda20a2eb4bdc89b95d1143423c0691309921cadae3132e6424f371030506e",
+        "triage-labels.md": "ae512af838c78b8750471c42cd2b20fa32319553e61d84c9a23d171b40ce14aa",
+        "agents/openai.yaml": "9527de0110541c45712319025155aeab8dc7d77c6ed6e5e83271bab1851ab939"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
+        "skillFolderHash": "b644b684781fd5baae57f6be000a180a4d4448d7"
+      }
+    },
+    {
+      "name": "setup-matt-pocock-skills",
+      "source": "~/.codebuddy/skills/setup-matt-pocock-skills",
+      "destination": "_local-variants/codebuddy/setup-matt-pocock-skills",
+      "status": "archived-variant",
+      "file_count": 6,
+      "file_hashes": {
+        "SKILL.md": "c778d4e3d86ecc9125c357279a86780657b5db23110e1f7acf4f46d2441e7204",
+        "domain.md": "a8cc3d1c11c9cdea455f39c4090cf61ac273f2474dd6f229ab0c2b9b1deec759",
+        "issue-tracker-github.md": "f0e138631d1fc8aedc9e05d25bc688b97679f81eae7a7c760dd35e0790568370",
+        "issue-tracker-gitlab.md": "94c574647c4755f2a807742f5e78e7cef586c100266d54501d0e55445c1b1807",
+        "issue-tracker-local.md": "9a052f4599525e581721ec24cb2ae3e0296b79053e39f684b540d34d3a4f6528",
+        "triage-labels.md": "4f53c9b40ce2651e3611aa090eaedbd6dbc9b71ef8c5f7e65eac0d8263190d0d"
+      }
+    },
+    {
+      "name": "setup-pre-commit",
+      "source": "~/.agents/skills/setup-pre-commit",
+      "destination": "misc/setup-pre-commit",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
+        "agents/openai.yaml": "acf41db398c5c43afe504008bb7d615a97b6498b0f1f6c5b2395254c0bfb57d1"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/misc/setup-pre-commit/SKILL.md",
+        "skillFolderHash": "5b63f9f665bacc9be04cae51982e9ef1469d6699"
+      }
+    },
+    {
+      "name": "setup-pre-commit",
+      "source": "~/.codebuddy/skills/setup-pre-commit",
+      "destination": "_local-variants/codebuddy/setup-pre-commit",
+      "status": "archived-variant",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "872f4037cb7e6e0e340d4175c086550072959925dffc87b160d1a30dc9f63bbd"
+      }
+    },
+    {
+      "name": "setup-ts-deep-modules",
+      "source": "~/.agents/skills/setup-ts-deep-modules",
+      "destination": "in-progress/setup-ts-deep-modules",
+      "status": "active",
+      "file_count": 3,
+      "file_hashes": {
+        "SKILL.md": "29acca66ac99d4532e2a6f0370d8125d7cba1e87c9ac66573203c75189d3e6c7",
+        "dependency-cruiser.config.cjs": "3c4973bec69f73b2117654abf9e666a7c28665b213be20e6d39869e29842428e",
+        "agents/openai.yaml": "159f680217d50747702620c05fd65734a152185b3219a8ca5ee4630878a354fa"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/in-progress/setup-ts-deep-modules/SKILL.md",
+        "skillFolderHash": "b32508a8a7d62c07d32d7c5cff84d357719def7f"
+      }
+    },
+    {
+      "name": "skill-creator",
+      "source": "~/.agents/skills/skill-creator",
+      "destination": "utils/skill-creator",
+      "status": "active",
+      "file_count": 18,
+      "file_hashes": {
+        "LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+        "SKILL.md": "dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf",
+        "agents/analyzer.md": "bf68f4cac5a56c673a928c2e6d619586c5b93ea364026ab37547772cb45a663a",
+        "agents/comparator.md": "fe1fc9787c495d864c5d6eada47396478572325fde1b33a96d78bf4b849b7a3e",
+        "agents/grader.md": "57134da0c1a4eea33fbd74a1c9c44aa814f07d6bc64de303edb586f941e5d21a",
+        "assets/eval_review.html": "ce477dcc74dc1c0d1d3352646a79167b5a63634e936b1019160025065974e452",
+        "eval-viewer/generate_review.py": "fc9d1b9243fe5ab6012ebd579bd76d0035de1b79fd3b969de114defab26478fb",
+        "eval-viewer/viewer.html": "a53213426ee1100441d701a3a0d49cda7a842f992d2c36463f4d3cc0258575fa",
+        "references/schemas.md": "8e8876180a8989b406a4d3edddf875b04cdfd5805cc8616686d552b11ce4455f",
+        "scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "scripts/aggregate_benchmark.py": "123ef128ea5ccc01a4b1ac212ef5567f21e9c13d3d240609780beeb3200c49aa",
+        "scripts/generate_report.py": "13df7118a3c50c83c4c3250a606d5f2b20b25a3d44cbc392b3d669ec75281453",
+        "scripts/improve_description.py": "87d864570220b699fac52da309d2d6efdb060647bfebc74f768128e646accf80",
+        "scripts/package_skill.py": "1a33059b0db1ef73375d46d513e5ea81369d2e8838c970597b0d52ddef8d1c0f",
+        "scripts/quick_validate.py": "67cf5703402013936c8fb75ad6a1afecd8841d45cc5e606b634eb05825fde365",
+        "scripts/run_eval.py": "43e3b8f80dbf69c343967ba77e268fae991d9fa3ed68b32a0ff02532cd48657f",
+        "scripts/run_loop.py": "7bd6f674203168520517eec94c55f493c0d154339b061b4d7c0f0dad187d0f21",
+        "scripts/utils.py": "3af8ae62c40c73ab712207436a0d9a981e845f25c5a7040229eb189cc8e45bb1"
+      },
+      "upstream": {
+        "source": "anthropics/skills",
+        "sourceUrl": "https://github.com/anthropics/skills.git",
+        "skillPath": "skills/skill-creator/SKILL.md",
+        "skillFolderHash": "3cf9a8db32597ba3e24b584a3d696f4e11c7d7b6"
+      }
+    },
+    {
+      "name": "slides",
+      "source": "~/.agents/skills/slides",
+      "destination": "design/slides",
+      "status": "active",
+      "file_count": 6,
+      "file_hashes": {
+        "SKILL.md": "2b90bdaf63f231919a01f4962f374ecd84af101a7e7545f8d9c68e049025accb",
+        "references/copywriting-formulas.md": "03733d5916ab771834745550045b736deeb94a08226f2b200f7953009c35b219",
+        "references/create.md": "792d647a5d4f87d765cf417f7ac54dd0b2fc4d229cc23ea9df56282d4c1ee086",
+        "references/html-template.md": "fd5b051a37365fc6059c75bb388ec6f64daf1bd9ae938b287b6d762dc83c0c35",
+        "references/layout-patterns.md": "0a967ca3bd829d3234e6f1802bade6c76447fabbaddbc8117c41adbae7dfb6df",
+        "references/slide-strategies.md": "27ee3e53ffa0ea679ec83ebeacb0bcfbce498df57277e99f574b9c139dc44286"
+      }
+    },
+    {
+      "name": "tdd",
+      "source": "~/.agents/skills/tdd",
+      "destination": "engineering/tdd",
+      "status": "active",
+      "file_count": 4,
+      "file_hashes": {
+        "SKILL.md": "5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0",
+        "mocking.md": "3ceb807fdf4a47d6a93d4d9a891e5ba6d362a6247bd08adc451feebfc17361ef",
+        "tests.md": "859f9e592c188fda4fc7277dd180e4ce9c7a2e13f6efe1f6f29eccc9d28c106a",
+        "agents/openai.yaml": "ea6f01cf1b8c06a4b0f5b649d74b1b8ce8685e72af1b38d70d877693e092af0b"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/engineering/tdd/SKILL.md",
+        "skillFolderHash": "667dbdd00c09d0e2189e082986e6a4d61a67c2a6"
+      }
+    },
+    {
+      "name": "tdd",
+      "source": "~/.codebuddy/skills/tdd",
+      "destination": "_local-variants/codebuddy/tdd",
+      "status": "archived-variant",
+      "file_count": 6,
+      "file_hashes": {
+        "SKILL.md": "af059705061156fd4845ddbb736fe92b564118ac5f03551e09ef9e8f6d970638",
+        "deep-modules.md": "f2123700bf953db1740625686c75bdd145efd486357c47c6818c869fee657a32",
+        "interface-design.md": "764c5ff0e3fa6b4ab7095eb65ccc7201e090baf19fa16051dfdb72c06d27417d",
+        "mocking.md": "3ceb807fdf4a47d6a93d4d9a891e5ba6d362a6247bd08adc451feebfc17361ef",
+        "refactoring.md": "54fced22dd1911b7094c3fe7979b7c1a40d40be307482c4adf7dc0588f27d6cc",
+        "tests.md": "e12182f5c4c6a844b7c6ab4b8d2623b642aaaae5460fe58ed087efd4f3d5fb8a"
+      }
+    },
+    {
+      "name": "teach",
+      "source": "~/.agents/skills/teach",
+      "destination": "productivity/teach",
+      "status": "active",
+      "file_count": 6,
+      "file_hashes": {
+        "GLOSSARY-FORMAT.md": "9b99859ec28437668130d8f2ce5a342938970f8a1ed4fd38c3eab4f4b5fff210",
+        "LEARNING-RECORD-FORMAT.md": "701fa34b6748aa89e6c960ffb815257f481a7d77fb2900f9028f7edf3fdd6052",
+        "MISSION-FORMAT.md": "8cacbb3c0644d3ae0ea4965564797099401a6930a23f7cf462918576587f2418",
+        "RESOURCES-FORMAT.md": "e9cacf34026e11a8d1c8f9de88abe5bcbf654f4ebdb25cae8c0de0d5f48f44ec",
+        "SKILL.md": "550482c2d674b085c9043b87bfdc14a8f2ec453c736119e7fcbb1e9332bffeba",
+        "agents/openai.yaml": "5856f3ae8aec742f1499c640aecdd5f1d6af5fa210a7c6ec794de8263a6f733f"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/productivity/teach/SKILL.md",
+        "skillFolderHash": "3fd617b610e59acbb99644de1ef37e394ff53cd1"
+      }
+    },
+    {
+      "name": "teach",
+      "source": "~/.codebuddy/skills/teach",
+      "destination": "_local-variants/codebuddy/teach",
+      "status": "archived-variant",
+      "file_count": 5,
+      "file_hashes": {
+        "GLOSSARY-FORMAT.md": "d177def491519d97873291f2e860d8f1d60ead78feecb82eee022177958069c6",
+        "LEARNING-RECORD-FORMAT.md": "855f81017625256584bbf62bd5edb9b0c86605c4cc1139c56acc36b802595d17",
+        "MISSION-FORMAT.md": "8da6d3ac84eb2eb19f17c260b6acf01c560d3ac7a4501c415eea0e985602f4d7",
+        "RESOURCES-FORMAT.md": "2bc634a64b0d0daa10904f9222e7aa0d361420dfacabbf092fbe3a72222edc08",
+        "SKILL.md": "d36496c90da9871babf8aef3c4e2fb5de1dddc7fafc79659d2ac0ba567069b3b"
+      }
+    },
+    {
+      "name": "template-skill",
+      "source": "~/.agents/skills/template-skill",
+      "destination": "utils/template-skill",
+      "status": "active",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "eb685d91de039ed864fbd790cddf31684b017fd4a34ee1a55760d8d7cdbadefa"
+      },
+      "upstream": {
+        "source": "anthropics/skills",
+        "sourceUrl": "https://github.com/anthropics/skills.git",
+        "skillPath": "template/SKILL.md",
+        "skillFolderHash": "a38aa7fa73fd2835b9ce77a60274f7dc62d015a6"
+      }
+    },
+    {
+      "name": "theme-factory",
+      "source": "~/.agents/skills/theme-factory",
+      "destination": "design/theme-factory",
+      "status": "active",
+      "file_count": 13,
+      "file_hashes": {
+        "LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+        "SKILL.md": "c35893e221e28895c52143cc11bf30e41a44817796b39d4b15727dadc9796552",
+        "theme-showcase.pdf": "3e126eca9fe99088051f7cb984c97cedb31c7d9e09ce0ba5d61bd01e70a0d253",
+        "themes/arctic-frost.md": "868a75a8fb5b2a61d0f0ab87c437fe632d3cbab6371c418f06aa2816ac109ae0",
+        "themes/botanical-garden.md": "222cb8e7496abc9b75b29453c809fb9839e7e4b01fa45deecdd896b38d087765",
+        "themes/desert-rose.md": "bd065b8629be3b64655183927e248e3d892a27b8d184b009cfba89c96102744f",
+        "themes/forest-canopy.md": "ecb722efa24688e808b5bf323c334ca2349e989cfddd72ce8400ce5d4c4bd3e7",
+        "themes/golden-hour.md": "3444a00df971d3c2f06b665e21a2e9eb5d7d7d6f6281f2758773b8345776a139",
+        "themes/midnight-galaxy.md": "0e134c4c0324df41e34ac314269aa6829cd378cf3c304b31858d0cd158d2f944",
+        "themes/modern-minimalist.md": "b8bc572b75948d4df69c401af703b9262ed6820a3ceb270da30a529e92763614",
+        "themes/ocean-depths.md": "a7ad8eec85341dbfcb2665da827a4b6a4baee08ab3335ac02421f18e6b46b2e2",
+        "themes/sunset-boulevard.md": "658af11ab04be4923692571081ffb42a428141ae537703117b9236d9f8ee22a3",
+        "themes/tech-innovation.md": "183648163026dd5eeba3df5effa335b55ba333c3ee1fe215278605e55f40a52a"
+      },
+      "upstream": {
+        "source": "anthropics/skills",
+        "sourceUrl": "https://github.com/anthropics/skills.git",
+        "skillPath": "skills/theme-factory/SKILL.md",
+        "skillFolderHash": "e05534d132fb1b21f9917840874758e30f0a9b1a"
+      }
+    },
+    {
+      "name": "to-issues",
+      "source": "~/.codebuddy/skills/to-issues",
+      "destination": "productivity/to-issues",
+      "status": "active",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "0e6a2973fa5bdf32570227c578f7e474d945dd9281615d31439664c3ef016fce"
+      }
+    },
+    {
+      "name": "to-prd",
+      "source": "~/.codebuddy/skills/to-prd",
+      "destination": "productivity/to-prd",
+      "status": "active",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "5212dee3af6a95e60d7daaedac08f15f2789b170468d57d23f722e516a255269"
+      }
+    },
+    {
+      "name": "to-questionnaire",
+      "source": "~/.agents/skills/to-questionnaire",
+      "destination": "productivity/to-questionnaire",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+        "agents/openai.yaml": "9e8a06c38c8842eea8d4922cb9d1ead8e3ace647bab259b943c994a1b4742bc2"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/productivity/to-questionnaire/SKILL.md",
+        "skillFolderHash": "46dfbeeba12a9e52eef446676f42e7551023d9a9"
+      }
+    },
+    {
+      "name": "to-spec",
+      "source": "~/.agents/skills/to-spec",
+      "destination": "engineering/to-spec",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "43ad9cf318e5e7d3d1fa360253a37021796dc87a0c2e595ad262661a10f85088",
+        "agents/openai.yaml": "1c5b4d1e3d8e52287ef19cc2742fdbbfae1914ac75d33af3e4c8174f08cc55bb"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/engineering/to-spec/SKILL.md",
+        "skillFolderHash": "136b9651747cfccbfbb7c50a6b0dfb757e7547d2"
+      }
+    },
+    {
+      "name": "to-tickets",
+      "source": "~/.agents/skills/to-tickets",
+      "destination": "engineering/to-tickets",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "56ec23c5b2782785d4e65bff9e315b6d3aeb4ef977c174a219e99489fada1995",
+        "agents/openai.yaml": "21bc6215fffcd7614e9f772bb1760e87cc5fc7dcc707e7d282bc9414267a6090"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/engineering/to-tickets/SKILL.md",
+        "skillFolderHash": "2dee20ad722a31c04ededf9f2d83842473573045"
+      }
+    },
+    {
+      "name": "triage",
+      "source": "~/.agents/skills/triage",
+      "destination": "engineering/triage",
+      "status": "active",
+      "file_count": 4,
+      "file_hashes": {
+        "AGENT-BRIEF.md": "7f5f87fed3033df1b06e083c480f3e847b1fbb0647746b8a4c6a50f9f26ef44f",
+        "OUT-OF-SCOPE.md": "1fbf9b432130c6380aa65813b55553cfda150309b27c595e183f8e335b8a190d",
+        "SKILL.md": "917b0baf74be583e74f110857ed45df2766617f75c00baf61fd136d7af515edf",
+        "agents/openai.yaml": "2e683717720cf456d165d0bb1a68bb600d0b6a8ccb61841c172e50d26f95351c"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/engineering/triage/SKILL.md",
+        "skillFolderHash": "4cb951d62ecccaed601cdc5f9a1b7b3d8a799635"
+      }
+    },
+    {
+      "name": "triage",
+      "source": "~/.codebuddy/skills/triage",
+      "destination": "_local-variants/codebuddy/triage",
+      "status": "archived-variant",
+      "file_count": 3,
+      "file_hashes": {
+        "AGENT-BRIEF.md": "1c71c747aa97d938f75ec7a4b8fe87451763b38a3ce6348acf2b222e5819b2e5",
+        "OUT-OF-SCOPE.md": "8ed8cf27833444060c81b3961a83c0e3d8e6cf2fcb2ddf6f8b07c6655cbb0d85",
+        "SKILL.md": "b819f0285e4e5814ac6472d0217f07dc9f23d2fdae3ebb0dd31d98360d8ac029"
+      }
+    },
+    {
+      "name": "ubiquitous-language",
+      "source": "~/.codebuddy/skills/ubiquitous-language",
+      "destination": "documentation/ubiquitous-language",
+      "status": "active",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "2449e2345b96b9f1e861c697b5eab50d03ae1254481a4306b6f815684e523b3a"
+      }
+    },
+    {
+      "name": "ui-styling",
+      "source": "~/.agents/skills/ui-styling",
+      "destination": "frontend/ui-styling",
+      "status": "active",
+      "file_count": 16,
+      "file_hashes": {
+        "LICENSE.txt": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+        "SKILL.md": "f8b6c3832d2af51f67b3932e3c4a79bcd8a8596cc61ce1547a686fc951e5c62d",
+        "references/canvas-design-system.md": "f5de85ff39d9f3a8275c4164b921ba72d5e1d34b8d7a9243d9ee34b3870a4f5f",
+        "references/shadcn-accessibility.md": "a22cd4ccf82b635b2b2c4f12416a0c4f7edcd825d219d6089450fa797a0d9511",
+        "references/shadcn-components.md": "79c4f91cbf68993a43fa3a95889c35db73de45bdd3dfd83a6830863c01aa598a",
+        "references/shadcn-theming.md": "d17d641474221123ff0e0288043ca2f2dab3ac96908a19eed28d82f9e58865ed",
+        "references/tailwind-customization.md": "4c5adeed6263a274f74f6eb2c816ca420fd6ef4f35683582988bacd404799afe",
+        "references/tailwind-responsive.md": "8d00ae620df26daea4623c7bf996d6e612e09d359305fcfa2b40cab757ed840c",
+        "references/tailwind-utilities.md": "aba1c40ef84f43beea142ae310371e332541f39d973df90a71f1854823effda1",
+        "scripts/requirements.txt": "09402d2d274248e18bb5fd0a0267fd7cbf99b7a2440e73e87f054aa8f259f9da",
+        "scripts/shadcn_add.py": "0c11d28ce9f12217df2c3306f24ae1f73527d5116db63707ab55cbe1a8bcf28c",
+        "scripts/tailwind_config_gen.py": "2e264ec871499681aecd6111f60743fba31b5ceb7e9ccb2b71b7346039285f89",
+        "scripts/tests/coverage-ui.json": "33bdc1f5998db9a38cac8e6128a82711f8f8b65fbb3dcb0c1680ae260441cbce",
+        "scripts/tests/requirements.txt": "80846c98ee02a7e9651ec4eee6709f840b785646b469aad5284ab7ab9b344f17",
+        "scripts/tests/test_shadcn_add.py": "35f60ac5d74c4a7f950854a0337883c3e8dd812c58fcf6c5153876e43a6effa2",
+        "scripts/tests/test_tailwind_config_gen.py": "4efa59fdbe318d55e6a452d85401db5d1aa4504f93739878bb40d8bb504af585"
+      }
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "source": "~/.agents/skills/ui-ux-pro-max",
+      "destination": "frontend/ui-ux-pro-max",
+      "status": "active",
+      "file_count": 68,
+      "file_hashes": {
+        "SKILL.md": "798785faea346cf824b761b36cf5f47335cfaeb9c4f5082a0355247cb4e302a1",
+        "data/app-interface.csv": "331e7cf2c0b222d80c566c5f255c63cb339f65bfd02e471a720f28e4864a9f08",
+        "data/catalog-summary.json": "65fe0b64480a8a827738297d0a64ca55c627d4afcb774fe4555c59cea8dd6905",
+        "data/charts.csv": "4115cf1120680f2cedef0676cb648f30c7ef4699e2a947535d4113e71ed3b12a",
+        "data/colors.csv": "8162429222bce22df62b564085946a30d07cc9722c58d0a3a494bd0d1d00841c",
+        "data/data-provenance.json": "e82fb33ed49375a300e93d9c11ccd1c1493c999e84ee7ee295e527634786e2e0",
+        "data/google-font-licenses.json": "35688523f2955795caa1a47c53b83099e60c1708461476f9cc3a050cf3b0148a",
+        "data/google-fonts.csv": "1c8c3b2ea1faf6a1012da463756def8b3889db33f2226f0343bb4daa80307d03",
+        "data/icons.csv": "50816c6012030178195a16ee481ebf58b47bd985d70e8ec58886cc83f6eddafc",
+        "data/landing.csv": "9a2edd3bb676c2a58f00ade7a062e285222d4297bfd847c8d5b056f0dbbf52d0",
+        "data/motion.csv": "381affe8df8ea1f66fbbda2598827f9f54299107bbe6a1b4e9b68f6b62091ceb",
+        "data/phosphor-icons-upstream.json": "2399325233b277b5c97a80e6a5e8941154f5d057beee4e7613db87c87d700236",
+        "data/products.csv": "42473f75e8dde5987bdf89ce55d8c168091b80a356cae691dd60247d80720b70",
+        "data/react-performance.csv": "3d925802539abac5afeb63ae8aa1960b7229ad271b3a47caed40ab2d97ad0734",
+        "data/styles.csv": "a93a4d9d7025856575d7b7583bda020be9043013432c5af7c58af9dbdfb206b7",
+        "data/typography.csv": "321fc446e89024488ebae96dda93efc4d2307bd8bddb240857ad51364f6782c8",
+        "data/ui-reasoning.csv": "f0774dd741cecdad5eec842034bd6d5e9ea50e9f220a1910069748daa0bb8e9a",
+        "data/ux-guidelines.csv": "ff81ec613f70ba9fc3fcce52dbe4ae35d44b2079dbe6dc066d2d6e38c28facd5",
+        "data/stacks/angular.csv": "704be83f2bad30c7e6de01afb113ffa01e0c458762f48b7102f31ba2367b5553",
+        "data/stacks/astro.csv": "2c2f55fadaafc05e04cc321c8194a1a28b656e6757fe2ba316f41b16428299c6",
+        "data/stacks/avalonia.csv": "442fca14675a020683473e7e49f08abb27b9df0765c80efe54aef61f1a4ac258",
+        "data/stacks/flutter.csv": "64dba0ac17349f28bce517a0f5f48c54d9ed2e487ec0c0258303463b382f41a0",
+        "data/stacks/html-tailwind.csv": "d05a581d20af57b8ca0104a6d31d90a07c437d500662a96c3029fc2f9a4678ee",
+        "data/stacks/javafx.csv": "2e819b8d5abdd23ad4dae0991650fdb57af497aabd68b37463aa9c442944c869",
+        "data/stacks/jetpack-compose.csv": "699de218b286948eaec7d15767b6e1350ee299167e49bf476d82e3ff58724e0a",
+        "data/stacks/laravel.csv": "854ea4daa5fc61292d22235ad33b49ba3fe22423c3de8d3cb03758ffed3b59f9",
+        "data/stacks/nextjs.csv": "ecd2c27b2ea0127d203ae726060efcdd7335b5e83f96b99e4f3befbbfeebd5a4",
+        "data/stacks/nuxt-ui.csv": "c36ee8470926b4a0748d241363c71664c9969c2edbc62f7f72de0db73880fac6",
+        "data/stacks/nuxtjs.csv": "3d9b54ed2d151bd9c86e9e5609b8a6f88a00c4c52fa601a30af96c49b2c4d176",
+        "data/stacks/react-native.csv": "ba31dd9c0c04da6bc02a74448bf121f9c0728ae5ba3b4d47b487778b0a1135b5",
+        "data/stacks/react.csv": "2d2b9c198e875106a30f7ee68341a9ee0033cad60a7e130cf23152783e08aeda",
+        "data/stacks/shadcn.csv": "e56cfde5b74907836ac3582a4779d5b7f3d206a702ab81b8669a1b668c3eeb51",
+        "data/stacks/svelte.csv": "f6e379ba802941ba26b01d4ffbe3cd39120f2587659a1d93851c707f66bc13db",
+        "data/stacks/swiftui.csv": "bdd9231ff3ad658f4e7c063e1eb49df2fd09ac8d90631a86df899b39833b9623",
+        "data/stacks/threejs.csv": "97542e0ba34915a0ff7578be20e1619495df47c95c8c1c39b83e3785e1de771f",
+        "data/stacks/uno.csv": "a0474363e4225b5367214d5675fd3e075f137026f9500f0d04357882ef4f6d48",
+        "data/stacks/uwp.csv": "c409f08c1fbba1f1029f1acaa554e7b4471cc85517a5751c9f2e62465badcd5c",
+        "data/stacks/vue.csv": "b655f1ebb9dff2652d15981f31b1784c8a6d4759efd2815a14f3088257569f95",
+        "data/stacks/winui.csv": "e676dc1c13ee6c205c40b0746f1335150a346c7a49a0616d2545bc3d2c930c85",
+        "data/stacks/wpf.csv": "9781a9950b20333637b30a02e498b7efca21b618a3eeb8665836f3ac6e974da7",
+        "scripts/core.py": "e544826963efefce3c59b65e18d83d92a5baf571f05458025bf1fa9021eced42",
+        "scripts/design_system.py": "6a94743c3362c9c7e6d1450b94f4014d9ea752e7b4e151f6f0bdb217e0544bf7",
+        "scripts/reasoning_contract.py": "b8bac1af82aa280d3e06f00aabaeac4337e632996b07fed874e2b6ee6e9c5913",
+        "scripts/search.py": "8373e2dd2d560d9853ec116140de0e0d5bee45a6abe5e041173c84e1c36a7f87",
+        "scripts/validate_data.py": "718ad4cbb227436015c9c2bc80fc583d6ed738b01c1a940ef85e350780d99f58",
+        "scripts/tests/test_catalog_refresh.py": "3e2ca5d12702318f641ae62d0c14f22a3bcc84d84e79b863c0e947d475604adb",
+        "scripts/tests/test_core.py": "3527fe2f4b852f69f07c17ddc0d615d9a6e025c924e45a33985579a94a8d2118",
+        "scripts/tests/test_core_data_quality.py": "3ffc6b4905c9ea26d7ac4527ab154d153584231aee71b2ae4bd017977fa09cc5",
+        "scripts/tests/test_data_contracts.py": "0360d6e10080c0bca214f2b0bbad582ba50702a542ce21013351aca54938df3a",
+        "scripts/tests/test_design_system_mode.py": "517ba1ba6195c94811126d1162139c51aff77fc68c3e320c7bb6c1e89e76bc9b",
+        "scripts/tests/test_native_desktop_stack_freshness.py": "904f90bc6d364763673fa6067d98a4227d535760fa8b6d26abe22208176997ca",
+        "scripts/tests/test_relevance_evaluator.py": "2fe56a4d6fe5fff15ff592274b0eeaba925146cefea6c0fa29d8f1b77c9aca1f",
+        "scripts/tests/test_style_taxonomy.py": "cd14d0092e8a454d213aa104b53e4e70ba698491fa00fde9fdec5ca8a3d70011",
+        "scripts/tests/test_text_layout_resilience.py": "b51d32ee8a15505b87cb81957fb2d1b385e041e8beb4463c311d236bfd29ebd4",
+        "scripts/tests/test_web_stack_freshness.py": "becc5fa40e7516613d4e9930f226aa483e3796090c17cb16542c93d1927e680d",
+        "scripts/tests/fixtures/relevance-baseline.json": "38398452985116e74e31bd6bccca0f4decd1bbfe4eebc1ac99f7a1836baaf77f",
+        "scripts/tests/fixtures/relevance-cases.json": "e77d36eebbf6ddc2860946a02cdb659351da6c09f2688f1ed30939a418099646",
+        "scripts/tests/fixtures/relevance-thresholds.json": "9d738e11c6b82fecc8d0946e7b38515518ded5ed3294a7eb19a021c4edb5b57d",
+        "scripts/tests/fixtures/catalogs/google-api.json": "22d8dc81a7d6827b7e8b64b53e7d184210fb9759e8e294e0d5133c81cc460176",
+        "scripts/tests/fixtures/catalogs/google-catalog.json": "c608ad5c4084ebc50a4bbbfb69ea2456c01fd5519c457e18410fffd250ae948f",
+        "scripts/tests/fixtures/catalogs/google-existing.csv": "4e0761b839dc6b2187a370e82eddc0aed8a7ff10c09e28dd814bb3656dac595b",
+        "scripts/tests/fixtures/catalogs/google-metadata.json": "30bffc29ae348416a2de2f9c6c418e768e4578f136b0f4bac5d2f70124f2e9ba",
+        "scripts/tests/fixtures/catalogs/google-overrides.json": "6243a48a4619986768c4628e2d0c98ff195beba71ba9be5df8f0c52fc6d90c0b",
+        "scripts/tests/fixtures/catalogs/icons-curated.csv": "68362c9a700c13b96f000784a0198c1c7e117a7088a01c85744e44233038fe9d",
+        "scripts/tests/fixtures/catalogs/phosphor-core.json": "ae4d0bb076240824e1b643c2270d1f8cc0952a69502ec1e622b7dedd85b930bb",
+        "scripts/tests/fixtures/catalogs/phosphor-package.json": "500588c757d6de03e3d7e69b27a8b8b1f88ccf6bb0333e4c1e9b0d6a4f112475",
+        "scripts/tests/fixtures/catalogs/phosphor-react-exports.json": "d79f2ee0afdbc2f87776733e145df3538a16a25d7c2fba0056bb48295dad0ded",
+        "scripts/tests/fixtures/catalogs/phosphor-react-package.json": "1c57a1d76bcc0cdd3632d4c18b9c0e79576b4591df39831c9607e5d0eb4f2cec"
+      }
+    },
+    {
+      "name": "wait-what",
+      "source": "~/.agents/skills/wait-what",
+      "destination": "productivity/wait-what",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "d961bb37defd975c539427edb8f450cdbccdcdd552e213c1ece46676a7970905",
+        "agents/openai.yaml": "b41faadf741d51e4ea184148b2d1854d93f947aaf754c7844f70a00f04194999"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/productivity/wait-what/SKILL.md",
+        "skillFolderHash": "c8b050e6b8c711be1a9008ceacb2126914f0763e"
+      }
+    },
+    {
+      "name": "wayfinder",
+      "source": "~/.agents/skills/wayfinder",
+      "destination": "engineering/wayfinder",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "0c9fa96791aebf3b7d654cf35c6aadde97d81f57c17b07d13b27c14d9c46561f",
+        "agents/openai.yaml": "88bc81a11a6d52ac67aeaa76b8b619e387020d47c5133a4dd4927fd15c4ad073"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/engineering/wayfinder/SKILL.md",
+        "skillFolderHash": "25da74eadc3e388b2f2a2cc716f3d44b2fb9dfe0"
+      }
+    },
+    {
+      "name": "webapp-testing",
+      "source": "~/.agents/skills/webapp-testing",
+      "destination": "testing/webapp-testing",
+      "status": "active",
+      "file_count": 6,
+      "file_hashes": {
+        "LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+        "SKILL.md": "51b7349e77ec63b7744a6f63647e7566a0b4d2e301121cc10e8c2113af6556a2",
+        "examples/console_logging.py": "ea46877289acb82da7e7ce59d0bc37c8977cd57e2a006d0c88d7a1c625bf95da",
+        "examples/element_discovery.py": "d63c89604a22f8845d724e95dda45db49b1bf57c25ce0a83afbb7b8da3d402f0",
+        "examples/static_html_automation.py": "9d533aafb875ee3ab8b8ebf8f5b9003ac8d999da3d09b285cce252e623140064",
+        "scripts/with_server.py": "b0dcf4918935b795f4eda9821579b9902119235ff4447f687a30286e7d0925fd"
+      },
+      "upstream": {
+        "source": "anthropics/skills",
+        "sourceUrl": "https://github.com/anthropics/skills.git",
+        "skillPath": "skills/webapp-testing/SKILL.md",
+        "skillFolderHash": "5ffb7dc66b9fd4c25c3e400a4c00da99a349b714"
+      }
+    },
+    {
+      "name": "wizard",
+      "source": "~/.agents/skills/wizard",
+      "destination": "engineering/wizard",
+      "status": "active",
+      "file_count": 3,
+      "file_hashes": {
+        "SKILL.md": "bdf31d48211ea559878f95a4f344aeabf8d85897488ba564382bab0b000daac1",
+        "template.sh": "6566f147299bc6f1d941e64591ed04385416d543e11f96f564c7228f5018d0ed",
+        "agents/openai.yaml": "98f44d682d58e262f160dc59a8befc365e0aa65820dd0261864af26aa8e59d83"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/engineering/wizard/SKILL.md",
+        "skillFolderHash": "e396d3ba97c723a78ffd350fb14a3c409137b306"
+      }
+    },
+    {
+      "name": "write-a-skill",
+      "source": "~/.codebuddy/skills/write-a-skill",
+      "destination": "utils/write-a-skill",
+      "status": "active",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "be8f20e66309258034b82a7db5040b03798aa40546f9d387662c2bd86be23123"
+      }
+    },
+    {
+      "name": "writing-beats",
+      "source": "~/.agents/skills/writing-beats",
+      "destination": "in-progress/writing-beats",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "a96abafa2372eede8267d770138b322d6125da8adaa7ccf0a5e08e4ee13ee71e",
+        "agents/openai.yaml": "ddaef01da61d8e3c5f482c4403033c20cf5823f08a1dbf1d4c871670831d01e2"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/in-progress/writing-beats/SKILL.md",
+        "skillFolderHash": "3a28fb076fdaaec0927080718abb98fc0f340011"
+      }
+    },
+    {
+      "name": "writing-beats",
+      "source": "~/.codebuddy/skills/writing-beats",
+      "destination": "_local-variants/codebuddy/writing-beats",
+      "status": "archived-variant",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "0843367d0a653bb17e61b3771d0ec08fa463663bc0ab6f3f421141b2687c4429"
+      }
+    },
+    {
+      "name": "writing-for-agents",
+      "source": "~/.agents/skills/writing-for-agents",
+      "destination": "productivity/writing-for-agents",
+      "status": "active",
+      "file_count": 3,
+      "file_hashes": {
+        "SKILL-MECHANICS.md": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
+        "SKILL.md": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+        "agents/openai.yaml": "eacb24b2a618cfb81dacb0416f4fdd75ddf3a8060f8ddb99aae1b1e301907e4b"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/productivity/writing-for-agents/SKILL.md",
+        "skillFolderHash": "ad2925850efb8973a72d2e666f7a975f9a2d4a9b"
+      }
+    },
+    {
+      "name": "writing-fragments",
+      "source": "~/.agents/skills/writing-fragments",
+      "destination": "in-progress/writing-fragments",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "298b0edd23df229183630de592ed8aa4289233560f2040691f6eb77caeaad4ea",
+        "agents/openai.yaml": "81167f25ee8ea1bb4b4958f12b6702ea972ad31b05e03ec91e39fa4bae0c2641"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/in-progress/writing-fragments/SKILL.md",
+        "skillFolderHash": "98e500e0097ec80f52f6a024c5a2ff6d15235bdb"
+      }
+    },
+    {
+      "name": "writing-fragments",
+      "source": "~/.codebuddy/skills/writing-fragments",
+      "destination": "_local-variants/codebuddy/writing-fragments",
+      "status": "archived-variant",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "4ffa34a701caff27da54b9e073fef48471f0ccafee009d404c22ae542d0e8dea"
+      }
+    },
+    {
+      "name": "writing-shape",
+      "source": "~/.agents/skills/writing-shape",
+      "destination": "in-progress/writing-shape",
+      "status": "active",
+      "file_count": 2,
+      "file_hashes": {
+        "SKILL.md": "f5e6c57bdd85178ace4a260c92f46da6b64ddee18215b461d875739c68976f72",
+        "agents/openai.yaml": "56de45430e23104ff178415f5ecf7821d51a9cfabd8814b1607ebf39da2ef5cd"
+      },
+      "upstream": {
+        "source": "mattpocock/skills",
+        "sourceUrl": "https://github.com/mattpocock/skills.git",
+        "skillPath": "skills/in-progress/writing-shape/SKILL.md",
+        "skillFolderHash": "ac92229646fccf7315ae139c37b479b3790617f2"
+      }
+    },
+    {
+      "name": "writing-shape",
+      "source": "~/.codebuddy/skills/writing-shape",
+      "destination": "_local-variants/codebuddy/writing-shape",
+      "status": "archived-variant",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "81a542b95fa865325835bf5ec7644a98e657c1e0f3374c56cb9f3b42b374660f"
+      }
+    },
+    {
+      "name": "zoom-out",
+      "source": "~/.codebuddy/skills/zoom-out",
+      "destination": "productivity/zoom-out",
+      "status": "active",
+      "file_count": 1,
+      "file_hashes": {
+        "SKILL.md": "2a6894c7f9b1c9c55f451c625a834c4f377e217b623a85280e55db5fe9cacf48"
+      }
+    }
+  ]
+}

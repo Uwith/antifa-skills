@@ -1,0 +1,161 @@
+# DejaOS CLI Workflow
+
+## Contents
+
+- Command contract
+- Create a project
+- Install the UI font
+- Run on a USB device
+- Inspect logs
+- Repeat after changes
+
+## Command contract
+
+- npm package: `dejaos-cli`
+- executable: `dejaos`
+- requirement: Node.js 18+
+- project selector: append `--project <absolute-project-directory>` to commands when not running from the project root
+
+Check and install:
+
+```text
+dejaos --version
+```
+
+Do not treat a failed direct command as proof that the CLI is uninstalled. Codex, sandboxed tools, IDE terminals, and user terminals may have different `PATH` values.
+
+Before offering installation, run the applicable discovery checks.
+
+Windows:
+
+```text
+Get-Command dejaos -All -ErrorAction SilentlyContinue
+where.exe dejaos
+cmd.exe /d /s /c "dejaos --version"
+npm.cmd prefix -g
+npm.cmd list -g dejaos-cli --depth=0
+<npm-prefix>\dejaos.cmd --version
+%APPDATA%\npm\dejaos.cmd --version
+```
+
+macOS/Linux:
+
+```text
+command -v dejaos
+npm prefix -g
+npm list -g dejaos-cli --depth=0
+<npm-prefix>/bin/dejaos --version
+```
+
+If an executable exists, retain and use its absolute path for the task. If the restricted environment returns access denied, request elevated execution or ask the user to run the absolute-path version command in their normal terminal. Report "installed but not callable from the current execution environment," not "not installed," and do not reinstall merely to repair the current process's `PATH`.
+
+Only when all discovery checks fail, ask for approval and install:
+
+```text
+npm install -g dejaos-cli
+dejaos --version
+```
+
+Do not claim installation succeeded without a verified version result.
+
+## Create a project
+
+Use:
+
+```text
+dejaos new <model> [name] [directory] [sdk]
+```
+
+Example:
+
+```text
+dejaos new DW200_V20 my_project ./my_project 2.0
+```
+
+The command fetches the current device-model metadata, creates `app.dxproj`, installs default SDK components, and prepares `dxmodules/`. It fails if `app.dxproj` already exists. The generated project keeps the selected device model in `model`; `mainModel` may identify the main model used for SDK and component downloads. Preserve both fields.
+
+Read `tools-http-api.md` for the complete model-to-main-model-to-SDK-to-component HTTP lookup contract. Do not rely on an external source checkout to recover these endpoints.
+
+After creation, verify at least:
+
+- `app.dxproj` exists and contains the requested `model`.
+- `src/`, `resource/`, and `dxmodules/` are present as expected.
+- Required components are named in `app.dxproj` and their wrappers exist in `dxmodules/`.
+- Requested hardware features are supported by the model and confirmed SKU selections in `device-sku-capabilities.md`.
+
+Use `dejaos edit --project <project>` to edit model, SDK, or component selections interactively. After a deliberate manual `app.dxproj` change, run `dejaos install --project <project>`.
+
+After every install, treat the generated project-local `dxmodules/*.js` files as the API contract for those exact component versions. Before running the app, compare every component call in `src/` with the corresponding wrapper: verify exports, member names, argument order/count, constants, return values, and initialization requirements. Never modify the generated wrappers to make invented application calls work.
+
+## Install the UI font
+
+Create `<project>/resource/font/` and save exactly one selected font as `<project>/resource/font/font.ttf`.
+
+Use the Chinese font for a Chinese conversation, Chinese UI, or broader CJK coverage:
+
+```text
+https://raw.githubusercontent.com/DejaOS/DejaOS/main/tools/font_cn.ttf
+```
+
+Use the smaller English font only for an English conversation with English-only UI:
+
+```text
+https://raw.githubusercontent.com/DejaOS/DejaOS/main/tools/font_en.ttf
+```
+
+Download in binary mode with an available HTTP tool, then verify the file exists and has a non-zero size. Application code should reference:
+
+```text
+/app/code/resource/font/font.ttf
+```
+
+Do not use the GitHub HTML `blob` page as the download URL.
+
+## Run on a USB device
+
+First ask the user to confirm that the correct device is connected by USB. Once confirmed:
+
+```text
+dejaos run --project <project>
+```
+
+`run` connects to the USB device, syncs changed files, and starts the app. The CLI checks the project model against the connected device model; treat a mismatch as a blocker and do not bypass it.
+
+For the first deployment, recovery from stale incremental state, or a resource/deletion issue:
+
+```text
+dejaos sync --all --project <project>
+dejaos start --project <project>
+```
+
+Do not default to `--all` after every small edit; incremental `run` is the normal loop.
+
+## Inspect logs
+
+Use:
+
+```text
+dejaos logs --project <project>
+```
+
+Logs can be a long-running stream. Capture only a bounded startup window using the execution environment's timeout or background-process controls, then stop the log command cleanly. Inspect for:
+
+- syntax or module-load errors
+- missing resources or fonts
+- incorrect relative imports
+- uncaught exceptions or worker failures
+- device, UART, network, SQLite, MQTT, or HTTP initialization failures
+- repeated watchdog resets or restart loops
+
+Record the command outcome and the relevant log excerpt. A successful `run` plus a clean startup sample is device-backed smoke validation, not full functional validation.
+
+## Repeat after changes
+
+For every material source, configuration, or resource change:
+
+1. Re-check imported components and API calls against the current `dxmodules/*.js`.
+2. Run available syntax or static checks.
+3. Run `dejaos run --project <project>` when the correct USB device remains confirmed.
+4. Capture and inspect a bounded `dejaos logs --project <project>` startup sample.
+5. Fix obvious errors and repeat.
+6. If no device is available, explicitly mark device execution and logs as pending.
