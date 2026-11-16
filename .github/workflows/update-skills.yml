@@ -19,7 +19,6 @@ jobs:
     timeout-minutes: 30
     env:
       GH_TOKEN: ${{ github.token }}
-      SKILLSHARE_CONFIG: ${{ runner.temp }}/skillshare-config.yaml
     steps:
       - uses: actions/checkout@v4
       - name: Install pinned Skillshare release
@@ -36,6 +35,8 @@ jobs:
           echo "$RUNNER_TEMP/skillshare-bin" >> "$GITHUB_PATH"
       - name: Configure isolated source
         run: |
+          echo "SKILLSHARE_CONFIG=$RUNNER_TEMP/skillshare-config.yaml" >> "$GITHUB_ENV"
+          export SKILLSHARE_CONFIG="$RUNNER_TEMP/skillshare-config.yaml"
           python3 - <<'PY'
           import json, os
           from pathlib import Path
