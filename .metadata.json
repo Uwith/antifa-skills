@@ -23,7 +23,7 @@
     "agents-context-router": {
       "source": "https://github.com/runkids/agents-context-router.git/skills/agents-context-router",
       "type": "github-subdir",
-      "installed_at": "2026-11-15T01:03:05.923806+08:00",
+      "installed_at": "2026-11-16T14:08:57.127746+08:00",
       "repo_url": "https://github.com/runkids/agents-context-router.git",
       "subdir": "skills/agents-context-router",
       "version": "39ef0db",
@@ -597,6 +597,942 @@
         "references/targets.md": "sha256:336a1e874696111c27102f07d9c0f5299d0856fc47707f49c4d355383c12f822",
         "references/trash.md": "sha256:e53ddc74ccf633d1c67481e616df584542dd882bac3a10e0857459628322f219",
         "scripts/run.sh": "sha256:e434ebdb7d3ae0b37c00ddc36687bc975da9e766b8cb863f9aed9a624ebbdfa9"
+      }
+    },
+    "design/algorithmic-art": {
+      "source": "https://github.com/anthropics/skills.git/skills/algorithmic-art",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/anthropics/skills.git",
+      "subdir": "skills/algorithmic-art",
+      "version": "1780c5e",
+      "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+      "file_hashes": {
+        "SKILL.md": "sha256:3bc4092c09804853186524c826bc0621b940bb6122c05b84496dff95388e6eef",
+        "LICENSE.txt": "sha256:bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+        "templates/generator_template.js": "sha256:9ee0f1da52ef8f7bbfde1917123654880890d43f2d388642d71eab6dd78f94c4",
+        "templates/viewer.html": "sha256:86c79d7ce97d2599ebe4bd9b97fdeb7295c9d3ed61ceeb513cbe1b2bb5d1ce29"
+      }
+    },
+    "engineering/ask-matt": {
+      "source": "https://github.com/mattpocock/skills.git/skills/engineering/ask-matt",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/engineering/ask-matt",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "PHASE-BOUNDARIES.md": "sha256:a8aa20158609ef39e2b308b6ba0660c91066838d07a867202e63a7744a88a3ed",
+        "SKILL.md": "sha256:1371f5ce005de0992a44b137748bfb960a56948aa9871b405fe9d90b24332e3c",
+        "agents/openai.yaml": "sha256:bdffbc5a0a99ed1b6ef3253d251d755fd18162b9845972e380007f844b09b05c"
+      }
+    },
+    "testing/bruno": {
+      "source": "https://github.com/TerminalSkills/skills.git/skills/bruno",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/TerminalSkills/skills.git",
+      "subdir": "skills/bruno",
+      "version": "4228905",
+      "commit": "42289059901710441bfa8081c08c3a9f36b93f9c",
+      "file_hashes": {
+        "_scores.json": "sha256:65e17adf9f469ffd311ce675a812556f3cb5dbc50948918a8598965381a24cb5",
+        "SKILL.md": "sha256:1455ba338e9d69a5a1a085c9bddf0f2365a7dbceb717683570f988304106ae94"
+      }
+    },
+    "in-progress/chief-of-staff": {
+      "source": "https://github.com/mattpocock/skills.git/skills/in-progress/chief-of-staff",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/in-progress/chief-of-staff",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+        "agents/openai.yaml": "sha256:c0f68ed9da6977adc97a791be3bb0830d301b2d27f9c635d92d6f325bffefb83"
+      }
+    },
+    "in-progress/claude-handoff": {
+      "source": "https://github.com/mattpocock/skills.git/skills/in-progress/claude-handoff",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/in-progress/claude-handoff",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:79357a18425d66d4c24048bedf83dceb79d3bba356f38014950f764a7fab4026",
+        "agents/openai.yaml": "sha256:2308a672978864633286fb9f0792b08657e501426b3f7883fc418d5d2eac5eb0"
+      }
+    },
+    "engineering/code-review": {
+      "source": "https://github.com/mattpocock/skills.git/skills/engineering/code-review",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/engineering/code-review",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:9c921a8d88138a41401d8897ca1bb852088ab1b7b605cdd04edc13e3e8aab6dd",
+        "agents/openai.yaml": "sha256:8229ca854e11dc8e6aef2131ee03f31fb1561cf905fab9ccc325180cf3331352"
+      }
+    },
+    "engineering/codebase-design": {
+      "source": "https://github.com/mattpocock/skills.git/skills/engineering/codebase-design",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/engineering/codebase-design",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "DESIGN-IT-TWICE.md": "sha256:c222ab5a82e0405672eb9062d62496139a08828e45d07fc5f18e4952c10fac1a",
+        "SKILL.md": "sha256:2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2",
+        "DEEPENING.md": "sha256:f3dd099ce99289bd213914d8ee3e2429b78309c3957ca4583f7659551b1d53c1",
+        "agents/openai.yaml": "sha256:edebc9e4fcfe102114012575eaa9600b9b5fd08c311664f389c36e7bc717740f"
+      }
+    },
+    "embedded/dejaos/dejaos-app-dev": {
+      "source": "https://github.com/DejaOS/DejaOS.git/skills/_temp/dejaos-app-dev-zh-review",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/DejaOS/DejaOS.git",
+      "subdir": "skills/_temp/dejaos-app-dev-zh-review",
+      "version": "dedb75a",
+      "commit": "dedb75a4d4cc9c71cf079f4c8e04c01d98e2aa5b",
+      "file_hashes": {
+        "SKILL.md": "sha256:b5862e5c4e8aaee672e257c05a72f1e58ac43dbfafdec77c37942a7432bc0f55",
+        "references/sdk4-runtime.md": "sha256:89da66dfe13c63bc26cbd2a9bf4709607c7038608aecf838eb25846d7d73f5e0",
+        "references/face-app-rules.md": "sha256:5657259a4f845ff77df60057a7bac87c90c30ed2a648f40a7390353bc006211f",
+        "references/sdk2-components.md": "sha256:84bd1225d73593cef555b10a806c9b145fb246ee5081886242c410700cc1d291",
+        "references/sdk4-reference-project.md": "sha256:1b70ed38ebb74339276ed71433a1e3a4a51a78d0a99746f184515e5a9884825c",
+        "references/device-sku-capabilities.md": "sha256:0695ba5c54b055b6e2be0e69a0755efe7e1559c05b1d0c718c85684fedcf3309",
+        "references/sdk4-api-patterns.md": "sha256:b32708133e705abf0eab34e08d9185eaee84025e0c9523ff24148405770f0ccc",
+        "references/dejaos-cli-workflow.md": "sha256:f89a6a279cdd2592233607641530782c506757aeee7b7077724baf6e570da1d0",
+        "references/tools-http-api.md": "sha256:dbaf951a2ef8be32dfda5710a84997e0b040f686530e817ae66b2bdc38b86a57",
+        "references/sdk2-runtime.md": "sha256:ddbfc6363bfa986bd007f02169453e859929be2d34c22add78c7140d313696d5",
+        "references/device-models.md": "sha256:4671b3b3d7adbaf854a809778b877b157fa9ade4fe99243160cbcbb1f24cb730",
+        "references/dxmodules-api-audit.md": "sha256:8c2d373c0b8953817aa9381bc232e07a7fa1097326c529984c155431a6cc1c51",
+        "references/sdk2-large-app-patterns.md": "sha256:e1d42c42e96759966df71c053d058189aced99787aa4641015aa26946752d623",
+        "agents/openai.yaml": "sha256:fa6e97c5adf7915fca020052c8337b8548c2cf453f7991f36ef5e69723a821b4",
+        "scripts/resolve-device-sdk.mjs": "sha256:025e2740b18d8228eace77e00592da2e38ee0ab5ddd0bc8b034a8fbb37994cdf",
+        "scripts/install-skill.bat": "sha256:60c57321239414bbae9a0d72bd348276a85d3300a91d225edcd090d278c4c773",
+        "assets/UIManager.js": "sha256:2293f08b8ec38f00e701d0fc4d9d45428434804501c67bb1de3641eb1b3e0025",
+        "references/sdk4-reference-project/src/main.js": "sha256:4ba44d4b20fef14f7bd2a7bee20c6cf67ed83a72ca1cfa3b793dea822576e6bf",
+        "references/sdk4-reference-project/src/drivers/ivcore_driver.js": "sha256:bf52ff753aee4d46aec74a06b47abe9b0a2f7296d3b667163381031f20027180",
+        "references/sdk4-reference-project/src/drivers/watchdog_driver.js": "sha256:c6306baf26eb883b3d839aeaeb55bffe4f447a36ec8b6313ac2e22052a47077e",
+        "references/sdk4-reference-project/src/drivers/network_driver.js": "sha256:4a62352483feb304808de69b65844c3a31a8c5a38c1d00ee676516d7c0b1909f",
+        "references/sdk4-reference-project/src/drivers/diag_driver.js": "sha256:158dab3675a9b295d28b4ded195687d7cb5d84a32393fc32333a1322d6095091",
+        "references/sdk4-reference-project/src/drivers/capturer_driver.js": "sha256:25a4b5b6878fef61cb2b7c68b069ec4ad98741db54e4f65eabb59e7b21798072",
+        "references/sdk4-reference-project/src/drivers/pwm_driver.js": "sha256:6c51e42bb4c803625806317b8a2c0d6596f6b75a20c71526ffd0ee6de2bb507b",
+        "references/sdk4-reference-project/src/drivers/card_driver.js": "sha256:0c267e905f081f22a6e7cec204e160a7dd26d5ecbad9da7c53801953eb5fb147",
+        "references/sdk4-reference-project/src/drivers/capcal_driver.js": "sha256:c52d68f5fbdd4d3740bc6ec8f03979f8ce0ca6e2b1f0077b7857e1d28d21670d",
+        "references/sdk4-reference-project/src/drivers/scanner_driver.js": "sha256:ff6421ff09215e36c6b6dbbc2b9389c9426dc56f5f79ee99669e5582f4ebd209",
+        "references/sdk4-reference-project/src/drivers/gpiokey_driver.js": "sha256:4ba772c742d82e96122feb71c58d6a91dd15eac3c39a46201fab9fb7bb1b4c58",
+        "references/sdk4-reference-project/src/drivers/gpio_driver.js": "sha256:2bfd9023484b67e2333c7076aeeeb326e3b06347772c186cf81fe9228cac84c5",
+        "references/sdk4-reference-project/src/drivers/os_driver.js": "sha256:9398f10123e6dfbceb0c7146be7815b3a316d39ce0ca339aa9454350dd565097",
+        "references/sdk4-reference-project/src/drivers/time_driver.js": "sha256:3d7259ddf7bc0fc63e8f7b1f5662aca09173b4240d3aa362d9a869d4c7d3d933",
+        "references/sdk4-reference-project/src/drivers/finger_driver.js": "sha256:8d81f48715cf71bc8ab7010b71f2fd77fc6b5b25904f5f2e4291065912e06ebd",
+        "references/sdk4-reference-project/src/drivers/ota_driver.js": "sha256:8454165f4e0674bd22b1e34b506e3b36d5a1a5373dc40d5d1badcf7c8f412696",
+        "references/sdk4-reference-project/src/drivers/advert_driver.js": "sha256:c6cfbd8312c5dff0eba5b2b51eb0d3f62a07271409fdaeb70f782dc2ff23e1e9",
+        "references/sdk4-reference-project/src/drivers/display_driver.js": "sha256:633af751362f18601531929337ad244b601e91544ab6a777179bf6c4b7bfb3e8",
+        "references/sdk4-reference-project/src/drivers/face_driver.js": "sha256:ebbd8ff7e1b7301d746b9232cc6bef70060453ee54bcf870cb65ee8ac4a301be",
+        "references/sdk4-reference-project/src/drivers/audio_driver.js": "sha256:e65415aba2db7261ab102631f9dd7052818d0e8f718c08108777e136c1f2b665",
+        "references/sdk4-reference-project/src/drivers/intercom_driver.js": "sha256:f76b7ecae175a1f717e8d35a8fae6cb0e27504dbdb935697af5be672a2d17539",
+        "references/sdk4-reference-project/src/drivers/log_driver.js": "sha256:b2842ee9cf4d110d8ce2c816c855874be3735068b6731ac221107f1ff7a938fb",
+        "references/sdk4-reference-project/src/drivers/eid_driver.js": "sha256:db26cdefaf34c73eac947a5021262108935883a2aa539b18390e7365217854d9",
+        "references/sdk4-reference-project/src/core/events.js": "sha256:787d8be0b9c356f3190e3aad827987dc51d3997beff18689a663e8d107bde44f",
+        "references/sdk4-reference-project/src/core/store.js": "sha256:525b994fd2578888b60b3bdf122fceef243a82a21712749842edda97cd2a675b",
+        "references/sdk4-reference-project/src/core/error.js": "sha256:4736c69749496bf69be2282c6c1a58522259ee8d759a5cf4e484496bf53a9876",
+        "references/sdk4-reference-project/src/core/commands.js": "sha256:dee678b320bd11d3f15e8a39f7141782b5f9aa01bfc1a296ae16239564aeceaf",
+        "references/sdk4-reference-project/src/core/event_bus.js": "sha256:0bdfdabdbd7132ae7fe566e5490ac1435474545e426afb2c4a601ac41b278301",
+        "references/sdk4-reference-project/src/core/lifecycle.js": "sha256:64fdcd9871e3568f3993cdb1b600d6b15297be8315070417049a043ebae1734f",
+        "references/sdk4-reference-project/src/utils/config_code_utils.js": "sha256:1ff5324e0463ed7f351d06e011c6a449cb9b50016627cc852e04adf3ee81e458",
+        "references/sdk4-reference-project/src/utils/data_utils.js": "sha256:a572aec816f5098f6ef3572043d09f72dc1cf0af2095d3c38999553db2c2a5f9",
+        "references/sdk4-reference-project/src/utils/diag_log.js": "sha256:48f0b42f1611750ac46ea8b33e48aa7b77afda21675ece07cb52319ee7cf12d3",
+        "references/sdk4-reference-project/src/utils/mqtt_endpoint.js": "sha256:2d8d4868809f9d5fe1a7512307b21c8c17dd05c0b83ad06b3cc07f27aca3adbb",
+        "references/sdk4-reference-project/src/view/index.js": "sha256:820565da0f16e412659d18ad46008611104685a180e30677d14094d5db1b637a",
+        "references/sdk4-reference-project/src/view/ui_driver.js": "sha256:9fceb24a37a279817ba5b5e0bedfd58c3485b4e616bcd991ede625094941b1e8",
+        "references/sdk4-reference-project/src/domain/eid_domain.js": "sha256:f5a447adaa98e12efa6a4132725a99cda12472a48914c0f0e6f5849bc7845150",
+        "references/sdk4-reference-project/src/domain/permission_domain.js": "sha256:668242f3d82487cf052a494663be7b60f98968c08f7dc5f7ff1c2bea5d3c55ac",
+        "references/sdk4-reference-project/src/domain/log_domain.js": "sha256:864b5424aafcb7e02ce16a3dd07ae6afd77788f69faf6ef4e64f114d7fb39c7f",
+        "references/sdk4-reference-project/src/domain/intercom_domain.js": "sha256:968e99a54a60f76ba9c659e8986edadba030ff40ad5e522f4bb8b80fc4cec2ac",
+        "references/sdk4-reference-project/src/domain/face_view_domain.js": "sha256:749c3c07aeaa01d05b0ed9107d482074371ff3cd3fcdd1c5f05d8014a37cc633",
+        "references/sdk4-reference-project/src/domain/display_domain.js": "sha256:ccb2c4c6ef32859cdcec4a95dd9994da9fff916f8c92c44fc1bacffdee9ca41a",
+        "references/sdk4-reference-project/src/domain/advert_domain.js": "sha256:87b2ffe05590644eb454beaa973011ca0cc7b1edcd68c81f7ec64d6de0b1f85d",
+        "references/sdk4-reference-project/src/domain/wecom_domain.js": "sha256:c36d1dcd7b25dec09344496bc492123dc3d1fb624e2c258aba089df48da4d672",
+        "references/sdk4-reference-project/src/domain/face_domain.js": "sha256:9b94f5d0fdd9fa527e29c7c47a45182eff637c37f55b147d62ff81fc93cd176e",
+        "references/sdk4-reference-project/src/domain/audio_domain.js": "sha256:febbe7f529d4eb5a4e2de853b3e8c66b30cc2f3ef49c83ed464d30abd805ea37",
+        "references/sdk4-reference-project/src/domain/door_domain.js": "sha256:80d93937bc1be8108b22da21906516060bd8297abae1f2592d04e3a125f30e62",
+        "references/sdk4-reference-project/src/domain/time_domain.js": "sha256:88e87cadf0d50a98140f93db6c4bb78b2a7e60108703c64300102edfa03c4557",
+        "references/sdk4-reference-project/src/domain/finger_domain.js": "sha256:400e3c4b6a841d818d742a8c201d1a2e63a3025400a52fff82e99ac23e73e4bc",
+        "references/sdk4-reference-project/src/domain/mqtt_domain.js": "sha256:0299323f57fdc1b0c45915d89bd925e5323d340407ad49b0b500c2b52949cc0f",
+        "references/sdk4-reference-project/src/domain/login_auth_domain.js": "sha256:dc13fddcfc84f4e9b2a75838ac49f91a519af1c62309bbf4ae23a748f0a96443",
+        "references/sdk4-reference-project/src/domain/verify_domain.js": "sha256:40655d212e22692f20abb38be4d4b15313026caf07c121c8bd3bd82ad3ca055d",
+        "references/sdk4-reference-project/src/domain/ui_domain.js": "sha256:df1d343d1039c6bd6d1c63d1838b12213a23363f5a05c5fc5ccd9ee4ce7d2c33",
+        "references/sdk4-reference-project/src/domain/person_domain.js": "sha256:2e120be053e53e7c472f02b3e28272b1e360ea1236f4f0e3a77eed69a7da2dbd",
+        "references/sdk4-reference-project/src/domain/security_domain.js": "sha256:1ec9a54f5869f2b88ba71d483d555975ab2546b7d7def85cf4644938b89e5a5c",
+        "references/sdk4-reference-project/src/domain/record_domain.js": "sha256:e799c9a58bd10e2dd970488c546e4f31af852083120f37588a04c206309e8d52",
+        "references/sdk4-reference-project/src/domain/capcal_domain.js": "sha256:80aca70b20f0557e3d06f3e25a264b56f3e79cfd96567636438e01327fbacd63",
+        "references/sdk4-reference-project/src/domain/verify_flow_domain.js": "sha256:ca1a4976ec6ec77449f64be80005fce77492c2cea6b4d5f722b5a1b9aa94bc53",
+        "references/sdk4-reference-project/src/domain/light_domain.js": "sha256:50dfcfcdfdaf6ec9703e166c1272963c3a51063119959135d6a08e5dbbaf50f0",
+        "references/sdk4-reference-project/src/domain/network_domain.js": "sha256:741d6bcf07a5048ac292361b199a64ade568bb3d30032e6e2df8adba8c4911bd",
+        "references/sdk4-reference-project/src/domain/software_domain.js": "sha256:e5caf960ca40cdb3b7af6a1bbd01a1f92b1e3fbb3a8fdb6e414d66772b7569a2",
+        "references/sdk4-reference-project/src/domain/diag_domain.js": "sha256:9a9945bca7f91904a6ebcf7d12297269bcbc268926de844bb5b346fd0c01559a",
+        "references/sdk4-reference-project/src/domain/voucher_domain.js": "sha256:8e8d82c20bbb6bec03aab8e12874806eaa01a1adcbb6f00da7a02fba33a94758",
+        "references/sdk4-reference-project/src/domain/nfc_domain.js": "sha256:f1f6c46ba9313da58275ec495b12ff427946c19eaa3825d4abaaf13ba8008bad",
+        "references/sdk4-reference-project/src/domain/alarm_domain.js": "sha256:8f6572b986ca460f26d61c18131d039f1af260e3116ce1a5afe0a550250140aa",
+        "references/sdk4-reference-project/src/domain/door_schedule_domain.js": "sha256:36e8117fdcb49a5b1564547af43693f20853af0196247ac263f29c33d6e151a7",
+        "references/sdk4-reference-project/src/services/advert_service.js": "sha256:91fde7f390be7679f76f174ae1dad71a61fc7f3e87797b45803d92b64dd8d815",
+        "references/sdk4-reference-project/src/services/code_service.js": "sha256:d2ae3925443366470dba752a82141d9c3d8c6b7c9e5ef6a699136de50c337bb4",
+        "references/sdk4-reference-project/src/services/door_service.js": "sha256:2f4ffd131dbb6cd35fc6cc58f8ad3a38e5ac86f5f93b0e01c458bbf74f61f1d9",
+        "references/sdk4-reference-project/src/services/diag_service.js": "sha256:9557aee63573de6746bb2ec029243cdf1b5fdefc1fa0af991c52a43a11a9fe1d",
+        "references/sdk4-reference-project/src/services/alarm_service.js": "sha256:fb95334d24a2d6a797c43aee14ba657823d60ce128a76d136d72253ef66c17ff",
+        "references/sdk4-reference-project/src/services/access_reporter.js": "sha256:3058f36cb211286b90617ece37b0b705aff42e7f8c1eddb1b4055f0b64766f17",
+        "references/sdk4-reference-project/src/services/control_service.js": "sha256:28e0baedc3ea5fa8e930a717ba59453f790c160e588ee039b2d21a307c0a028a",
+        "references/sdk4-reference-project/src/services/face_service.js": "sha256:36de30a7e93834d19c76d9af41f1616786f18d32bdf3284e144ce9bf3d3f2cf9",
+        "references/sdk4-reference-project/src/services/config_service.js": "sha256:2262596b2d3fe44b2ba48707d0de2c1045ebfad81b9f504bbc3255ca5feab35b",
+        "references/sdk4-reference-project/src/services/capcal_service.js": "sha256:666c717e14393bfc4d13c3cdf53512ace81e1353fa19bc82d287b5a1ff1cd2ad",
+        "references/sdk4-reference-project/src/services/wecom_service.js": "sha256:7c92ee2a56a99fc57e49592a619bb2c049fcb7dd4a854760406441034761f927",
+        "references/sdk4-reference-project/src/services/state_service.js": "sha256:77556a689549d73b94d00a113ba94f7af05a2d88a9455e41ef2d5ba8a7146826",
+        "references/sdk4-reference-project/src/services/call_service.js": "sha256:588229276798d4dc7dc47058f292feaca5c6b865b999d948b18f8d8e16fb9682",
+        "references/sdk4-reference-project/src/services/access_service.js": "sha256:913568c71a4765957cb40c9048bd05f08f49a56c496c5f34ae620a1778c33a31",
+        "references/sdk4-reference-project/src/services/login_auth_service.js": "sha256:3106ad1246310de3ee1404cc60f3ab0cf927be35d994b092228f83ad29fc57f3",
+        "references/sdk4-reference-project/src/services/grant_service.js": "sha256:214a67971cf2d20ff6dadc7bf3322264ed137e8b9b62b4fa864f85f532a1ff91",
+        "references/sdk4-reference-project/src/storage/config/rules.js": "sha256:bc157f422d7c361f54bac39611148977c75e9989bacbf130c2b1deb1002fd7fe",
+        "references/sdk4-reference-project/src/storage/config/config.js": "sha256:edac39f54547b1253505fd27e39eeb2bb78ef1ffe939dbc0f6a2c52f349924f9",
+        "references/sdk4-reference-project/src/storage/sqlite/sqlite.js": "sha256:a37d13c26f82f348ec4a1817d03c6e692297df21024fb0d46f8a65d821581984",
+        "references/sdk4-reference-project/src/storage/data/security.js": "sha256:0f4530cec81ade986d0464fba1d8a91ab60b1b652c34676f069742d93ce0aa8b",
+        "references/sdk4-reference-project/src/storage/data/permission.js": "sha256:e3cfa8a75584652bd1d0bae0c065cfe1f12fea7142d9d4f7962e446b8025dc75",
+        "references/sdk4-reference-project/src/storage/data/person.js": "sha256:b509508b579f75192270a7e4e28a1e8bea3c29b2ededda5d8022d5f755d58c14",
+        "references/sdk4-reference-project/src/storage/data/voucher.js": "sha256:0b1c9212d89b74338b8b75a25c5a93ce34767b17021757550fb34f3d9a4dfc83",
+        "references/sdk4-reference-project/src/storage/data/door_schedule.js": "sha256:905a66c0d4ce95c33c03c8c99fea14687fc64f112ee2ea2eaecad171126a5558",
+        "references/sdk4-reference-project/src/storage/data/sql.js": "sha256:64a5a7323f575fc39687dfd21a660a53d6a75261af9933e083d911728dc2c1a7",
+        "references/sdk4-reference-project/src/storage/data/data.js": "sha256:1a707d78192fa9433cef8ba0c1cf76302b95363f7be8ece802fdcc7094dcd952",
+        "references/sdk4-reference-project/src/storage/data/record.js": "sha256:61e970d2afab54750b35752caf7f69274e8ab44ef82c146277a09fa3d2f992ab",
+        "references/sdk4-reference-project/src/view/core/capability_store.js": "sha256:cb0a8a05455ed5b93c65a5e4d5c10e8847168138ceb6ca07d7a49ffb52fd661a",
+        "references/sdk4-reference-project/src/view/utils/datetime.js": "sha256:01428b8f0a9d0dbb7c207b4d22b519ca25fa015573830f518926b4476e5f8cb5",
+        "references/sdk4-reference-project/src/view/utils/text_metrics.js": "sha256:b0020c5330f68388c3cb147d95d837f9006c9edd18640a202b341d03d0fbd420",
+        "references/sdk4-reference-project/src/view/utils/assets.js": "sha256:e25e79e129f5cfd7bc3144373cafeb175586ff64e84047b791916176144175e0",
+        "references/sdk4-reference-project/src/view/components/layout.js": "sha256:0e17ba7afb0484dad221c4c07f411a5b65438604f0dc8516369f24be9eb33787",
+        "references/sdk4-reference-project/src/view/components/idle_home.js": "sha256:9b27650f784fd39a9748049b2b18b98e2dd8c6dea6e73c988a67fcb04f5ab49a",
+        "references/sdk4-reference-project/src/view/components/popup.js": "sha256:10b2402fc2008b73bfcc154f6d73d51e0e815f8f005c6ca31dbbae9f7e7d00ab",
+        "references/sdk4-reference-project/src/view/components/font.js": "sha256:24b7a6d2dab725e279990463388267da7a0c4d59d237f0ac2969e342366f4783",
+        "references/sdk4-reference-project/src/view/components/result_popup.js": "sha256:de9fd6e2f1a868829a629cb20a039530d30b544e7bd95f5fb2a5b7101ec8bc45",
+        "references/sdk4-reference-project/src/view/components/status_bar.js": "sha256:ef47768a3bd936b6227b3bf4a5a9fd4f695f110cf42223c321bb13d281a54ccb",
+        "references/sdk4-reference-project/src/view/components/page_header.js": "sha256:3f220685293bc29df5f705f9361550b1350076f3c69bc89c7ae929942c0baf0f",
+        "references/sdk4-reference-project/src/view/components/theme.js": "sha256:34286db9adcf3471bd2ae3d8c068ed3cb85e4a95267914abb14a4b767907d793",
+        "references/sdk4-reference-project/src/view/components/screen_off.js": "sha256:c7acedb36f05dff3a170c23e16d1ced51aeb53e2a193f056997adf17f661c98b",
+        "references/sdk4-reference-project/src/view/components/keyboard.js": "sha256:d0806898b7f4270c51d5bd79dbc047bf0704bd87e74ee283a4fb14371e89b3f7",
+        "references/sdk4-reference-project/src/view/components/confirm.js": "sha256:6648afc42fcc5d4c9823ac9de3b23c5db2469b30466d73a8820749d736c1b85e",
+        "references/sdk4-reference-project/src/view/components/face_box.js": "sha256:1c9baf5de2f58ba2e599632bb2d5c00075a81b555574df8706406d28eef3c2d4",
+        "references/sdk4-reference-project/src/view/components/loading_spinner.js": "sha256:b7e1b11582a510f449f4a93a81df6efb29c9abb63afb22f5acf43a8cedfcf685",
+        "references/sdk4-reference-project/src/view/components/screensaver.js": "sha256:01eae2e884cf6438781420f7429bc647562e0b44de670cbf8ba0b1675d62e96d",
+        "references/sdk4-reference-project/src/view/i18n/index.js": "sha256:0482f0c0ec8e88c31e9d6806dc3ad9a868410459146113194e83f9f8c454d9b1",
+        "references/sdk4-reference-project/src/view/i18n/en.js": "sha256:7ca41b15c54241b880f9efed0ee96468febe5fddb293b138dcbe3f2443f45273",
+        "references/sdk4-reference-project/src/view/i18n/zh.js": "sha256:66069591ad5f80da17018736c4c07954709b28e568f031ef4fadee7de2d84204",
+        "references/sdk4-reference-project/src/view/pages/base_view.js": "sha256:6d4f20d2270e37acadf24dc5f90b60155b9b51fd0d4686581c321e85973e8a82",
+        "references/sdk4-reference-project/src/view/router/core.js": "sha256:6ebfe8ef76cff04f3c15f8abfe154727893b889fafcaaec6afbea58dd749158e",
+        "references/sdk4-reference-project/src/view/router/routes.js": "sha256:628fc75fb199c347f3bf5cabcb43fe0294eb88876cfb0b57b08fffd90d97beb7",
+        "references/sdk4-reference-project/src/view/components/pinyin/pinyin.js": "sha256:02e0bfafd1fd39a259b847e9d2dda136d4b93679d227ae6822cf32348827a39c",
+        "references/sdk4-reference-project/src/view/components/pinyin/dict.js": "sha256:d5b01a2e52530d5d859a0d374b41da55e24aae7f2617b36d494f0862d6202f0c",
+        "references/sdk4-reference-project/src/view/pages/init/init_page.js": "sha256:fd7b0d551f454f46534777b3762d7dd202c66117d69d5e3d304b19796db40420",
+        "references/sdk4-reference-project/src/view/pages/settings/settings_page.js": "sha256:40afd89e1129d038f2d2fc55bc446ff3ba4bebc12cd313d9bcb6ddfbfff72745",
+        "references/sdk4-reference-project/src/view/pages/settings/settings_blank_page.js": "sha256:420748f96612cd1af17f3eead8cba138f4b97784190198da6bc85a03970fcfec",
+        "references/sdk4-reference-project/src/view/pages/settings/settings_menu.js": "sha256:cbf8ec7edabf23ffdb526a5ed32443218f846b380b5895170722c9fbdfe4476b",
+        "references/sdk4-reference-project/src/view/pages/home/home_store.js": "sha256:b54fd4f5c74e2b81a8fb112915463d093f4605b696ed5fe01c21eb45d00cafde",
+        "references/sdk4-reference-project/src/view/pages/home/home_page.js": "sha256:d816c63283244ef8ccd54de0c0f7eacea6b57d09be4e39f573e88141d07057c2",
+        "references/sdk4-reference-project/src/view/pages/cloud_cert/cloud_cert_store.js": "sha256:9f2da0db2853cbd0ebacf068f436c2db861d526c0ce07a07b9af6ff899eb5927",
+        "references/sdk4-reference-project/src/view/pages/cloud_cert/cloud_cert_page.js": "sha256:55dec44e0cc486c7cb1759064e6cfe95badc482a793b87dd2b86593b8fd5ba38",
+        "references/sdk4-reference-project/src/view/pages/password/password_store.js": "sha256:f1a1fd219bd18e5ff9be52152ac992f1f80c9df5f9769c26ddc6c717514913fd",
+        "references/sdk4-reference-project/src/view/pages/password/password_page.js": "sha256:369cdacc511c70e29d611e7e9c02cef119efbb77951a6e8f66fefa01c5215da9",
+        "references/sdk4-reference-project/src/view/pages/fingerprint/fingerprint_enroll_page.js": "sha256:4e9752a6b546db1020b2d88ded10433da2e571651b37a23ba4aadbede2a3c903",
+        "references/sdk4-reference-project/src/view/pages/fingerprint/fingerprint_store.js": "sha256:b1419958a91a1664335383b50e38c613c483efdc90ee7e05ea34de8157d2c514",
+        "references/sdk4-reference-project/src/view/pages/fingerprint/fingerprint_remote_page.js": "sha256:cc56b0cf77db907b0b7e911b2c744aaf4c13617e2e3ed5aa948a2a6967799e22",
+        "references/sdk4-reference-project/src/view/pages/record/record_store.js": "sha256:4fb888bccb881de92a972d01ad306553f777fae409483195ba838c729196894b",
+        "references/sdk4-reference-project/src/view/pages/record/record_detail_page.js": "sha256:dd97d7c342ec9e5ed2a7bbce534b827edb1c1a5d72dcce1afc46fd62970bab41",
+        "references/sdk4-reference-project/src/view/pages/record/record_page.js": "sha256:dc1cd23699b30a5ae1e094af78b41224f8e9a5768aa1c633db21e466f9c41055",
+        "references/sdk4-reference-project/src/view/pages/auth/auth_page.js": "sha256:ff6e228209e0092f317f005c03e88751cb3833db0e6c83e6d944450436ff1fc7",
+        "references/sdk4-reference-project/src/view/pages/auth/first_password_page.js": "sha256:5c118cf671e70e658d84874e7a6c82bc7cfb29a15234da3cb1fa1cca2b4acf0c",
+        "references/sdk4-reference-project/src/view/pages/auth/auth_store.js": "sha256:624d32f29b7b1fcbd37c3254a0edc0652aa1a71645058f817164b46ca5038c94",
+        "references/sdk4-reference-project/src/view/pages/platform/platform_page.js": "sha256:2b66b8d1f7849dd92240a8a8eb86f9c452c592f84db7e073af415e04b6f2bddb",
+        "references/sdk4-reference-project/src/view/pages/platform/platform_store.js": "sha256:b4d6b37ade95c2b78a86ec251242a4f0e0a8b846d0294d60d44695dd01a9f411",
+        "references/sdk4-reference-project/src/view/pages/wecom/wecom_store.js": "sha256:dfbc9ab62209c59f8c4125ce1d3c83d55a08628758d65986d4f32ecbdbf7d608",
+        "references/sdk4-reference-project/src/view/pages/wecom/wecom_network_page.js": "sha256:715ed43c43d27842ed99ad73d9d589c70b5499a9cc0ca46d1c974b012a634896",
+        "references/sdk4-reference-project/src/view/pages/wecom/wecom_bind_page.js": "sha256:84c526c0769bb3cf074481f69bb4ba2b5cac9f9b2e3acc972df36043155d07a9",
+        "references/sdk4-reference-project/src/view/pages/wecom/wecom_capture_page.js": "sha256:2c0d4c32b1435038a23e5e7665ecc250a257fcf4e914180172d1a774d19e5d3a",
+        "references/sdk4-reference-project/src/view/pages/wecom/wecom_footer.js": "sha256:a0666fd000f0426542e1da7b330278305c42fa4e0452acd785f7283252fca39c",
+        "references/sdk4-reference-project/src/view/pages/network/network_store.js": "sha256:ab6755d129404c7ef5fdb71fbd3e3730b0943026ffd4ccfde205a95b2e919cb6",
+        "references/sdk4-reference-project/src/view/pages/network/network_page.js": "sha256:08c198ea7287f79a4d7add6ef2be296539cd32cd50c44a68f5f6821beccce26f",
+        "references/sdk4-reference-project/src/view/pages/local_user/local_user_verifier_page.js": "sha256:7eceb0cd5e7a11a1917945c444d6e05eff197aa78b9312291bb4bc6ccfca46c5",
+        "references/sdk4-reference-project/src/view/pages/local_user/local_user_add_page.js": "sha256:dc2954b4392532f1bca270de47910330c1ed0fde71029b6bb7afffc4076ab550",
+        "references/sdk4-reference-project/src/view/pages/local_user/local_user_face_page.js": "sha256:a171dbe9ef27ff9077b0b3c23415c10dd195e842ededd7ecc2ff248c07359448",
+        "references/sdk4-reference-project/src/view/pages/local_user/local_user_page.js": "sha256:81fda7151a75c2f7559a5aad21da3526b55dac37cfa0675e5838d0bc9771eedb",
+        "references/sdk4-reference-project/src/view/pages/local_user/local_user_store.js": "sha256:fa78ca7dff9d49eef7bc47fb7f565126f6d185d88227ff81ea01111ecdc90059",
+        "references/sdk4-reference-project/src/view/pages/system/system_section_page.js": "sha256:feab93f19f5fe1a62517b4fefb316fcdf643f4142656818e6b696fa1527d3103",
+        "references/sdk4-reference-project/src/view/pages/system/system_store.js": "sha256:f8664adaf8b4cd418d3be1ddeebccf5f52b33a564fa174fddfe88d0bd1ce8801",
+        "references/sdk4-reference-project/src/view/pages/system/system_menu.js": "sha256:3d63b5b56e6446a83343c40f6cc39336d4f4c800e51cc7b7265f01f2dde3eeb7",
+        "references/sdk4-reference-project/src/view/pages/system/system_page.js": "sha256:2335dd4043268a06c14d0419d0c5ddaf759988c0347cbef305a8819245571aad",
+        "references/sdk4-reference-project/src/view/pages/call/call_store.js": "sha256:a3a2bab14a9c274296dc9b7baedcc87b39e3d457098e39bccd48e0c2fecbda70",
+        "references/sdk4-reference-project/src/view/pages/call/call_page.js": "sha256:c92bc4b691de445162e70bb7e6c9dc95af354c9c89ca88150d19e371a619b0ce",
+        "references/sdk4-reference-project/src/view/pages/call/call_list_page.js": "sha256:70e048975728b26ad77edef4e3bfa1666929c72587d350ece22a778b06a2a152",
+        "references/sdk4-reference-project/src/view/pages/voice/voice_store.js": "sha256:dce8d71c79244f6c5aef48877776724076a8849d9ebd49e7321c4d54a0856e4b",
+        "references/sdk4-reference-project/src/view/pages/voice/voice_page.js": "sha256:770b3fd8877f01ed29ffa36a71662eb420e16348165c6ced4a1753a1aa130e38",
+        "references/sdk4-reference-project/src/view/pages/diagnostics/diagnostics_page.js": "sha256:0aba4da403ef1cd795cead268147a0cc3c999cdd1ad5b50ced3a09b998d02d63",
+        "references/sdk4-reference-project/src/view/pages/diagnostics/diagnostics_store.js": "sha256:19d95b3ae0899cd57c2099dcb135cfa306acc96a0956493893bf69f09a892864",
+        "references/sdk4-reference-project/src/view/pages/device/device_store.js": "sha256:a8815c04326a46b8a4e98325d59f5866fe045a4a1e9c9843325856370ccaafc5",
+        "references/sdk4-reference-project/src/view/pages/device/device_menu.js": "sha256:fc541fa07f40bf0d26835d3c8a950eb1c6fb08ed397c0756aded3b74228db44e",
+        "references/sdk4-reference-project/src/view/pages/device/device_section_page.js": "sha256:0e2637b780c7bf88fca8ad6744ab9782d6de1b134bcbf40c14f5a3b0391ef682",
+        "references/sdk4-reference-project/src/view/pages/device/device_page.js": "sha256:a4c45d54af6dfe39db37e2eddacdedb7dde9dbeb68eddfbda55eaf6ef96bae59",
+        "references/sdk4-reference-project/src/view/pages/factory/factory_menu.js": "sha256:18eee997ab7d535988e7014ac90c026a13f3303095f45e166d8ea592fb247477",
+        "references/sdk4-reference-project/src/view/pages/factory/calibration_page.js": "sha256:1b882c8e03307ea434f741859a219d68f30108ddcf72a5d3d372652dc19bca0b",
+        "references/sdk4-reference-project/src/view/pages/factory/factory_page.js": "sha256:55f8164195b1caf714498fd6ee73b170f8bcde1af7aaa56bf51a94d277c1d789",
+        "references/sdk4-reference-project/src/view/pages/factory/capcal_store.js": "sha256:5a6ef7fb0032f50d765203943342dd07852eefb880f0fd9ba637d4683495e430",
+        "references/sdk4-reference-project/src/view/pages/help/help_page.js": "sha256:8a6ce5c855838adcacd5855ca4763d0cfa269e05dbcd2279efef7119e2ad6a95",
+        "references/sdk4-reference-project/src/view/pages/door/door_schedule_store.js": "sha256:c09226657b31ada17f5c0eb62d6ecd0264fccf6890d415736c372284ed20409c",
+        "references/sdk4-reference-project/src/view/pages/door/door_schedule_page.js": "sha256:9280f4fa0f48cea6662d8f55b5d1e7680850c1bfdb478d73ed14befda2ec3169",
+        "references/sdk4-reference-project/src/view/pages/door/door_store.js": "sha256:e97221d0fcce273bf5cfe7bc8207e0b11ef5362a09081d387161d22accf5e68f",
+        "references/sdk4-reference-project/src/view/pages/door/door_page.js": "sha256:c1b76fa82dec17cabb931b74cbbde334d3faf7237998d9af74eb599e6d743bf7",
+        "references/sdk4-reference-project/src/protocols/http/http_protocol.js": "sha256:5f3d11cb56aec41ce4b2ef41b3f2e01cefdb8b34711946df8ff8a97a8f6dc5c0",
+        "references/sdk4-reference-project/src/protocols/mqtt/mqtt_client.js": "sha256:7c184a46677b1794283df8dadf4cff2194c3291d6a99d9a29cd06e0eed61773b",
+        "references/sdk4-reference-project/src/protocols/mqtt/mqtt_protocol.js": "sha256:5c4c431d4b05cee400b654fdbc73d455afe8789e4e7e173c21d7ddb478bbfe52",
+        "assets/sdk2/VF105_V12-app.dxproj": "sha256:ae7eeecbd335081b4ed3c5d16225e3cf7c8ea60f424490fe448e7f5d654665e9",
+        "assets/sdk2/DW200_V20-app.dxproj": "sha256:f18e6ec47b8e04a6240dfa78af78a05233a8c4b979cad45c133eb44b3d07a359"
+      }
+    },
+    "embedded/dejaos/dejaos-app-dev-sdk2-0": {
+      "source": "https://github.com/DejaOS/DejaOS.git/skills/dejaos-app-dev-sdk2-0",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/DejaOS/DejaOS.git",
+      "subdir": "skills/dejaos-app-dev-sdk2-0",
+      "version": "dedb75a",
+      "commit": "dedb75a4d4cc9c71cf079f4c8e04c01d98e2aa5b",
+      "file_hashes": {
+        "SKILL.md": "sha256:9ce8e27695976409f10b3000c9779083ab9ac442cd6a3c30b6930f3c9f0411d9",
+        "references/device-sku-capabilities.md": "sha256:3a2ea9f28760ee72ab8f2a50344bd526b8d97aa401a820f3a9420e0f319230fb",
+        "references/fitlock-patterns.md": "sha256:11752b636838b537605ee8d7b147c12f2afd1de0d07f242c98fd74f68512642c",
+        "references/dejaos-cli-workflow.md": "sha256:688ca7ed7989645096d20161f0ca49649fdaf782093d870d5ea1490d9653bb34",
+        "references/tools-http-api.md": "sha256:210db04eff1d3656e1a5889f69386f7d1165f2ec9a1471c837e2a6a35d43c2e7",
+        "references/dejaos-guide.md": "sha256:d0125f45e38c1443861e85c82760abf7ee0b75f58e6da0c74fb32ff1ce94a97f",
+        "agents/openai.yaml": "sha256:5af9c116f6d894226b62cb13dcc2ee0d229087f780bc00ce291bf5e63d7388c6",
+        "assets/VF105_V12-app.dxproj": "sha256:ae7eeecbd335081b4ed3c5d16225e3cf7c8ea60f424490fe448e7f5d654665e9",
+        "assets/UIManager.js": "sha256:b0ce270ffbca041016f90a7f9e94690f59c0d791c706c8b9e5572f13e4821824",
+        "assets/DW200_V20-app.dxproj": "sha256:f18e6ec47b8e04a6240dfa78af78a05233a8c4b979cad45c133eb44b3d07a359"
+      }
+    },
+    "engineering/diagnosing-bugs": {
+      "source": "https://github.com/mattpocock/skills.git/skills/engineering/diagnosing-bugs",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/engineering/diagnosing-bugs",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:849198df88cdb65fd0d97236604c1fca7ff2f22d2f705f9724a800d0266b118d",
+        "agents/openai.yaml": "sha256:3e430dbe4334a87597488c060cb3dc3786bb00c9182877d6f5ec41f62490e90b",
+        "scripts/hitl-loop.template.sh": "sha256:35103539fc36873eea36074769ad454f9379d6fc8b2dc0e26ce987fd3bfe5503"
+      }
+    },
+    "utils/discernment-nudge": {
+      "source": "https://github.com/anthropics/skills.git/skills/discernment-nudge",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/anthropics/skills.git",
+      "subdir": "skills/discernment-nudge",
+      "version": "1780c5e",
+      "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+      "file_hashes": {
+        "SKILL.md": "sha256:9191177c4a8ef11a20dace786d708506b22d43e748c71287bb823de0dc812dad",
+        "LICENSE.txt": "sha256:bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362"
+      }
+    },
+    "documentation/doc-coauthoring": {
+      "source": "https://github.com/anthropics/skills.git/skills/doc-coauthoring",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/anthropics/skills.git",
+      "subdir": "skills/doc-coauthoring",
+      "version": "1780c5e",
+      "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+      "file_hashes": {
+        "SKILL.md": "sha256:2e47d78846faeea4a56e9809c52700087a15a2155a3f293a3efbaded81398ef4"
+      }
+    },
+    "engineering/domain-modeling": {
+      "source": "https://github.com/mattpocock/skills.git/skills/engineering/domain-modeling",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/engineering/domain-modeling",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "GLOSSARY-FORMAT.md": "sha256:21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801",
+        "SKILL.md": "sha256:7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3",
+        "ADR-FORMAT.md": "sha256:944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0",
+        "agents/openai.yaml": "sha256:f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b"
+      }
+    },
+    "frontend/frontend-design": {
+      "source": "https://github.com/anthropics/skills.git/skills/frontend-design",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/anthropics/skills.git",
+      "subdir": "skills/frontend-design",
+      "version": "1780c5e",
+      "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+      "file_hashes": {
+        "SKILL.md": "sha256:d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3",
+        "LICENSE.txt": "sha256:0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+      }
+    },
+    "misc/git-guardrails-claude-code": {
+      "source": "https://github.com/mattpocock/skills.git/skills/misc/git-guardrails-claude-code",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/misc/git-guardrails-claude-code",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:69b291d655626a01602b998a1836fcb93c058ede68dfafddfd71e87f17074764",
+        "agents/openai.yaml": "sha256:d53cd783fc0ac208dec9a4c267989284384785aab6422dccdaed42f9e40243ec",
+        "scripts/block-dangerous-git.sh": "sha256:234922b83c0a1737ee7300806c21ac0f389b07aaeb65c2d71ccedafbc5e1ea4b"
+      }
+    },
+    "productivity/grill-me": {
+      "source": "https://github.com/mattpocock/skills.git/skills/productivity/grill-me",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/productivity/grill-me",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637",
+        "agents/openai.yaml": "sha256:c061e39c3e0f9d865fb1b97556d485704af2a8a58f4b8221a8917a5c2074a32b"
+      }
+    },
+    "engineering/grill-with-docs": {
+      "source": "https://github.com/mattpocock/skills.git/skills/engineering/grill-with-docs",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/engineering/grill-with-docs",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:7de372c13488f1ee96cc11cd8907b56b6809cc93eef776eeddd37de6b6cbe3fe",
+        "agents/openai.yaml": "sha256:94cd0ab161fb468a836349f5ed482ba58ce8e709a05c57ce533d739dbd35cca9"
+      }
+    },
+    "productivity/grilling": {
+      "source": "https://github.com/mattpocock/skills.git/skills/productivity/grilling",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/productivity/grilling",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:a146842ed93ca43d833550fa9adf02e58cb63c83fea9d4b4522995b82242d4e2",
+        "agents/openai.yaml": "sha256:1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b"
+      }
+    },
+    "productivity/handoff": {
+      "source": "https://github.com/mattpocock/skills.git/skills/productivity/handoff",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/productivity/handoff",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:4cbb043950dad2ffd3662ff1a5a0b51ae676004b5cae10e3787e8ee7a4ee69d3",
+        "agents/openai.yaml": "sha256:5c479fd562c691851690e8b18c8501045bef0943c10743d636b2fae26add1d28"
+      }
+    },
+    "engineering/implement": {
+      "source": "https://github.com/mattpocock/skills.git/skills/engineering/implement",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/engineering/implement",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:483bdc4ccf4ac31d86ac7beeaa0d0db80313e71e120bb8c59b3196ae5decd53d",
+        "agents/openai.yaml": "sha256:8970a8596ade0c28ab427f41a4ea242d6bdf6186c59ebf55e1238dbecaab79dc"
+      }
+    },
+    "engineering/implement-spec": {
+      "source": "https://github.com/mattpocock/skills.git/skills/engineering/implement-spec",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/engineering/implement-spec",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:1993a473cec40ac85d081c112cdffdc63ec3267c2e412055ad09e013a2f623d1",
+        "agents/openai.yaml": "sha256:fd41efb42c60c96320d6531be7e4bf15cbf5518cd652d57dff27ccffa46988e9"
+      }
+    },
+    "engineering/improve-codebase-architecture": {
+      "source": "https://github.com/mattpocock/skills.git/skills/engineering/improve-codebase-architecture",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/engineering/improve-codebase-architecture",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:35b03a3db61e0f5aa333ea59b54963e45a3d2ace6649b2ef4f9576603e2582a6",
+        "HTML-REPORT.md": "sha256:581e8bb5a521e46bbda8ca7e19b15948bed882187108092ebb90c62513b77528",
+        "agents/openai.yaml": "sha256:c8cb20f68ebf0edb4e497bc11ae5fcaa196004e661cd189015b04f4109ced7f1"
+      }
+    },
+    "in-progress/loop-me": {
+      "source": "https://github.com/mattpocock/skills.git/skills/in-progress/loop-me",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/in-progress/loop-me",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:e44d1cc3e760fb86ac42964c2a5f1fcac511715db50fb375f3f7be814de1eaa7",
+        "agents/openai.yaml": "sha256:b66fa10079957051be6a812f45e55b67ac394b71d5ba88349962b4c9205802c3"
+      }
+    },
+    "engineering/mcp-builder": {
+      "source": "https://github.com/anthropics/skills.git/skills/mcp-builder",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/anthropics/skills.git",
+      "subdir": "skills/mcp-builder",
+      "version": "1780c5e",
+      "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+      "file_hashes": {
+        "SKILL.md": "sha256:b483b56d6673134497e45489c317f26ae0f1429c194db0297e43073e17e6748c",
+        "LICENSE.txt": "sha256:bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+        "scripts/requirements.txt": "sha256:d5d7558b2368ecea9dfeed7d1fbc71ee9e0750bebd1282faa527d528a344c3c7",
+        "scripts/evaluation.py": "sha256:49ed1d17cdce5da101b210197740713f49b935c29d4f339542a14b132658e6f7",
+        "scripts/connections.py": "sha256:9403668a2041568772082a8b334122c1f88daf0541fb393af4522d0094a47a6e",
+        "scripts/example_evaluation.xml": "sha256:9272b348ddcc4b06ba562367ccd0770e018158c0068ac5116d5e34aaeff8777a",
+        "reference/mcp_best_practices.md": "sha256:80fb4369a349447cf18ecdd7494fe7938b6065377e9f08c077cec411093a3007",
+        "reference/python_mcp_server.md": "sha256:2da52f77e675191014ca2e146a4b95aa04d0ca7dd7e2b100322df15ade685e80",
+        "reference/node_mcp_server.md": "sha256:ee3c95d812e450f6168b734390d0c9ef6f8ebeef041d73a122c972dfbd4d476a",
+        "reference/node_mcp_server_v2.md": "sha256:49b2fe48f33910b743ae3a56353fffa5d5f252f531053f24f2da4e5914c0d3aa",
+        "reference/evaluation.md": "sha256:8c99479f8a2d22a636c38e274537aac3610879e26f34e0709825077c4576f427"
+      }
+    },
+    "misc/migrate-to-shoehorn": {
+      "source": "https://github.com/mattpocock/skills.git/skills/misc/migrate-to-shoehorn",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/misc/migrate-to-shoehorn",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
+        "agents/openai.yaml": "sha256:395c2db852e66a199f1cd07f7ed92d66cb6f0787460c5475926f1a5e778b699d"
+      }
+    },
+    "engineering/ponytail/ponytail": {
+      "source": "https://github.com/DietrichGebert/ponytail.git/skills/ponytail",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/DietrichGebert/ponytail.git",
+      "subdir": "skills/ponytail",
+      "version": "96608e0",
+      "commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+      "file_hashes": {
+        "SKILL.md": "sha256:9badd22a32e19cb884e46dfa8d3aae82bb81dfa5484105b8b4f0262df823a509"
+      }
+    },
+    "engineering/ponytail/ponytail-audit": {
+      "source": "https://github.com/DietrichGebert/ponytail.git/skills/ponytail-audit",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/DietrichGebert/ponytail.git",
+      "subdir": "skills/ponytail-audit",
+      "version": "96608e0",
+      "commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+      "file_hashes": {
+        "SKILL.md": "sha256:2b3223a02c386d1263e1b08343cb8eb3a53e444cdafb1d79e26c8ec2a8fcad28"
+      }
+    },
+    "engineering/ponytail/ponytail-debt": {
+      "source": "https://github.com/DietrichGebert/ponytail.git/skills/ponytail-debt",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/DietrichGebert/ponytail.git",
+      "subdir": "skills/ponytail-debt",
+      "version": "96608e0",
+      "commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+      "file_hashes": {
+        "SKILL.md": "sha256:b5ec2762f6ba8c4af9ea7173aa6c9f91b88655a25e43f9de0264f6ce8722b25f"
+      }
+    },
+    "engineering/ponytail/ponytail-gain": {
+      "source": "https://github.com/DietrichGebert/ponytail.git/skills/ponytail-gain",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/DietrichGebert/ponytail.git",
+      "subdir": "skills/ponytail-gain",
+      "version": "96608e0",
+      "commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+      "file_hashes": {
+        "SKILL.md": "sha256:231034a896d6762e4b5c8468287083422c56b499119976ec9f76821f7d083090"
+      }
+    },
+    "engineering/ponytail/ponytail-help": {
+      "source": "https://github.com/DietrichGebert/ponytail.git/skills/ponytail-help",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/DietrichGebert/ponytail.git",
+      "subdir": "skills/ponytail-help",
+      "version": "96608e0",
+      "commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+      "file_hashes": {
+        "SKILL.md": "sha256:86ab0ce0af70cbeeeef499d5c884873b393f87f86401dcc45553662ce2c1eff9"
+      }
+    },
+    "engineering/ponytail/ponytail-review": {
+      "source": "https://github.com/DietrichGebert/ponytail.git/skills/ponytail-review",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/DietrichGebert/ponytail.git",
+      "subdir": "skills/ponytail-review",
+      "version": "96608e0",
+      "commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+      "file_hashes": {
+        "SKILL.md": "sha256:33fe4ebe22a460924e5d4a261e223df22e409cc94ab76182bee9fb91a3ef022e"
+      }
+    },
+    "engineering/pr": {
+      "source": "https://github.com/mattpocock/skills.git/skills/engineering/pr",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/engineering/pr",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "CREDITS.md": "sha256:a7a087127665d7298a72280ef6e19c41ad8404523712a788c8dc3ab414bc2497",
+        "SKILL.md": "sha256:ab63f1cf78647389edcd386c9427c5dfca27ed2836930c24773ffee834c19bcd",
+        "agents/openai.yaml": "sha256:2295b586624db4ef546f3fd4695492f039d941a46d8a1593a702ce3ca511b8ad"
+      }
+    },
+    "engineering/prototype": {
+      "source": "https://github.com/mattpocock/skills.git/skills/engineering/prototype",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/engineering/prototype",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:714de632d116bb73f65cdb5a882db15b9369a6713b9a47c0fad827848f0bfbe3",
+        "LOGIC.md": "sha256:f61c7d249e786a79ef289018901c348271e1798dd0b0bc5607b5c6f4d4a01ab9",
+        "UI.md": "sha256:723211e878acbc7b6ff09755263f3295cde724ba902ff0064da41eed51d45ad3",
+        "agents/openai.yaml": "sha256:5af65e43ab41a350436697b81e27b7f848d36782043b73c322bb2c9fa9cc55dc"
+      }
+    },
+    "engineering/research": {
+      "source": "https://github.com/mattpocock/skills.git/skills/engineering/research",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/engineering/research",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:1f629e18ab899412683bc6a1c4efb4339999e27c2fdac328f26ee10a8c031d33",
+        "agents/openai.yaml": "sha256:9b4c470d63221c1f68f22df70b83e2f12401b317babe0d1b7b5f24a974474d0d"
+      }
+    },
+    "engineering/retro": {
+      "source": "https://github.com/mattpocock/skills.git/skills/engineering/retro",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/engineering/retro",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+        "agents/openai.yaml": "sha256:cb6fb9d7e6b4be5975f41f6def1dd00a1255bad5d9b02696b124c924a8b8745c"
+      }
+    },
+    "misc/scaffold-exercises": {
+      "source": "https://github.com/mattpocock/skills.git/skills/misc/scaffold-exercises",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/misc/scaffold-exercises",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:75f5c9d771606fb9762f16522efc954df11c324f87148d8ff069bce166257de9",
+        "agents/openai.yaml": "sha256:525b33913340bea7947ad2de17f2a7c5fb94be543345fe80ae753b9a44ba601d"
+      }
+    },
+    "engineering/setup-matt-pocock-skills": {
+      "source": "https://github.com/mattpocock/skills.git/skills/engineering/setup-matt-pocock-skills",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/engineering/setup-matt-pocock-skills",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "issue-tracker-gitlab.md": "sha256:947602d33a80f98f939fb990995b8f95a3459b114b919c4221d08bd75d7cffe0",
+        "domain.md": "sha256:593a7042218689f1d24df89df14eaf0a20e19e0d0a7d479a01947ac78f0784b9",
+        "triage-labels.md": "sha256:ae512af838c78b8750471c42cd2b20fa32319553e61d84c9a23d171b40ce14aa",
+        "SKILL.md": "sha256:b01e05bfe8c323171275c6ceec78b12f1bd4c62dfd26c2cfe8be806d3883f1ed",
+        "issue-tracker-github.md": "sha256:6fdb3e9b00b7b0b115ecac3b1c00e3790f637f190abf598815368722c0a94692",
+        "issue-tracker-local.md": "sha256:7dcda20a2eb4bdc89b95d1143423c0691309921cadae3132e6424f371030506e",
+        "agents/openai.yaml": "sha256:9527de0110541c45712319025155aeab8dc7d77c6ed6e5e83271bab1851ab939"
+      }
+    },
+    "misc/setup-pre-commit": {
+      "source": "https://github.com/mattpocock/skills.git/skills/misc/setup-pre-commit",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/misc/setup-pre-commit",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
+        "agents/openai.yaml": "sha256:acf41db398c5c43afe504008bb7d615a97b6498b0f1f6c5b2395254c0bfb57d1"
+      }
+    },
+    "in-progress/setup-ts-deep-modules": {
+      "source": "https://github.com/mattpocock/skills.git/skills/in-progress/setup-ts-deep-modules",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/in-progress/setup-ts-deep-modules",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "dependency-cruiser.config.cjs": "sha256:3c4973bec69f73b2117654abf9e666a7c28665b213be20e6d39869e29842428e",
+        "SKILL.md": "sha256:29acca66ac99d4532e2a6f0370d8125d7cba1e87c9ac66573203c75189d3e6c7",
+        "agents/openai.yaml": "sha256:159f680217d50747702620c05fd65734a152185b3219a8ca5ee4630878a354fa"
+      }
+    },
+    "utils/skill-creator": {
+      "source": "https://github.com/anthropics/skills.git/skills/skill-creator",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/anthropics/skills.git",
+      "subdir": "skills/skill-creator",
+      "version": "1780c5e",
+      "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+      "file_hashes": {
+        "SKILL.md": "sha256:dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf",
+        "LICENSE.txt": "sha256:bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+        "eval-viewer/generate_review.py": "sha256:fc9d1b9243fe5ab6012ebd579bd76d0035de1b79fd3b969de114defab26478fb",
+        "eval-viewer/viewer.html": "sha256:a53213426ee1100441d701a3a0d49cda7a842f992d2c36463f4d3cc0258575fa",
+        "references/schemas.md": "sha256:8e8876180a8989b406a4d3edddf875b04cdfd5805cc8616686d552b11ce4455f",
+        "agents/grader.md": "sha256:57134da0c1a4eea33fbd74a1c9c44aa814f07d6bc64de303edb586f941e5d21a",
+        "agents/comparator.md": "sha256:fe1fc9787c495d864c5d6eada47396478572325fde1b33a96d78bf4b849b7a3e",
+        "agents/analyzer.md": "sha256:bf68f4cac5a56c673a928c2e6d619586c5b93ea364026ab37547772cb45a663a",
+        "scripts/run_eval.py": "sha256:43e3b8f80dbf69c343967ba77e268fae991d9fa3ed68b32a0ff02532cd48657f",
+        "scripts/package_skill.py": "sha256:1a33059b0db1ef73375d46d513e5ea81369d2e8838c970597b0d52ddef8d1c0f",
+        "scripts/quick_validate.py": "sha256:67cf5703402013936c8fb75ad6a1afecd8841d45cc5e606b634eb05825fde365",
+        "scripts/improve_description.py": "sha256:87d864570220b699fac52da309d2d6efdb060647bfebc74f768128e646accf80",
+        "scripts/aggregate_benchmark.py": "sha256:123ef128ea5ccc01a4b1ac212ef5567f21e9c13d3d240609780beeb3200c49aa",
+        "scripts/__init__.py": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "scripts/run_loop.py": "sha256:7bd6f674203168520517eec94c55f493c0d154339b061b4d7c0f0dad187d0f21",
+        "scripts/generate_report.py": "sha256:13df7118a3c50c83c4c3250a606d5f2b20b25a3d44cbc392b3d669ec75281453",
+        "scripts/utils.py": "sha256:3af8ae62c40c73ab712207436a0d9a981e845f25c5a7040229eb189cc8e45bb1",
+        "assets/eval_review.html": "sha256:ce477dcc74dc1c0d1d3352646a79167b5a63634e936b1019160025065974e452"
+      }
+    },
+    "engineering/tdd": {
+      "source": "https://github.com/mattpocock/skills.git/skills/engineering/tdd",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/engineering/tdd",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "mocking.md": "sha256:3ceb807fdf4a47d6a93d4d9a891e5ba6d362a6247bd08adc451feebfc17361ef",
+        "tests.md": "sha256:859f9e592c188fda4fc7277dd180e4ce9c7a2e13f6efe1f6f29eccc9d28c106a",
+        "SKILL.md": "sha256:5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0",
+        "agents/openai.yaml": "sha256:ea6f01cf1b8c06a4b0f5b649d74b1b8ce8685e72af1b38d70d877693e092af0b"
+      }
+    },
+    "productivity/teach": {
+      "source": "https://github.com/mattpocock/skills.git/skills/productivity/teach",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/productivity/teach",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "MISSION-FORMAT.md": "sha256:8cacbb3c0644d3ae0ea4965564797099401a6930a23f7cf462918576587f2418",
+        "RESOURCES-FORMAT.md": "sha256:e9cacf34026e11a8d1c8f9de88abe5bcbf654f4ebdb25cae8c0de0d5f48f44ec",
+        "LEARNING-RECORD-FORMAT.md": "sha256:701fa34b6748aa89e6c960ffb815257f481a7d77fb2900f9028f7edf3fdd6052",
+        "GLOSSARY-FORMAT.md": "sha256:9b99859ec28437668130d8f2ce5a342938970f8a1ed4fd38c3eab4f4b5fff210",
+        "SKILL.md": "sha256:550482c2d674b085c9043b87bfdc14a8f2ec453c736119e7fcbb1e9332bffeba",
+        "agents/openai.yaml": "sha256:5856f3ae8aec742f1499c640aecdd5f1d6af5fa210a7c6ec794de8263a6f733f"
+      }
+    },
+    "utils/template-skill": {
+      "source": "https://github.com/anthropics/skills.git/template",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/anthropics/skills.git",
+      "subdir": "template",
+      "version": "1780c5e",
+      "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+      "file_hashes": {
+        "SKILL.md": "sha256:eb685d91de039ed864fbd790cddf31684b017fd4a34ee1a55760d8d7cdbadefa"
+      }
+    },
+    "design/theme-factory": {
+      "source": "https://github.com/anthropics/skills.git/skills/theme-factory",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/anthropics/skills.git",
+      "subdir": "skills/theme-factory",
+      "version": "1780c5e",
+      "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+      "file_hashes": {
+        "SKILL.md": "sha256:c35893e221e28895c52143cc11bf30e41a44817796b39d4b15727dadc9796552",
+        "theme-showcase.pdf": "sha256:3e126eca9fe99088051f7cb984c97cedb31c7d9e09ce0ba5d61bd01e70a0d253",
+        "LICENSE.txt": "sha256:bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+        "themes/sunset-boulevard.md": "sha256:658af11ab04be4923692571081ffb42a428141ae537703117b9236d9f8ee22a3",
+        "themes/tech-innovation.md": "sha256:183648163026dd5eeba3df5effa335b55ba333c3ee1fe215278605e55f40a52a",
+        "themes/arctic-frost.md": "sha256:868a75a8fb5b2a61d0f0ab87c437fe632d3cbab6371c418f06aa2816ac109ae0",
+        "themes/modern-minimalist.md": "sha256:b8bc572b75948d4df69c401af703b9262ed6820a3ceb270da30a529e92763614",
+        "themes/golden-hour.md": "sha256:3444a00df971d3c2f06b665e21a2e9eb5d7d7d6f6281f2758773b8345776a139",
+        "themes/midnight-galaxy.md": "sha256:0e134c4c0324df41e34ac314269aa6829cd378cf3c304b31858d0cd158d2f944",
+        "themes/forest-canopy.md": "sha256:ecb722efa24688e808b5bf323c334ca2349e989cfddd72ce8400ce5d4c4bd3e7",
+        "themes/ocean-depths.md": "sha256:a7ad8eec85341dbfcb2665da827a4b6a4baee08ab3335ac02421f18e6b46b2e2",
+        "themes/desert-rose.md": "sha256:bd065b8629be3b64655183927e248e3d892a27b8d184b009cfba89c96102744f",
+        "themes/botanical-garden.md": "sha256:222cb8e7496abc9b75b29453c809fb9839e7e4b01fa45deecdd896b38d087765"
+      }
+    },
+    "productivity/to-questionnaire": {
+      "source": "https://github.com/mattpocock/skills.git/skills/productivity/to-questionnaire",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/productivity/to-questionnaire",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+        "agents/openai.yaml": "sha256:9e8a06c38c8842eea8d4922cb9d1ead8e3ace647bab259b943c994a1b4742bc2"
+      }
+    },
+    "engineering/to-spec": {
+      "source": "https://github.com/mattpocock/skills.git/skills/engineering/to-spec",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/engineering/to-spec",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:43ad9cf318e5e7d3d1fa360253a37021796dc87a0c2e595ad262661a10f85088",
+        "agents/openai.yaml": "sha256:1c5b4d1e3d8e52287ef19cc2742fdbbfae1914ac75d33af3e4c8174f08cc55bb"
+      }
+    },
+    "engineering/to-tickets": {
+      "source": "https://github.com/mattpocock/skills.git/skills/engineering/to-tickets",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/engineering/to-tickets",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:56ec23c5b2782785d4e65bff9e315b6d3aeb4ef977c174a219e99489fada1995",
+        "agents/openai.yaml": "sha256:21bc6215fffcd7614e9f772bb1760e87cc5fc7dcc707e7d282bc9414267a6090"
+      }
+    },
+    "engineering/triage": {
+      "source": "https://github.com/mattpocock/skills.git/skills/engineering/triage",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/engineering/triage",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "OUT-OF-SCOPE.md": "sha256:1fbf9b432130c6380aa65813b55553cfda150309b27c595e183f8e335b8a190d",
+        "SKILL.md": "sha256:917b0baf74be583e74f110857ed45df2766617f75c00baf61fd136d7af515edf",
+        "AGENT-BRIEF.md": "sha256:7f5f87fed3033df1b06e083c480f3e847b1fbb0647746b8a4c6a50f9f26ef44f",
+        "agents/openai.yaml": "sha256:2e683717720cf456d165d0bb1a68bb600d0b6a8ccb61841c172e50d26f95351c"
+      }
+    },
+    "productivity/wait-what": {
+      "source": "https://github.com/mattpocock/skills.git/skills/productivity/wait-what",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/productivity/wait-what",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:d961bb37defd975c539427edb8f450cdbccdcdd552e213c1ece46676a7970905",
+        "agents/openai.yaml": "sha256:b41faadf741d51e4ea184148b2d1854d93f947aaf754c7844f70a00f04194999"
+      }
+    },
+    "engineering/wayfinder": {
+      "source": "https://github.com/mattpocock/skills.git/skills/engineering/wayfinder",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/engineering/wayfinder",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:0c9fa96791aebf3b7d654cf35c6aadde97d81f57c17b07d13b27c14d9c46561f",
+        "agents/openai.yaml": "sha256:88bc81a11a6d52ac67aeaa76b8b619e387020d47c5133a4dd4927fd15c4ad073"
+      }
+    },
+    "testing/webapp-testing": {
+      "source": "https://github.com/anthropics/skills.git/skills/webapp-testing",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/anthropics/skills.git",
+      "subdir": "skills/webapp-testing",
+      "version": "1780c5e",
+      "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+      "file_hashes": {
+        "SKILL.md": "sha256:51b7349e77ec63b7744a6f63647e7566a0b4d2e301121cc10e8c2113af6556a2",
+        "LICENSE.txt": "sha256:bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+        "examples/console_logging.py": "sha256:ea46877289acb82da7e7ce59d0bc37c8977cd57e2a006d0c88d7a1c625bf95da",
+        "examples/static_html_automation.py": "sha256:9d533aafb875ee3ab8b8ebf8f5b9003ac8d999da3d09b285cce252e623140064",
+        "examples/element_discovery.py": "sha256:d63c89604a22f8845d724e95dda45db49b1bf57c25ce0a83afbb7b8da3d402f0",
+        "scripts/with_server.py": "sha256:b0dcf4918935b795f4eda9821579b9902119235ff4447f687a30286e7d0925fd"
+      }
+    },
+    "engineering/wizard": {
+      "source": "https://github.com/mattpocock/skills.git/skills/engineering/wizard",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/engineering/wizard",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "template.sh": "sha256:6566f147299bc6f1d941e64591ed04385416d543e11f96f564c7228f5018d0ed",
+        "SKILL.md": "sha256:bdf31d48211ea559878f95a4f344aeabf8d85897488ba564382bab0b000daac1",
+        "agents/openai.yaml": "sha256:98f44d682d58e262f160dc59a8befc365e0aa65820dd0261864af26aa8e59d83"
+      }
+    },
+    "in-progress/writing-beats": {
+      "source": "https://github.com/mattpocock/skills.git/skills/in-progress/writing-beats",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/in-progress/writing-beats",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:a96abafa2372eede8267d770138b322d6125da8adaa7ccf0a5e08e4ee13ee71e",
+        "agents/openai.yaml": "sha256:ddaef01da61d8e3c5f482c4403033c20cf5823f08a1dbf1d4c871670831d01e2"
+      }
+    },
+    "productivity/writing-for-agents": {
+      "source": "https://github.com/mattpocock/skills.git/skills/productivity/writing-for-agents",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/productivity/writing-for-agents",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL-MECHANICS.md": "sha256:c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
+        "SKILL.md": "sha256:551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+        "agents/openai.yaml": "sha256:eacb24b2a618cfb81dacb0416f4fdd75ddf3a8060f8ddb99aae1b1e301907e4b"
+      }
+    },
+    "in-progress/writing-fragments": {
+      "source": "https://github.com/mattpocock/skills.git/skills/in-progress/writing-fragments",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/in-progress/writing-fragments",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:298b0edd23df229183630de592ed8aa4289233560f2040691f6eb77caeaad4ea",
+        "agents/openai.yaml": "sha256:81167f25ee8ea1bb4b4958f12b6702ea972ad31b05e03ec91e39fa4bae0c2641"
+      }
+    },
+    "in-progress/writing-shape": {
+      "source": "https://github.com/mattpocock/skills.git/skills/in-progress/writing-shape",
+      "type": "github-subdir",
+      "repo_url": "https://github.com/mattpocock/skills.git",
+      "subdir": "skills/in-progress/writing-shape",
+      "version": "5863806",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "file_hashes": {
+        "SKILL.md": "sha256:f5e6c57bdd85178ace4a260c92f46da6b64ddee18215b461d875739c68976f72",
+        "agents/openai.yaml": "sha256:56de45430e23104ff178415f5ecf7821d51a9cfabd8814b1607ebf39da2ef5cd"
       }
     }
   },

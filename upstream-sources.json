@@ -1,0 +1,489 @@
+{
+  "note": "Baselines are verified upstream snapshots, not claims about original install versions. Differing local content is protected by Skillshare local-change checks.",
+  "skills": [
+    {
+      "skill": "design/algorithmic-art",
+      "source": "anthropics/skills",
+      "path": "skills/algorithmic-art",
+      "status": "matches-upstream",
+      "baseline_commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064"
+    },
+    {
+      "skill": "engineering/ask-matt",
+      "source": "mattpocock/skills",
+      "path": "skills/engineering/ask-matt",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "design/banner-design",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "design/brand",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "testing/bruno",
+      "source": "TerminalSkills/skills",
+      "path": "skills/bruno",
+      "status": "matches-upstream",
+      "baseline_commit": "42289059901710441bfa8081c08c3a9f36b93f9c"
+    },
+    {
+      "skill": "utils/btw",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "in-progress/chief-of-staff",
+      "source": "mattpocock/skills",
+      "path": "skills/in-progress/chief-of-staff",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "in-progress/claude-handoff",
+      "source": "mattpocock/skills",
+      "path": "skills/in-progress/claude-handoff",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "engineering/code-review",
+      "source": "mattpocock/skills",
+      "path": "skills/engineering/code-review",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "engineering/codebase-design",
+      "source": "mattpocock/skills",
+      "path": "skills/engineering/codebase-design",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "embedded/dejaos/dejaos-app-dev",
+      "source": "DejaOS/DejaOS",
+      "path": "skills/_temp/dejaos-app-dev-zh-review",
+      "status": "matches-upstream",
+      "baseline_commit": "dedb75a4d4cc9c71cf079f4c8e04c01d98e2aa5b"
+    },
+    {
+      "skill": "embedded/dejaos/dejaos-app-dev-sdk2-0",
+      "source": "DejaOS/DejaOS",
+      "path": "skills/dejaos-app-dev-sdk2-0",
+      "status": "matches-upstream",
+      "baseline_commit": "dedb75a4d4cc9c71cf079f4c8e04c01d98e2aa5b"
+    },
+    {
+      "skill": "embedded/dejaos/dejaos-device-control",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "design/design",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "engineering/design-an-interface",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "design/design-system",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "engineering/diagnose",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "engineering/diagnosing-bugs",
+      "source": "mattpocock/skills",
+      "path": "skills/engineering/diagnosing-bugs",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "utils/discernment-nudge",
+      "source": "anthropics/skills",
+      "path": "skills/discernment-nudge",
+      "status": "matches-upstream",
+      "baseline_commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064"
+    },
+    {
+      "skill": "documentation/doc-coauthoring",
+      "source": "anthropics/skills",
+      "path": "skills/doc-coauthoring",
+      "status": "matches-upstream",
+      "baseline_commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064"
+    },
+    {
+      "skill": "engineering/domain-modeling",
+      "source": "mattpocock/skills",
+      "path": "skills/engineering/domain-modeling",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "documentation/edit-article",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "frontend/frontend-design",
+      "source": "anthropics/skills",
+      "path": "skills/frontend-design",
+      "status": "matches-upstream",
+      "baseline_commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064"
+    },
+    {
+      "skill": "misc/git-guardrails-claude-code",
+      "source": "mattpocock/skills",
+      "path": "skills/misc/git-guardrails-claude-code",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "engineering/git-manage",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "productivity/grill-me",
+      "source": "mattpocock/skills",
+      "path": "skills/productivity/grill-me",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "engineering/grill-with-docs",
+      "source": "mattpocock/skills",
+      "path": "skills/engineering/grill-with-docs",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "productivity/grilling",
+      "source": "mattpocock/skills",
+      "path": "skills/productivity/grilling",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "utils/hallmark",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "productivity/handoff",
+      "source": "mattpocock/skills",
+      "path": "skills/productivity/handoff",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "engineering/implement",
+      "source": "mattpocock/skills",
+      "path": "skills/engineering/implement",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "engineering/implement-spec",
+      "source": "mattpocock/skills",
+      "path": "skills/engineering/implement-spec",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "engineering/improve-codebase-architecture",
+      "source": "mattpocock/skills",
+      "path": "skills/engineering/improve-codebase-architecture",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "in-progress/loop-me",
+      "source": "mattpocock/skills",
+      "path": "skills/in-progress/loop-me",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "engineering/mcp-builder",
+      "source": "anthropics/skills",
+      "path": "skills/mcp-builder",
+      "status": "matches-upstream",
+      "baseline_commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064"
+    },
+    {
+      "skill": "misc/migrate-to-shoehorn",
+      "source": "mattpocock/skills",
+      "path": "skills/misc/migrate-to-shoehorn",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "documentation/obsidian-vault",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "engineering/ponytail/ponytail",
+      "source": "DietrichGebert/ponytail",
+      "path": "skills/ponytail",
+      "status": "matches-upstream",
+      "baseline_commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846"
+    },
+    {
+      "skill": "engineering/ponytail/ponytail-audit",
+      "source": "DietrichGebert/ponytail",
+      "path": "skills/ponytail-audit",
+      "status": "matches-upstream",
+      "baseline_commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846"
+    },
+    {
+      "skill": "engineering/ponytail/ponytail-debt",
+      "source": "DietrichGebert/ponytail",
+      "path": "skills/ponytail-debt",
+      "status": "matches-upstream",
+      "baseline_commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846"
+    },
+    {
+      "skill": "engineering/ponytail/ponytail-gain",
+      "source": "DietrichGebert/ponytail",
+      "path": "skills/ponytail-gain",
+      "status": "matches-upstream",
+      "baseline_commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846"
+    },
+    {
+      "skill": "engineering/ponytail/ponytail-help",
+      "source": "DietrichGebert/ponytail",
+      "path": "skills/ponytail-help",
+      "status": "matches-upstream",
+      "baseline_commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846"
+    },
+    {
+      "skill": "engineering/ponytail/ponytail-review",
+      "source": "DietrichGebert/ponytail",
+      "path": "skills/ponytail-review",
+      "status": "matches-upstream",
+      "baseline_commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846"
+    },
+    {
+      "skill": "engineering/pr",
+      "source": "mattpocock/skills",
+      "path": "skills/engineering/pr",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "engineering/prototype",
+      "source": "mattpocock/skills",
+      "path": "skills/engineering/prototype",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "testing/qa",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "engineering/request-refactor-plan",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "engineering/research",
+      "source": "mattpocock/skills",
+      "path": "skills/engineering/research",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "engineering/retro",
+      "source": "mattpocock/skills",
+      "path": "skills/engineering/retro",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "engineering/review",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "misc/scaffold-exercises",
+      "source": "mattpocock/skills",
+      "path": "skills/misc/scaffold-exercises",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "engineering/setup-matt-pocock-skills",
+      "source": "mattpocock/skills",
+      "path": "skills/engineering/setup-matt-pocock-skills",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "misc/setup-pre-commit",
+      "source": "mattpocock/skills",
+      "path": "skills/misc/setup-pre-commit",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "in-progress/setup-ts-deep-modules",
+      "source": "mattpocock/skills",
+      "path": "skills/in-progress/setup-ts-deep-modules",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "utils/skill-creator",
+      "source": "anthropics/skills",
+      "path": "skills/skill-creator",
+      "status": "matches-upstream",
+      "baseline_commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064"
+    },
+    {
+      "skill": "design/slides",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "engineering/tdd",
+      "source": "mattpocock/skills",
+      "path": "skills/engineering/tdd",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "productivity/teach",
+      "source": "mattpocock/skills",
+      "path": "skills/productivity/teach",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "utils/template-skill",
+      "source": "anthropics/skills",
+      "path": "template",
+      "status": "matches-upstream",
+      "baseline_commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064"
+    },
+    {
+      "skill": "design/theme-factory",
+      "source": "anthropics/skills",
+      "path": "skills/theme-factory",
+      "status": "matches-upstream",
+      "baseline_commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064"
+    },
+    {
+      "skill": "productivity/to-issues",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "productivity/to-prd",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "productivity/to-questionnaire",
+      "source": "mattpocock/skills",
+      "path": "skills/productivity/to-questionnaire",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "engineering/to-spec",
+      "source": "mattpocock/skills",
+      "path": "skills/engineering/to-spec",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "engineering/to-tickets",
+      "source": "mattpocock/skills",
+      "path": "skills/engineering/to-tickets",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "engineering/triage",
+      "source": "mattpocock/skills",
+      "path": "skills/engineering/triage",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "documentation/ubiquitous-language",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "frontend/ui-styling",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "frontend/ui-ux-pro-max",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "productivity/wait-what",
+      "source": "mattpocock/skills",
+      "path": "skills/productivity/wait-what",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "engineering/wayfinder",
+      "source": "mattpocock/skills",
+      "path": "skills/engineering/wayfinder",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "testing/webapp-testing",
+      "source": "anthropics/skills",
+      "path": "skills/webapp-testing",
+      "status": "matches-upstream",
+      "baseline_commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064"
+    },
+    {
+      "skill": "engineering/wizard",
+      "source": "mattpocock/skills",
+      "path": "skills/engineering/wizard",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "utils/write-a-skill",
+      "status": "source-unconfirmed"
+    },
+    {
+      "skill": "in-progress/writing-beats",
+      "source": "mattpocock/skills",
+      "path": "skills/in-progress/writing-beats",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "productivity/writing-for-agents",
+      "source": "mattpocock/skills",
+      "path": "skills/productivity/writing-for-agents",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "in-progress/writing-fragments",
+      "source": "mattpocock/skills",
+      "path": "skills/in-progress/writing-fragments",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "in-progress/writing-shape",
+      "source": "mattpocock/skills",
+      "path": "skills/in-progress/writing-shape",
+      "status": "matches-upstream",
+      "baseline_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "skill": "productivity/zoom-out",
+      "status": "source-unconfirmed"
+    }
+  ]
+}

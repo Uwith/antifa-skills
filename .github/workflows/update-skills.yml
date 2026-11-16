@@ -1,0 +1,82 @@
+name: Update upstream skills
+
+on:
+  schedule:
+    - cron: '23 3 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: upstream-skills
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+      SKILLSHARE_CONFIG: ${{ runner.temp }}/skillshare-config.yaml
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Skillshare release
+        env:
+          VERSION: '0.30.8'
+        run: |
+          mkdir -p "$RUNNER_TEMP/skillshare-bin"
+          gh release download "v$VERSION" --repo runkids/skillshare \
+            --pattern "skillshare_${VERSION}_linux_amd64.tar.gz" \
+            --pattern checksums.txt --dir "$RUNNER_TEMP/skillshare-bin"
+          cd "$RUNNER_TEMP/skillshare-bin"
+          grep " skillshare_${VERSION}_linux_amd64.tar.gz$" checksums.txt | sha256sum --check --strict
+          tar -xzf "skillshare_${VERSION}_linux_amd64.tar.gz" skillshare
+          echo "$RUNNER_TEMP/skillshare-bin" >> "$GITHUB_PATH"
+      - name: Configure isolated source
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          Path(os.environ['SKILLSHARE_CONFIG']).write_text(
+              'sources:\n  skills: ' + json.dumps(os.environ['GITHUB_WORKSPACE']) + '\nmode: merge\ntargets: {}\n'
+          )
+          PY
+      - name: Test update selection
+        run: PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_*.py' -v
+      - name: Check and update verified sources
+        run: python3 scripts/update-upstream-skills.py
+      - name: Upload update report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: upstream-update-report
+          path: ${{ runner.temp }}/skillshare-update-report.md
+          if-no-files-found: warn
+      - name: Open or refresh update PR
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: automation/update-skills
+          commit-message: 'chore: update upstream skills'
+          title: 'chore: update upstream skills'
+          body-path: ${{ runner.temp }}/skillshare-update-report.md
+          delete-branch: true
+          add-paths: |
+            .metadata.json
+            agent-browser/
+            agents-context-router/
+            feature-radar/
+            frontend/
+            rex/
+            security-audit/
+            skillshare/
+            design/
+            documentation/
+            embedded/
+            engineering/
+            in-progress/
+            misc/
+            productivity/
+            testing/
+            utils/

@@ -1,4 +1,4 @@
-# my-skills
+# antifa-skills
 
 Personal AI agent skills, based on [runkids/my-skills](https://github.com/runkids/my-skills), managed and synced with [**skillshare**](https://github.com/runkids/skillshare).
 
@@ -23,7 +23,22 @@ When local installations differ, `.agents` takes precedence, followed by native 
 
 [local-import.json](local-import.json) records each imported location, available upstream attribution, and SHA-256 hashes. Original installed skills were not moved or changed. Existing `.metadata.json` remains upstream Skillshare metadata; imported local files are recorded separately rather than pretending they were installed from a verified remote commit.
 
-This collection is maintained in [Uwith/my-skills](https://github.com/Uwith/my-skills), with `runkids/my-skills` retained as the upstream repository. On this machine, Skillshare's global `sources.skills` points directly to this checkout. Use `skillshare sync` to distribute changes, `skillshare push -m "Update skills"` to commit and push, and `skillshare pull` to retrieve changes from the fork.
+This collection is maintained in [Uwith/antifa-skills](https://github.com/Uwith/antifa-skills), with `runkids/my-skills` retained as the upstream repository. On this machine, Skillshare's global `sources.skills` points directly to this checkout. Use `skillshare sync` to distribute changes, `skillshare push -m "Update skills"` to commit and push, and `skillshare pull` to retrieve changes from the fork.
+
+## Upstream updates
+
+The `Update upstream skills` GitHub Actions workflow runs every Monday at 03:23 UTC and can also be started manually from Actions. It uses Skillshare v0.30.8 with an isolated configuration and no local targets. Verified GitHub sources in `.metadata.json` are updated without `--force`, pruning, or bypassing security audits. Missing tracked checkouts, archived variants, and the authoring template are excluded.
+
+Updates are proposed in one PR from `automation/update-skills`. The PR body and workflow artifact report per-skill results, including skipped or failed updates. Review before merging. After merging, run locally:
+
+```bash
+skillshare pull
+skillshare sync
+```
+
+[upstream-sources.json](upstream-sources.json) records the 56 verified imported sources and 23 unresolved sources. It is an initial provenance report; `.metadata.json` is the live update record. Unresolved sources remain locally maintained until their repository and skill directory are confirmed. The local import report remains a historical snapshot.
+
+GitHub must allow Actions to create pull requests in repository Settings → Actions → General → Workflow permissions. Scheduled workflows in forks may also need to be enabled in the Actions tab.
 
 ## Install
 
@@ -36,11 +51,11 @@ One source of truth. Sync everywhere with one command.
 curl -fsSL https://raw.githubusercontent.com/runkids/skillshare/main/install.sh | sh
 
 # Install all skills from this repo
-skillshare install Uwith/my-skills
+skillshare install Uwith/antifa-skills
 skillshare sync
 
 # Or pick a specific skill
-skillshare install Uwith/my-skills -s frontend-design
+skillshare install Uwith/antifa-skills -s frontend-design
 skillshare sync
 ```
 
